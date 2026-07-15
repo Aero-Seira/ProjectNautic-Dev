@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-16T02:43:24+08:00",
+  "generated_at": "2026-07-16T03:37:32+08:00",
   "root": "C:\\Users\\aeroseira\\Desktop\\MC\\Versions\\ProjectNautic-Dev",
   "profile": {
     "pack_name": "ProjectNautic-Dev",
@@ -10,12 +10,13 @@
     "fml_version": "4.0.42",
     "java_version": 21,
     "observed_mod_loaders": {
-      "neoforge": 29,
-      "fabric": 1
+      "neoforge": 63,
+      "fabric": 7
     },
     "content_counts": {
-      "mod": 30,
-      "config": 69,
+      "mod": 71,
+      "resource-pack": 1,
+      "config": 116,
       "script-content": 9,
       "launcher-profile": 3
     }
@@ -199,6 +200,47 @@
         "contained_jars": 0
       }
     },
+    "mod:mods/[Tiny Item Animations] tia-neoforge-1.21-1.2.1.jar": {
+      "id": "mod:mods/[Tiny Item Animations] tia-neoforge-1.21-1.2.1.jar",
+      "category": "mod",
+      "path": "mods/[Tiny Item Animations] tia-neoforge-1.21-1.2.1.jar",
+      "kind": "file",
+      "size": 18957,
+      "mtime_ns": 1784143039178640700,
+      "sha256": "6b157d1ff7d7973d9c53a41f06906b6c0a30cec5bd4a852e8c0f55f078a14382",
+      "suggested_document": "components/tia.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[Tiny Item Animations] tia-neoforge-1.21-1.2.1.jar",
+        "loader": "neoforge",
+        "mod_id": "tia",
+        "name": "Tiny Item Animations",
+        "version": "1.2.1",
+        "description": "Adds a cute little animation when picking up items with your mouse.",
+        "authors": "Trivaxy",
+        "license": "LPUL",
+        "dependencies": {
+          "tia": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[2,)",
+              "ordering": "NONE",
+              "side": "CLIENT"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21,1.21.2)",
+              "ordering": "NONE",
+              "side": "CLIENT"
+            }
+          ]
+        },
+        "manifest_title": "neoforge",
+        "contained_jars": 0
+      }
+    },
     "mod:mods/[Xaero的小地图] xaerominimap-neoforge-1.21.1-26.3.0.jar": {
       "id": "mod:mods/[Xaero的小地图] xaerominimap-neoforge-1.21.1-26.3.0.jar",
       "category": "mod",
@@ -263,6 +305,236 @@
         "contained_jars": 1
       }
     },
+    "mod:mods/[可点击的进度] clickadv-1.21-3.8.jar": {
+      "id": "mod:mods/[可点击的进度] clickadv-1.21-3.8.jar",
+      "category": "mod",
+      "path": "mods/[可点击的进度] clickadv-1.21-3.8.jar",
+      "kind": "file",
+      "size": 14593,
+      "mtime_ns": 1784142777739321200,
+      "sha256": "1d149d19063ecf862757460504d72eabcf31339d986c16ba23e4cee1b43a13fd",
+      "suggested_document": "components/clickadv.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[可点击的进度] clickadv-1.21-3.8.jar",
+        "loader": "neoforge",
+        "mod_id": "clickadv",
+        "name": "Clickable Advancements mod",
+        "version": "3.8",
+        "description": "Clickable Advancements lets you click on advancements in chat",
+        "authors": "Someaddon",
+        "license": "ARR",
+        "dependencies": {
+          "clickadv": [
+            {
+              "modId": "minecraft",
+              "mandatory": true,
+              "versionRange": "[1.21,1.30)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "cupboard",
+              "mandatory": true,
+              "versionRange": "[1.21-1.4,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/[可视性：重铸] visuality-forge-2.1.0.jar": {
+      "id": "mod:mods/[可视性：重铸] visuality-forge-2.1.0.jar",
+      "category": "mod",
+      "path": "mods/[可视性：重铸] visuality-forge-2.1.0.jar",
+      "kind": "file",
+      "size": 115765,
+      "mtime_ns": 1784142942486679900,
+      "sha256": "f4c134d3041e9e6626276a26d2864f3aed177c08c8a109cd3788c5470c28d02e",
+      "suggested_document": "components/visuality.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[可视性：重铸] visuality-forge-2.1.0.jar",
+        "loader": "neoforge",
+        "mod_id": "visuality",
+        "name": "Visuality: Reforged",
+        "version": "2.1.0",
+        "description": "Little visual improvements by adding a bunch of new particles.",
+        "authors": "LimonBlaze",
+        "license": "MIT",
+        "dependencies": {
+          "visuality": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.0,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "manifest_title": "visuality-forge",
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/[平滑转移] smoothswapping-0.9.3.2-1.21.1-neoforge.jar": {
+      "id": "mod:mods/[平滑转移] smoothswapping-0.9.3.2-1.21.1-neoforge.jar",
+      "category": "mod",
+      "path": "mods/[平滑转移] smoothswapping-0.9.3.2-1.21.1-neoforge.jar",
+      "kind": "file",
+      "size": 62900,
+      "mtime_ns": 1784142830480732700,
+      "sha256": "c1187b545097df22c528e9339902ab3631bea2da2b94f7b1569faabbc548d041",
+      "suggested_document": "components/smoothswapping.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[平滑转移] smoothswapping-0.9.3.2-1.21.1-neoforge.jar",
+        "loader": "neoforge",
+        "mod_id": "smoothswapping",
+        "name": "Smooth Swapping",
+        "version": "0.9.3.2",
+        "description": "Moves items smoothly in inventories",
+        "authors": "Schauweg",
+        "license": "GNU LGPL 3.0",
+        "dependencies": {
+          "smoothswapping": [
+            {
+              "modId": "neoforge",
+              "mandatory": true,
+              "versionRange": "[21,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "mandatory": true,
+              "versionRange": "[1.21,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/[异步粒子] AsyncParticles-21.1.2.0+1.21.1.jar": {
+      "id": "mod:mods/[异步粒子] AsyncParticles-21.1.2.0+1.21.1.jar",
+      "category": "mod",
+      "path": "mods/[异步粒子] AsyncParticles-21.1.2.0+1.21.1.jar",
+      "kind": "file",
+      "size": 1158834,
+      "mtime_ns": 1784143026532570700,
+      "sha256": "7e45fe46faed41187ba6d2aaf625074b05936a9fc1b719812e04bad0ebfb7f0e",
+      "suggested_document": "components/asyncparticles.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[异步粒子] AsyncParticles-21.1.2.0+1.21.1.jar",
+        "loader": "fabric",
+        "mod_id": "asyncparticles",
+        "name": "AsyncParticles",
+        "version": "21.1.2.0",
+        "authors": [
+          "Harvey_Husky"
+        ],
+        "environment": "client",
+        "dependencies": {
+          "fabricloader": ">=0.17.0",
+          "minecraft": ">=1.21",
+          "mixinextras": ">=0.5.0",
+          "mixinsquared": "*"
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/[截图到剪贴板] screenshot-to-clipboard-neoforge-1.0.10.jar": {
+      "id": "mod:mods/[截图到剪贴板] screenshot-to-clipboard-neoforge-1.0.10.jar",
+      "category": "mod",
+      "path": "mods/[截图到剪贴板] screenshot-to-clipboard-neoforge-1.0.10.jar",
+      "kind": "file",
+      "size": 14146,
+      "mtime_ns": 1784143365240799800,
+      "sha256": "4e980758da4346cd63dd50f4f44bd46fab4279f71578e26a7c5c49c858ca9d47",
+      "suggested_document": "components/screenshotclipboard.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[截图到剪贴板] screenshot-to-clipboard-neoforge-1.0.10.jar",
+        "loader": "neoforge",
+        "mod_id": "screenshotclipboard",
+        "name": "Screenshot to Clipboard",
+        "version": "1.0.10",
+        "description": "Any time you take a screenshot in the game, the image data is copied to the clipboard. You can then paste this anywhere (e.g. Discord) to upload the image and share it with others.",
+        "authors": "comp500",
+        "license": "MIT",
+        "dependencies": {
+          "screenshotclipboard": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[20.6,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.20.6,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/[更好的进度] BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar": {
+      "id": "mod:mods/[更好的进度] BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar",
+      "category": "mod",
+      "path": "mods/[更好的进度] BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar",
+      "kind": "file",
+      "size": 98641,
+      "mtime_ns": 1784142031750937300,
+      "sha256": "60b548bef04a2f0e1da686ee9035c2e3d4ed0459a17d7a4836fc26af6de6b60e",
+      "suggested_document": "components/betteradvancements.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[更好的进度] BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar",
+        "loader": "neoforge",
+        "mod_id": "betteradvancements",
+        "name": "Better Advancements",
+        "version": "0.4.3.21",
+        "description": "Improvements to the advancements screen.",
+        "authors": "way2muchnoise",
+        "license": "\"Don't Be a Jerk\" non-commercial care-free license",
+        "dependencies": {
+          "betteradvancements": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.1.0,)",
+              "ordering": "NONE",
+              "side": "CLIENT"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21.1, 1.22)",
+              "ordering": "NONE",
+              "side": "CLIENT"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
     "mod:mods/[树叶渲染优化] cullleaves-neoforge-4.1.1+1.21.1.jar": {
       "id": "mod:mods/[树叶渲染优化] cullleaves-neoforge-4.1.1+1.21.1.jar",
       "category": "mod",
@@ -310,6 +582,53 @@
         "contained_jars": 0
       }
     },
+    "mod:mods/[氛围！] ambiance-neoforge-1.21-1.1.0.jar": {
+      "id": "mod:mods/[氛围！] ambiance-neoforge-1.21-1.1.0.jar",
+      "category": "mod",
+      "path": "mods/[氛围！] ambiance-neoforge-1.21-1.1.0.jar",
+      "kind": "file",
+      "size": 1472888,
+      "mtime_ns": 1784142931769588500,
+      "sha256": "fcbb8cc424d4013fcca530e6f8239c48c8faff47255274b79203472e26396bb1",
+      "suggested_document": "components/ambiance.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[氛围！] ambiance-neoforge-1.21-1.1.0.jar",
+        "loader": "neoforge",
+        "mod_id": "ambiance",
+        "name": "Ambiance",
+        "version": "1.1.0",
+        "description": "A small Minecraft Mod that add new ambient effects to the Minecraft! Support Us on Patreon for future projects!",
+        "authors": "Team Chorus, YeoXuHang",
+        "license": "All-Rights-Reserved",
+        "dependencies": {
+          "ambiance": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.1.73,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21, 1.22)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "configuration",
+              "type": "required",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "manifest_title": "neoforge",
+        "contained_jars": 0
+      }
+    },
     "mod:mods/[火花] spark-1.10.124-neoforge.jar": {
       "id": "mod:mods/[火花] spark-1.10.124-neoforge.jar",
       "category": "mod",
@@ -336,6 +655,69 @@
               "versionRange": "[20,)",
               "ordering": "NONE",
               "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/[物品栏粒子] InventoryParticles-2.6.0+1.21.1+neoforge.jar": {
+      "id": "mod:mods/[物品栏粒子] InventoryParticles-2.6.0+1.21.1+neoforge.jar",
+      "category": "mod",
+      "path": "mods/[物品栏粒子] InventoryParticles-2.6.0+1.21.1+neoforge.jar",
+      "kind": "file",
+      "size": 1664805,
+      "mtime_ns": 1784143737795194600,
+      "sha256": "7fa427b7cbbfa5febfb8afaa68044a989b749084bd08dbf11c6d5ed8effe8fa9",
+      "suggested_document": "components/inventory-particles.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[物品栏粒子] InventoryParticles-2.6.0+1.21.1+neoforge.jar",
+        "loader": "neoforge",
+        "mod_id": "inventory_particles",
+        "name": "Inventory Particles",
+        "version": "2.6.0+1.21.1+neoforge",
+        "description": "Beautiful particles for your inventory items! Make your inventory more alive and dynamic!",
+        "authors": "LopyMine kovrik337s",
+        "license": "Code[CC-BY-ND-4.0], Textures[ARR]",
+        "dependencies": {
+          "inventory_particles": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[1,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "1.21.1",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "mossylib",
+              "type": "required",
+              "versionRange": "[1.0.5,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "particle_effects",
+              "type": "incompatible",
+              "versionRange": "[,1.4.0)",
+              "ordering": "NONE",
+              "side": "BOTH",
+              "reason": "Please update Particle Effects to latest version"
+            },
+            {
+              "modId": "inventory_interactions",
+              "type": "incompatible",
+              "versionRange": "[,1.2.0)",
+              "ordering": "NONE",
+              "side": "BOTH",
+              "reason": "Please update Inventory Interactions to latest version"
             }
           ]
         },
@@ -495,6 +877,188 @@
         "contained_jars": 0
       }
     },
+    "mod:mods/[禁用聊天举报] NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar": {
+      "id": "mod:mods/[禁用聊天举报] NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar",
+      "category": "mod",
+      "path": "mods/[禁用聊天举报] NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar",
+      "kind": "file",
+      "size": 306668,
+      "mtime_ns": 1784142191572574200,
+      "sha256": "866ac9a47afcd829bdb03890b5d8f80bb4c6f47332c64717b6e909bee51337b6",
+      "suggested_document": "components/nochatreports.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[禁用聊天举报] NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar",
+        "loader": "neoforge",
+        "mod_id": "nochatreports",
+        "name": "No Chat Reports",
+        "version": "1.21.1-v2.9.1",
+        "description": "Strips cryptographic signatures from player messages, making it impossible to track and associate them with your Mojang/Microsoft account, as well as use Player Chat Reporting feature.",
+        "authors": "Aizistral",
+        "license": "WTFPL",
+        "dependencies": {
+          "nochatreports": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.0.0,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "manifest_title": "No Chat Reports",
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/[聊动魅影] ChatImpressiveAnimation-neoforge-1.6.0+mc1.21.5.jar": {
+      "id": "mod:mods/[聊动魅影] ChatImpressiveAnimation-neoforge-1.6.0+mc1.21.5.jar",
+      "category": "mod",
+      "path": "mods/[聊动魅影] ChatImpressiveAnimation-neoforge-1.6.0+mc1.21.5.jar",
+      "kind": "file",
+      "size": 70429,
+      "mtime_ns": 1784142177665093000,
+      "sha256": "3c530294517708f621c503d7f56eeda6efa26ecf5a5cfa1af9ddbd7d8d7ee525",
+      "suggested_document": "components/chatimpressiveanimation.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[聊动魅影] ChatImpressiveAnimation-neoforge-1.6.0+mc1.21.5.jar",
+        "loader": "neoforge",
+        "mod_id": "chatimpressiveanimation",
+        "name": "Chat Impressive Animation",
+        "version": "1.6.0+mc1.21.5",
+        "description": "Makes the chat look better by adding animations, such as opening/closing the chat bar, sending messages, etc. It also removes the message indicator",
+        "authors": "Wulian233, TexTrue",
+        "license": "MIT",
+        "dependencies": {
+          "chatimpressiveanimation": [
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21,1.21.6)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "cloth_config",
+              "type": "required",
+              "versionRange": "*",
+              "ordering": "AFTER",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/[聊天头像] chat_heads-0.15.2-neoforge-1.21.jar": {
+      "id": "mod:mods/[聊天头像] chat_heads-0.15.2-neoforge-1.21.jar",
+      "category": "mod",
+      "path": "mods/[聊天头像] chat_heads-0.15.2-neoforge-1.21.jar",
+      "kind": "file",
+      "size": 89325,
+      "mtime_ns": 1784142131267774300,
+      "sha256": "cc1bde9cdb709232b7d07bdae693355a774a34d08029d82ef6d9c9f17981d36b",
+      "suggested_document": "components/chat-heads.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[聊天头像] chat_heads-0.15.2-neoforge-1.21.jar",
+        "loader": "neoforge",
+        "mod_id": "chat_heads",
+        "name": "Chat Heads",
+        "version": "0.15.2",
+        "description": "See who are you chatting with! This mod adds player heads next to their chat messages.",
+        "authors": "dzwdz, Fourmisain",
+        "license": "MPL-2.0",
+        "dependencies": {
+          "chat_heads": [
+            {
+              "modId": "neoforge",
+              "mandatory": true,
+              "versionRange": "[21.0.110-beta,)",
+              "ordering": "NONE",
+              "side": "CLIENT"
+            },
+            {
+              "modId": "minecraft",
+              "mandatory": true,
+              "versionRange": "[1.21, 1.21.1]",
+              "ordering": "NONE",
+              "side": "CLIENT"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/[自动汉化更新] I18nUpdateMod-3.7.0-all.jar": {
+      "id": "mod:mods/[自动汉化更新] I18nUpdateMod-3.7.0-all.jar",
+      "category": "mod",
+      "path": "mods/[自动汉化更新] I18nUpdateMod-3.7.0-all.jar",
+      "kind": "file",
+      "size": 49726,
+      "mtime_ns": 1784142061417763900,
+      "sha256": "66fc7f6debca5bfe6d7c6aa392f6e23a712dc018ae71cbb6e0b214ff6a28142d",
+      "suggested_document": "components/i18nupdatemod.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[自动汉化更新] I18nUpdateMod-3.7.0-all.jar",
+        "loader": "fabric",
+        "mod_id": "i18nupdatemod",
+        "name": "I18nUpdateMod",
+        "version": "3.7.0",
+        "description": "Brand new Minecraft Mod Language Package update mod.",
+        "authors": [
+          {
+            "name": "xfl03",
+            "contact": {
+              "homepage": "https://github.com/xfl03"
+            }
+          }
+        ],
+        "environment": "client",
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/[自然音效] AmbientSounds_NEOFORGE_v6.3.8_mc1.21.1.jar": {
+      "id": "mod:mods/[自然音效] AmbientSounds_NEOFORGE_v6.3.8_mc1.21.1.jar",
+      "category": "mod",
+      "path": "mods/[自然音效] AmbientSounds_NEOFORGE_v6.3.8_mc1.21.1.jar",
+      "kind": "file",
+      "size": 84811632,
+      "mtime_ns": 1784143436820083800,
+      "sha256": "07ee6fd24d8427ee079e2e376095b0ac92450b0153331f1575f8195e2c9cf90b",
+      "suggested_document": "components/ambientsounds.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[自然音效] AmbientSounds_NEOFORGE_v6.3.8_mc1.21.1.jar",
+        "loader": "fabric",
+        "mod_id": "ambientsounds",
+        "name": "AmbientSounds",
+        "version": "6.3.8",
+        "description": "Expands minecraft's ambient sounds.",
+        "authors": [
+          "CreativeMD",
+          "AriaFreeze"
+        ],
+        "environment": "client",
+        "dependencies": {
+          "fabricloader": ">=0.15.11",
+          "fabric-api": "*",
+          "minecraft": ">=1.21",
+          "creativecore": ">=2.13.37"
+        },
+        "manifest_title": "AmbientSounds",
+        "contained_jars": 0
+      }
+    },
     "mod:mods/[苹果皮] appleskin-neoforge-mc1.21-3.0.9.jar": {
       "id": "mod:mods/[苹果皮] appleskin-neoforge-mc1.21-3.0.9.jar",
       "category": "mod",
@@ -527,6 +1091,116 @@
         },
         "manifest_title": "AppleSkin",
         "contained_jars": 0
+      }
+    },
+    "mod:mods/[通用拼音搜索] jecharacters-1.21.1-neoforge-4.5.26.jar": {
+      "id": "mod:mods/[通用拼音搜索] jecharacters-1.21.1-neoforge-4.5.26.jar",
+      "category": "mod",
+      "path": "mods/[通用拼音搜索] jecharacters-1.21.1-neoforge-4.5.26.jar",
+      "kind": "file",
+      "size": 250757,
+      "mtime_ns": 1784142075590823200,
+      "sha256": "b536257694c40e6985abe3efa334afc1ced68b4a8ad8490b0c23df0185b10a67",
+      "suggested_document": "components/jecharacters.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[通用拼音搜索] jecharacters-1.21.1-neoforge-4.5.26.jar",
+        "loader": "neoforge",
+        "mod_id": "jecharacters",
+        "name": "Just Enough Characters",
+        "version": "4.5.26",
+        "description": "Pinyin search for JEI and more.",
+        "authors": "Towdium, yzl210, Death-123, vfyjxf_",
+        "license": "MIT License",
+        "contained_jars": 2
+      }
+    },
+    "mod:mods/[配方性能优化] FastSuite-1.21.1-6.0.7.jar": {
+      "id": "mod:mods/[配方性能优化] FastSuite-1.21.1-6.0.7.jar",
+      "category": "mod",
+      "path": "mods/[配方性能优化] FastSuite-1.21.1-6.0.7.jar",
+      "kind": "file",
+      "size": 28193,
+      "mtime_ns": 1784141988827450700,
+      "sha256": "3e274cd01bdc27dff8e2514213f1c45306c86fe38e4271a4209bc1471de6c70d",
+      "suggested_document": "components/fastsuite.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[配方性能优化] FastSuite-1.21.1-6.0.7.jar",
+        "loader": "neoforge",
+        "mod_id": "fastsuite",
+        "name": "Fast Suite",
+        "version": "6.0.7",
+        "description": "Introduces multithreading to the json recipe system.",
+        "authors": "Shadows_of_Fire",
+        "license": "MIT License",
+        "dependencies": {
+          "fastsuite": [
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21.1,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.1.187,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "placebo",
+              "type": "required",
+              "versionRange": "[9.9.0,)",
+              "ordering": "AFTER",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "manifest_title": "FastSuite",
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/[鈇] flerovium-neoforge-1.21.1-1.1.2-all.jar": {
+      "id": "mod:mods/[鈇] flerovium-neoforge-1.21.1-1.1.2-all.jar",
+      "category": "mod",
+      "path": "mods/[鈇] flerovium-neoforge-1.21.1-1.1.2-all.jar",
+      "kind": "file",
+      "size": 182579,
+      "mtime_ns": 1784142091813284400,
+      "sha256": "2274b5c3e66cda6958b17a968ef8e6ef8710ff8a0a8bb99050fb5a167ba07928",
+      "suggested_document": "components/flerovium.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[鈇] flerovium-neoforge-1.21.1-1.1.2-all.jar",
+        "loader": "neoforge",
+        "mod_id": "flerovium",
+        "name": "Flerovium",
+        "version": "1.1.2",
+        "description": "Makes rendering faster",
+        "authors": "MoePus",
+        "license": "LGPL3.0",
+        "dependencies": {
+          "flerovium": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.1.0,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21.1,1.22)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 4
       }
     },
     "mod:mods/[钠 · 扩展] sodium-extra-neoforge-0.9.3+mc1.21.1.jar": {
@@ -761,6 +1435,542 @@
         "contained_jars": 0
       }
     },
+    "mod:mods/architectury-13.0.8-neoforge.jar": {
+      "id": "mod:mods/architectury-13.0.8-neoforge.jar",
+      "category": "mod",
+      "path": "mods/architectury-13.0.8-neoforge.jar",
+      "kind": "file",
+      "size": 584004,
+      "mtime_ns": 1784141711192130500,
+      "sha256": "5ec578f814e8cca87aeffa6e424032e78d9ea5ea6b603dd834c2dc13c31141ee",
+      "suggested_document": "components/architectury.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "architectury-13.0.8-neoforge.jar",
+        "loader": "neoforge",
+        "mod_id": "architectury",
+        "name": "Architectury",
+        "version": "13.0.8",
+        "description": "A intermediary api aimed to ease developing multiplatform mods.",
+        "authors": "shedaniel",
+        "license": "GNU LGPLv3",
+        "dependencies": {
+          "architectury": [
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.0.110-beta,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/BadOptimizations-2.4.1-1.21.1.jar": {
+      "id": "mod:mods/BadOptimizations-2.4.1-1.21.1.jar",
+      "category": "mod",
+      "path": "mods/BadOptimizations-2.4.1-1.21.1.jar",
+      "kind": "file",
+      "size": 283566,
+      "mtime_ns": 1784142102192885700,
+      "sha256": "22e2467892d3706f43d1cf2aa637785bb8601c20b0098a82ab956e6a8fc4d2ba",
+      "suggested_document": "components/badoptimizations.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "BadOptimizations-2.4.1-1.21.1.jar",
+        "loader": "fabric",
+        "mod_id": "badoptimizations",
+        "name": "BadOptimizations",
+        "version": "2.4.1",
+        "description": "Optimization mod that focuses on things other than rendering",
+        "authors": [
+          "Thosea"
+        ],
+        "environment": "client",
+        "dependencies": {
+          "minecraft": ">=1.21.1",
+          "fabricloader": ">=0.15.0"
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/beautifiedchatserver-1.21.1-3.2.jar": {
+      "id": "mod:mods/beautifiedchatserver-1.21.1-3.2.jar",
+      "category": "mod",
+      "path": "mods/beautifiedchatserver-1.21.1-3.2.jar",
+      "kind": "file",
+      "size": 74104,
+      "mtime_ns": 1784142759865124800,
+      "sha256": "fe05d5666d20f16279fb542252b2af30978639f6f84f5770787619c8d5456f84",
+      "suggested_document": "components/beautifiedchatserver.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "beautifiedchatserver-1.21.1-3.2.jar",
+        "loader": "fabric",
+        "mod_id": "beautifiedchatserver",
+        "name": "Beautified Chat Server",
+        "version": "3.2",
+        "description": "A highly configurable mod to change the style and colour of incoming chat messages server-wide.",
+        "authors": [
+          "Rick South"
+        ],
+        "environment": "*",
+        "dependencies": {
+          "fabricloader": ">=0.15.0",
+          "fabric": "*",
+          "minecraft": ">=1.21",
+          "java": ">=21",
+          "collective": ">=8.25"
+        },
+        "manifest_title": "Forge",
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/chatnotify-neoforge-2.6.9+1.21.1.jar": {
+      "id": "mod:mods/chatnotify-neoforge-2.6.9+1.21.1.jar",
+      "category": "mod",
+      "path": "mods/chatnotify-neoforge-2.6.9+1.21.1.jar",
+      "kind": "file",
+      "size": 386273,
+      "mtime_ns": 1784143409739193100,
+      "sha256": "37f3feacad0d16c0323fcc61aac4bd459d2d543041441675edf2cf6f96cb6f84",
+      "suggested_document": "components/chatnotify.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "chatnotify-neoforge-2.6.9+1.21.1.jar",
+        "loader": "neoforge",
+        "mod_id": "chatnotify",
+        "name": "ChatNotify",
+        "version": "2.6.9+1.21.1",
+        "description": "Plays a ping sound when your name is mentioned, with options to create custom alerts.",
+        "authors": "NotRyken",
+        "license": "Apache-2.0",
+        "dependencies": {
+          "chatnotify": [
+            {
+              "modId": "minecraft",
+              "versionRange": "[1.21.1,)"
+            },
+            {
+              "modId": "neoforge",
+              "versionRange": "[21.1.195,)"
+            }
+          ]
+        },
+        "manifest_title": "neoforge",
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/cloth-config-15.0.140-neoforge.jar": {
+      "id": "mod:mods/cloth-config-15.0.140-neoforge.jar",
+      "category": "mod",
+      "path": "mods/cloth-config-15.0.140-neoforge.jar",
+      "kind": "file",
+      "size": 1163890,
+      "mtime_ns": 1784141719850524000,
+      "sha256": "65e722e0d98431a07c45f8bdd8d529a217cc8c175fde1740248bd5c1b4f3c0d4",
+      "suggested_document": "components/cloth-config.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "cloth-config-15.0.140-neoforge.jar",
+        "loader": "neoforge",
+        "mod_id": "cloth_config",
+        "name": "Cloth Config v15 API",
+        "version": "15.0.140",
+        "description": "An API for config screens.",
+        "license": "GNU LGPLv3",
+        "dependencies": {
+          "cloth_config": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.0.110-beta,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/collective-1.21.1-8.39.jar": {
+      "id": "mod:mods/collective-1.21.1-8.39.jar",
+      "category": "mod",
+      "path": "mods/collective-1.21.1-8.39.jar",
+      "kind": "file",
+      "size": 1061931,
+      "mtime_ns": 1784142763556909300,
+      "sha256": "ae59b63790c3097fb01e7801c21f3e7feed13b151c2ad993895196c74381a8fe",
+      "suggested_document": "components/collective.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "collective-1.21.1-8.39.jar",
+        "loader": "fabric",
+        "mod_id": "collective",
+        "name": "Collective",
+        "version": "8.39",
+        "description": "Collective is a shared library with common code for all of Serilum's mods.",
+        "authors": [
+          "Rick South"
+        ],
+        "environment": "*",
+        "dependencies": {
+          "fabricloader": ">=0.15.0",
+          "fabric": "*",
+          "minecraft": ">=1.21",
+          "java": ">=21"
+        },
+        "manifest_title": "Forge",
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/configuration-neoforge-1.21.1-3.1.1.jar": {
+      "id": "mod:mods/configuration-neoforge-1.21.1-3.1.1.jar",
+      "category": "mod",
+      "path": "mods/configuration-neoforge-1.21.1-3.1.1.jar",
+      "kind": "file",
+      "size": 423189,
+      "mtime_ns": 1784142928270712600,
+      "sha256": "b903cc326e10af63226c7a45571bda1e0cf88b978c9920275806e852bcd92bc1",
+      "suggested_document": "components/configuration.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "configuration-neoforge-1.21.1-3.1.1.jar",
+        "loader": "neoforge",
+        "mod_id": "configuration",
+        "name": "Configuration",
+        "version": "3.1.1",
+        "description": "Library mod which allows configuration file management and processing",
+        "authors": "Toma",
+        "license": "MIT License",
+        "dependencies": {
+          "configuration": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.1.1,22)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21.1,1.22)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "manifest_title": "Configuration",
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/CreativeCore_NEOFORGE_v2.13.41_mc1.21.1.jar": {
+      "id": "mod:mods/CreativeCore_NEOFORGE_v2.13.41_mc1.21.1.jar",
+      "category": "mod",
+      "path": "mods/CreativeCore_NEOFORGE_v2.13.41_mc1.21.1.jar",
+      "kind": "file",
+      "size": 1218640,
+      "mtime_ns": 1784143432009710500,
+      "sha256": "bd4164b9ec8e21775e34a99a8d21e5280ee8cc6d3bd003a1b32dc3ada59ae887",
+      "suggested_document": "components/creativecore.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "CreativeCore_NEOFORGE_v2.13.41_mc1.21.1.jar",
+        "loader": "neoforge",
+        "mod_id": "creativecore",
+        "name": "CreativeCore",
+        "version": "2.13.41",
+        "description": "A simple but powerful coremod.",
+        "authors": "CreativeMD",
+        "license": "LGPL-3.0-only",
+        "dependencies": {
+          "creativecore": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.1,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21.1,1.22)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "manifest_title": "CreativeCore",
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/cupboard-1.21.1-3.8.jar": {
+      "id": "mod:mods/cupboard-1.21.1-3.8.jar",
+      "category": "mod",
+      "path": "mods/cupboard-1.21.1-3.8.jar",
+      "kind": "file",
+      "size": 28741,
+      "mtime_ns": 1784142774844773100,
+      "sha256": "722847521c1f9bae079bd3ec1a70b187c3186e71247ddf1182c0ea498cdec067",
+      "suggested_document": "components/cupboard.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "cupboard-1.21.1-3.8.jar",
+        "loader": "neoforge",
+        "mod_id": "cupboard",
+        "name": "Cupboard mod",
+        "version": "3.8",
+        "description": "Cupboard library for utilities and configs",
+        "authors": "Someaddon",
+        "license": "ARR",
+        "dependencies": {
+          "cupboard": [
+            {
+              "modId": "minecraft",
+              "mandatory": true,
+              "versionRange": "[1.21,1.30)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/EffectDescriptions-v21.1.1-1.21.1-NeoForge.jar": {
+      "id": "mod:mods/EffectDescriptions-v21.1.1-1.21.1-NeoForge.jar",
+      "category": "mod",
+      "path": "mods/EffectDescriptions-v21.1.1-1.21.1-NeoForge.jar",
+      "kind": "file",
+      "size": 66316,
+      "mtime_ns": 1784141948804899900,
+      "sha256": "3e27780c83a604be23cae8b902a6324a11d9c49a20671a9ccde2d3d6589d8b89",
+      "suggested_document": "components/effectdescriptions.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "EffectDescriptions-v21.1.1-1.21.1-NeoForge.jar",
+        "loader": "neoforge",
+        "mod_id": "effectdescriptions",
+        "name": "Effect Descriptions",
+        "version": "21.1.1",
+        "description": "Find out what potion effects do without checking the wiki.",
+        "authors": "Fuzs",
+        "license": "MPL-2.0",
+        "dependencies": {
+          "effectdescriptions": [
+            {
+              "modId": "neoforge",
+              "mandatory": true,
+              "type": "required",
+              "versionRange": "[21.1.21,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "mandatory": true,
+              "type": "required",
+              "versionRange": "[1.21.1]",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "puzzleslib",
+              "mandatory": true,
+              "type": "required",
+              "versionRange": "[21.1.7,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "manifest_title": "Effect Descriptions",
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/effecttimerplus-neoforge-2.2.7+1.21.jar": {
+      "id": "mod:mods/effecttimerplus-neoforge-2.2.7+1.21.jar",
+      "category": "mod",
+      "path": "mods/effecttimerplus-neoforge-2.2.7+1.21.jar",
+      "kind": "file",
+      "size": 42113,
+      "mtime_ns": 1784141960690617600,
+      "sha256": "e1ff8864c5783eece6dcde4c6e4a0c98ac4df2230da5c1811682bba7c4f9e371",
+      "suggested_document": "components/effecttimerplus.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "effecttimerplus-neoforge-2.2.7+1.21.jar",
+        "loader": "neoforge",
+        "mod_id": "effecttimerplus",
+        "name": "EffectTimerPlus",
+        "version": "2.2.7+1.21",
+        "description": "Adds a potency indicator and countdown overlay to status effect icons.",
+        "authors": "NotRyken",
+        "license": "LGPL-3.0-only",
+        "dependencies": {
+          "effecttimerplus": [
+            {
+              "modId": "minecraft",
+              "versionRange": "(1.20.6, 1.22)"
+            },
+            {
+              "modId": "neoforge",
+              "versionRange": "[21.0.143, 22)",
+              "side": "CLIENT"
+            },
+            {
+              "modId": "yet_another_config_lib_v3",
+              "type": "optional",
+              "versionRange": "[3.5.0,)",
+              "side": "CLIENT"
+            }
+          ]
+        },
+        "manifest_title": "neoforge",
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/effectual-neoforge-1.4.0-1.21.1.jar": {
+      "id": "mod:mods/effectual-neoforge-1.4.0-1.21.1.jar",
+      "category": "mod",
+      "path": "mods/effectual-neoforge-1.4.0-1.21.1.jar",
+      "kind": "file",
+      "size": 376149,
+      "mtime_ns": 1784141722945980600,
+      "sha256": "989f3ad0e00d90ebf5ec92959347747691d8b91e5032217d7c2f0b104ce95f18",
+      "suggested_document": "components/effectual.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "effectual-neoforge-1.4.0-1.21.1.jar",
+        "loader": "neoforge",
+        "mod_id": "effectual",
+        "name": "Effectual",
+        "version": "1.4.0-1.21.1",
+        "description": "Atmospheric effects and decorative particles.",
+        "authors": "iMeeTake",
+        "license": "MIT",
+        "dependencies": {
+          "effectual": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.1,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21.1]",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "architectury",
+              "type": "required",
+              "versionRange": "[13.0.8,)",
+              "ordering": "AFTER",
+              "side": "CLIENT"
+            },
+            {
+              "modId": "cloth_config",
+              "type": "required",
+              "versionRange": "[15.0.140,)",
+              "ordering": "AFTER",
+              "side": "CLIENT"
+            },
+            {
+              "modId": "tlib",
+              "type": "required",
+              "versionRange": "[1.5.0-1.21.1,)",
+              "ordering": "AFTER",
+              "side": "CLIENT"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/extrasounds-1.5.4+1.21.1-neoforge.jar": {
+      "id": "mod:mods/extrasounds-1.5.4+1.21.1-neoforge.jar",
+      "category": "mod",
+      "path": "mods/extrasounds-1.5.4+1.21.1-neoforge.jar",
+      "kind": "file",
+      "size": 371823,
+      "mtime_ns": 1784143436929870200,
+      "sha256": "020a830e16742477934317da256c98e20d8802fe32560c13fde1d9f6a052a6f0",
+      "suggested_document": "components/extrasounds.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "extrasounds-1.5.4+1.21.1-neoforge.jar",
+        "loader": "neoforge",
+        "mod_id": "extrasounds",
+        "name": "ExtraSounds Next",
+        "version": "1.5.2",
+        "description": "Improve your clicks, scrolls and more with Extra Sounds.",
+        "authors": "Arborsm, stashymane",
+        "license": "MIT",
+        "contained_jars": 1
+      }
+    },
+    "mod:mods/fzzy_config-0.7.6+1.21+neoforge.jar": {
+      "id": "mod:mods/fzzy_config-0.7.6+1.21+neoforge.jar",
+      "category": "mod",
+      "path": "mods/fzzy_config-0.7.6+1.21+neoforge.jar",
+      "kind": "file",
+      "size": 2369895,
+      "mtime_ns": 1784142985049487600,
+      "sha256": "4e5cc1438087b0bc0276969e88b9ad0bdf2bcc60d6caf5fe79e18947d7a29050",
+      "suggested_document": "components/fzzy-config.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "fzzy_config-0.7.6+1.21+neoforge.jar",
+        "loader": "neoforge",
+        "mod_id": "fzzy_config",
+        "name": "Fzzy Config",
+        "version": "0.7.6+1.21+neoforge",
+        "description": "Configuration engine with automatic GUI generation, client-server syncing, powerful validation and error handling, and much more.",
+        "authors": "fzzyhmstrs",
+        "license": "TDL-M (https://github.com/fzzyhmstrs/Timefall-Development-Licence-Modified)",
+        "dependencies": {
+          "fzzy_config": [
+            {
+              "modId": "neoforge",
+              "type": "REQUIRED",
+              "versionRange": "[21.0.0-beta,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "REQUIRED",
+              "versionRange": "[1.21,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "kotlinforforge",
+              "type": "REQUIRED",
+              "versionRange": "[5.3.0,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
     "mod:mods/ImmediatelyFast-NeoForge-1.6.11+1.21.1.jar": {
       "id": "mod:mods/ImmediatelyFast-NeoForge-1.6.11+1.21.1.jar",
       "category": "mod",
@@ -901,6 +2111,22 @@
           ]
         },
         "contained_jars": 0
+      }
+    },
+    "mod:mods/kotlinforforge-5.12.0-all.jar": {
+      "id": "mod:mods/kotlinforforge-5.12.0-all.jar",
+      "category": "mod",
+      "path": "mods/kotlinforforge-5.12.0-all.jar",
+      "kind": "file",
+      "size": 7279276,
+      "mtime_ns": 1784142989437146600,
+      "sha256": "095aed94f21b4e55895b21ea957750ae3ab829fbcfc6d3c66a3489f5f1128d46",
+      "suggested_document": "components/kotlinforforge-5-12-0-all-jar.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "kotlinforforge-5.12.0-all.jar",
+        "contained_jars": 11,
+        "name": "kotlinforforge-5.12.0-all.jar"
       }
     },
     "mod:mods/kubejs-neoforge-2101.7.2-build.368.jar": {
@@ -1153,6 +2379,46 @@
         "contained_jars": 0
       }
     },
+    "mod:mods/MossyLib-1.5.0+1.21.1+neoforge.jar": {
+      "id": "mod:mods/MossyLib-1.5.0+1.21.1+neoforge.jar",
+      "category": "mod",
+      "path": "mods/MossyLib-1.5.0+1.21.1+neoforge.jar",
+      "kind": "file",
+      "size": 179463,
+      "mtime_ns": 1784143728052666500,
+      "sha256": "05257d2df5be62a51b2949ce2811444339fbd66ba475eab61f26ea6407dd1248",
+      "suggested_document": "components/mossylib.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "MossyLib-1.5.0+1.21.1+neoforge.jar",
+        "loader": "neoforge",
+        "mod_id": "mossylib",
+        "name": "MossyLib",
+        "version": "1.5.0+1.21.1+neoforge",
+        "description": "Library with basic utilities for Mossy projects.",
+        "authors": "LopyMine",
+        "license": "CC-BY-ND 4.0",
+        "dependencies": {
+          "mossylib": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[1,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "1.21.1",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
     "mod:mods/New Visual Keybing-1.21.1-neoforge-0.6.16.jar": {
       "id": "mod:mods/New Visual Keybing-1.21.1-neoforge-0.6.16.jar",
       "category": "mod",
@@ -1194,6 +2460,206 @@
         "contained_jars": 0
       }
     },
+    "mod:mods/ParticleEffects-1.5.0+1.21.1+neoforge.jar": {
+      "id": "mod:mods/ParticleEffects-1.5.0+1.21.1+neoforge.jar",
+      "category": "mod",
+      "path": "mods/ParticleEffects-1.5.0+1.21.1+neoforge.jar",
+      "kind": "file",
+      "size": 309141,
+      "mtime_ns": 1784142955503556600,
+      "sha256": "496ae9069eaa766921fa10b042579898d561bf2659a02b8cc47d72983e51a7b2",
+      "suggested_document": "components/particle-effects.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "ParticleEffects-1.5.0+1.21.1+neoforge.jar",
+        "loader": "neoforge",
+        "mod_id": "particle_effects",
+        "name": "Particle Effects",
+        "version": "1.5.0+1.21.1+neoforge",
+        "description": "Visual Fabric Mod that adds unique textured particles for every effect in vanilla Minecraft!",
+        "authors": "LopyMine, KlashRaick",
+        "license": "CC-BY-ND 4.0",
+        "dependencies": {
+          "particle_effects": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[1,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "1.21.1",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "oldpotions",
+              "type": "optional",
+              "versionRange": "*",
+              "ordering": "AFTER",
+              "side": "BOTH"
+            },
+            {
+              "modId": "inventory_particles",
+              "type": "incompatible",
+              "versionRange": "[,2.0.1)",
+              "ordering": "NONE",
+              "side": "BOTH",
+              "reason": "Please update Inventory Particles to latest version"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/particular-1.21.1-NeoForge-1.5.5.jar": {
+      "id": "mod:mods/particular-1.21.1-NeoForge-1.5.5.jar",
+      "category": "mod",
+      "path": "mods/particular-1.21.1-NeoForge-1.5.5.jar",
+      "kind": "file",
+      "size": 314940,
+      "mtime_ns": 1784142961089037700,
+      "sha256": "9911906ae0d883a617ce950ff4f1833bd9e379c5b221df18a2b3e09556f84b2a",
+      "suggested_document": "components/particular.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "particular-1.21.1-NeoForge-1.5.5.jar",
+        "loader": "neoforge",
+        "mod_id": "particular",
+        "name": "Particular Reforged",
+        "version": "1.5.5",
+        "description": "Particular is a mod that enhances Minecraft's ambience with many hand-crafted visual effects.",
+        "authors": "Leclowndu93150",
+        "license": "LGPL-3.0",
+        "dependencies": {
+          "particular": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[4,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21.1,1.22)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "iris",
+              "type": "optional",
+              "versionRange": "[0,)",
+              "ordering": "NONE",
+              "side": "CLIENT"
+            },
+            {
+              "modId": "sable",
+              "type": "optional",
+              "versionRange": "[0,)",
+              "ordering": "BEFORE",
+              "side": "CLIENT"
+            },
+            {
+              "modId": "tfc",
+              "type": "optional",
+              "versionRange": "[0,)",
+              "ordering": "BEFORE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/Placebo-1.21.1-9.9.1.jar": {
+      "id": "mod:mods/Placebo-1.21.1-9.9.1.jar",
+      "category": "mod",
+      "path": "mods/Placebo-1.21.1-9.9.1.jar",
+      "kind": "file",
+      "size": 324056,
+      "mtime_ns": 1784141986291235100,
+      "sha256": "42c90bc43800558b9322bd60faa9011d6694e66a87b7e6b3b9f51fa735b527ea",
+      "suggested_document": "components/placebo.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "Placebo-1.21.1-9.9.1.jar",
+        "loader": "neoforge",
+        "mod_id": "placebo",
+        "name": "Placebo",
+        "version": "9.9.1",
+        "description": "1 (one) library boi",
+        "authors": "Shadows_of_Fire",
+        "license": "MIT License",
+        "dependencies": {
+          "placebo": [
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21.1,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.1.187,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "manifest_title": "Placebo",
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar": {
+      "id": "mod:mods/PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar",
+      "category": "mod",
+      "path": "mods/PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar",
+      "kind": "file",
+      "size": 1425176,
+      "mtime_ns": 1784142255435192900,
+      "sha256": "00069866c4c6bb67ee5192d1b425d46e6a1601dc598e61bd10b67ba5fa8b029c",
+      "suggested_document": "components/puzzleslib.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar",
+        "loader": "neoforge",
+        "mod_id": "puzzleslib",
+        "name": "Puzzles Lib",
+        "version": "21.1.52",
+        "description": "Why it's called Puzzles, you ask? That's the puzzle!",
+        "authors": "Fuzs",
+        "license": "MPL-2.0",
+        "dependencies": {
+          "puzzleslib": [
+            {
+              "modId": "neoforge",
+              "mandatory": true,
+              "type": "required",
+              "versionRange": "[21.1.21,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "mandatory": true,
+              "type": "required",
+              "versionRange": "[1.21.1]",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "manifest_title": "Puzzles Lib",
+        "contained_jars": 0
+      }
+    },
     "mod:mods/ScalableLux-neoforge-0.3.0-alpha.0.6-all.jar": {
       "id": "mod:mods/ScalableLux-neoforge-0.3.0-alpha.0.6-all.jar",
       "category": "mod",
@@ -1220,6 +2686,125 @@
               "type": "required",
               "versionRange": "[1.21.1,)",
               "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/smoothgui-neoforge-2.0.1+mc1.21.jar": {
+      "id": "mod:mods/smoothgui-neoforge-2.0.1+mc1.21.jar",
+      "category": "mod",
+      "path": "mods/smoothgui-neoforge-2.0.1+mc1.21.jar",
+      "kind": "file",
+      "size": 695696,
+      "mtime_ns": 1784142903438700900,
+      "sha256": "6c3e7e5a51741c1729663b86ffb778f66f216a554f8a91211ab3d10c8e37961a",
+      "suggested_document": "components/smoothgui.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "smoothgui-neoforge-2.0.1+mc1.21.jar",
+        "loader": "neoforge",
+        "mod_id": "smoothgui",
+        "name": "SmoothGui",
+        "version": "2.0.1",
+        "description": "Adds animation to gui opening.",
+        "authors": "Ezzenix",
+        "license": "MIT",
+        "dependencies": {
+          "smoothgui": [
+            {
+              "modId": "minecraft",
+              "mandatory": true,
+              "versionRange": "[1.21,)",
+              "ordering": "NONE",
+              "side": "CLIENT"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/smoothscrolling-1.21.1-NeoForge-1.0.1.jar": {
+      "id": "mod:mods/smoothscrolling-1.21.1-NeoForge-1.0.1.jar",
+      "category": "mod",
+      "path": "mods/smoothscrolling-1.21.1-NeoForge-1.0.1.jar",
+      "kind": "file",
+      "size": 40161,
+      "mtime_ns": 1784142896151021400,
+      "sha256": "71aa542af4d15a23dea6fb4726861f329266d6e0fc890bcd615d3e8be873df31",
+      "suggested_document": "components/smoothscrolling.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "smoothscrolling-1.21.1-NeoForge-1.0.1.jar",
+        "loader": "neoforge",
+        "mod_id": "smoothscrolling",
+        "name": "Smooth Scrolling Reforged",
+        "version": "1.0.1",
+        "authors": "Leclowndu93150",
+        "license": "GNU LGPL 3.0",
+        "dependencies": {
+          "smoothscrolling": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21.1,1.22)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/tlib-neoforge-1.5.0-1.21.1.jar": {
+      "id": "mod:mods/tlib-neoforge-1.5.0-1.21.1.jar",
+      "category": "mod",
+      "path": "mods/tlib-neoforge-1.5.0-1.21.1.jar",
+      "kind": "file",
+      "size": 228515,
+      "mtime_ns": 1784141714394002400,
+      "sha256": "e8362f364c262ce1405c568c968fc3a0a69042d5223deecfbbb0595a0514f035",
+      "suggested_document": "components/tlib.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "tlib-neoforge-1.5.0-1.21.1.jar",
+        "loader": "neoforge",
+        "mod_id": "tlib",
+        "name": "TLib",
+        "version": "1.5.0-1.21.1",
+        "description": "Library for Take's Mods",
+        "authors": "iMeeTake",
+        "license": "MIT",
+        "dependencies": {
+          "tlib": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.1,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21.1]",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "architectury",
+              "type": "required",
+              "versionRange": "[13.0.8,)",
+              "ordering": "AFTER",
               "side": "BOTH"
             }
           ]
@@ -1296,6 +2881,126 @@
         "contained_jars": 1
       }
     },
+    "mod:mods/yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar": {
+      "id": "mod:mods/yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+      "category": "mod",
+      "path": "mods/yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+      "kind": "file",
+      "size": 1118651,
+      "mtime_ns": 1784141958077435600,
+      "sha256": "b5c30321b46cfaa521645a04aff89d2804d8167a25bb23ad4b1ae8da73093a2f",
+      "suggested_document": "components/yet-another-config-lib-v3.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+        "loader": "neoforge",
+        "mod_id": "yet_another_config_lib_v3",
+        "name": "YetAnotherConfigLib",
+        "version": "3.8.2+1.21.1-neoforge",
+        "description": "YetAnotherConfigLib (yacl) is just that. A builder-based configuration library for Minecraft.",
+        "authors": "isXander",
+        "license": "LGPL-3.0-or-later",
+        "contained_jars": 8
+      }
+    },
+    "resource-pack:resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.21.1.zip": {
+      "id": "resource-pack:resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.21.1.zip",
+      "category": "resource-pack",
+      "path": "resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.21.1.zip",
+      "kind": "file",
+      "size": 5306636,
+      "mtime_ns": 1784143748244921700,
+      "sha256": "85ce682b3d0312e2430138f737a08e5c43fd3ecdc8eab14ea9f29c388d18dfda",
+      "suggested_document": "components/minecraft-mod-language-modpack-converted-1-21-1.md",
+      "metadata": {
+        "name": "Minecraft-Mod-Language-Modpack-Converted-1.21.1",
+        "pack_format": 34,
+        "description": "该包由1.21和1.20和1.19版本合并 作者：CFPA团队及汉化项目贡献者",
+        "namespaces": [
+          "abnormals_delight",
+          "absentbydesign",
+          "abundant_atmosphere",
+          "abundantdelight",
+          "accessible-step",
+          "accessorify",
+          "acd_nether",
+          "ad_astra",
+          "ad_extendra",
+          "adamsarsplus",
+          "additional_enchantments",
+          "additionallanterns",
+          "additionaltrims",
+          "adorn",
+          "advanced_ae",
+          "advanced_movement",
+          "advancednbttooltips",
+          "ae2",
+          "ae2_mega_things",
+          "ae2fct",
+          "ae2guide",
+          "ae2importexportcard",
+          "ae2insertexportcard",
+          "ae2netanalyser",
+          "ae2tb",
+          "ae2wtlib",
+          "aeinfinitybooster",
+          "aetherdelight",
+          "aethersdelight",
+          "after_netherite"
+        ],
+        "file_count": 2155,
+        "texture_count": 4,
+        "model_count": 0,
+        "language_file_count": 1094,
+        "recipe_count": 0,
+        "function_count": 0
+      }
+    },
+    "config:config/ambiance.json": {
+      "id": "config:config/ambiance.json",
+      "category": "config",
+      "path": "config/ambiance.json",
+      "kind": "file",
+      "size": 1828,
+      "mtime_ns": 1784143756787322200,
+      "sha256": "3f4e155a8a577d4a7c4e59db29b88e76626e8298b66d2b82b6ab886310a2603f",
+      "suggested_document": "components/ambiance.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 92,
+        "top_level_keys": [
+          "blocks",
+          "items",
+          "entities",
+          "otherMods"
+        ],
+        "probable_owner": "ambiance"
+      }
+    },
+    "config:config/ambientsounds-client.json": {
+      "id": "config:config/ambientsounds-client.json",
+      "category": "config",
+      "path": "config/ambientsounds-client.json",
+      "kind": "file",
+      "size": 4198,
+      "mtime_ns": 1784143798797351700,
+      "sha256": "c98f572839ace55b0792042fa4b984311e7d876abdaccfc8a4694f5bebad766c",
+      "suggested_document": "components/ambientsounds-client.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 228,
+        "top_level_keys": [
+          "general",
+          "dimensions",
+          "regions",
+          "categories",
+          "fade-volume",
+          "fade-pitch",
+          "silent-dimensions"
+        ],
+        "probable_owner": "ambientsounds"
+      }
+    },
     "config:config/appleskin-client.toml": {
       "id": "config:config/appleskin-client.toml",
       "category": "config",
@@ -1312,6 +3017,106 @@
           "client"
         ],
         "probable_owner": "appleskin"
+      }
+    },
+    "config:config/asyncparticles/asyncparticles-mixin.properties": {
+      "id": "config:config/asyncparticles/asyncparticles-mixin.properties",
+      "category": "config",
+      "path": "config/asyncparticles/asyncparticles-mixin.properties",
+      "kind": "file",
+      "size": 2168,
+      "mtime_ns": 1784143751212920900,
+      "sha256": "d5db248d843da992d94f0666ca1992f638bf543f23befb1c122dae9cd215dbd1",
+      "suggested_document": "components/asyncparticles-mixin.md",
+      "metadata": {
+        "extension": ".properties",
+        "line_count": 24,
+        "probable_owner": "asyncparticles"
+      }
+    },
+    "config:config/asyncparticles/asyncparticles.json": {
+      "id": "config:config/asyncparticles/asyncparticles.json",
+      "category": "config",
+      "path": "config/asyncparticles/asyncparticles.json",
+      "kind": "file",
+      "size": 1566,
+      "mtime_ns": 1784143758628987000,
+      "sha256": "35bda34f9fc333a46e1fcd5307260add7f745240f1146c9102d6665b08b22d60",
+      "suggested_document": "components/asyncparticles.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 51,
+        "top_level_keys": [
+          "version",
+          "particle",
+          "tick",
+          "rendering",
+          "valkyrienSkies",
+          "create"
+        ],
+        "probable_owner": "asyncparticles"
+      }
+    },
+    "config:config/badoptimizations.txt": {
+      "id": "config:config/badoptimizations.txt",
+      "category": "config",
+      "path": "config/badoptimizations.txt",
+      "kind": "file",
+      "size": 3458,
+      "mtime_ns": 1784142262142873900,
+      "sha256": "cae5ba66971b2f61e0b523c5aeb8b8d4fa806f0bea8a1709860e4fea94426ac9",
+      "suggested_document": "components/badoptimizations.md",
+      "metadata": {
+        "extension": ".txt",
+        "line_count": 82,
+        "probable_owner": "badoptimizations"
+      }
+    },
+    "config:config/beautifiedchatserver.json5": {
+      "id": "config:config/beautifiedchatserver.json5",
+      "category": "config",
+      "path": "config/beautifiedchatserver.json5",
+      "kind": "file",
+      "size": 2059,
+      "mtime_ns": 1784143066455131500,
+      "sha256": "0bab547f79ef82d13b75ccc213f7e662aa30d9de0b2155e4f3b1df4bc9396e6f",
+      "suggested_document": "components/beautifiedchatserver.md",
+      "metadata": {
+        "extension": ".json5",
+        "line_count": 24,
+        "probable_owner": "beautifiedchatserver"
+      }
+    },
+    "config:config/beautifiedchatserver/players.json": {
+      "id": "config:config/beautifiedchatserver/players.json",
+      "category": "config",
+      "path": "config/beautifiedchatserver/players.json",
+      "kind": "file",
+      "size": 2,
+      "mtime_ns": 1784143384686457000,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "suggested_document": "components/players.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 1,
+        "top_level_keys": [],
+        "probable_owner": "players"
+      }
+    },
+    "config:config/beautifiedchatserver/ranks.json": {
+      "id": "config:config/beautifiedchatserver/ranks.json",
+      "category": "config",
+      "path": "config/beautifiedchatserver/ranks.json",
+      "kind": "file",
+      "size": 2,
+      "mtime_ns": 1784143384686457000,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "suggested_document": "components/ranks.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 1,
+        "top_level_keys": [],
+        "probable_owner": "ranks"
       }
     },
     "config:config/better-advanced-tooltips-client.toml": {
@@ -1336,13 +3141,46 @@
         "probable_owner": "better"
       }
     },
+    "config:config/betteradvancements-client.toml": {
+      "id": "config:config/betteradvancements-client.toml",
+      "category": "config",
+      "path": "config/betteradvancements-client.toml",
+      "kind": "file",
+      "size": 939,
+      "mtime_ns": 1784142269127270300,
+      "sha256": "38e88509078026a5a660e00947e5a6db74a3c374c8c7978ef64c360167f84db9",
+      "suggested_document": "components/betteradvancements-client.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 25,
+        "top_level_keys": [
+          "defaultUncompletedIconColor",
+          "defaultUncompletedTitleColor",
+          "defaultCompletedIconColor",
+          "defaultCompletedTitleColor",
+          "doAdvancementsBackgroundFade",
+          "showDebugCoordinates",
+          "orderTabsAlphabetically",
+          "uiScaling",
+          "criteriaDetail",
+          "criteriaDetailRequiresShift",
+          "addInventoryButton",
+          "defaultDrawDirectLines",
+          "defaultHideLines",
+          "defaultCompletedLineColor",
+          "defaultUncompletedLineColor",
+          "onlyUseAboveAdvancementTabs"
+        ],
+        "probable_owner": "betteradvancements"
+      }
+    },
     "config:config/c2me.toml": {
       "id": "config:config/c2me.toml",
       "category": "config",
       "path": "config/c2me.toml",
       "kind": "file",
       "size": 9528,
-      "mtime_ns": 1784140169371675700,
+      "mtime_ns": 1784143758895952700,
       "sha256": "2ce4823e7eec432a21dcbb963203ff3a271fe0635f057a375e43f9212ea767fb",
       "suggested_document": "components/c2me.md",
       "metadata": {
@@ -1362,6 +3200,76 @@
           "ioSystem"
         ],
         "probable_owner": "c2me"
+      }
+    },
+    "config:config/chat_heads.json5": {
+      "id": "config:config/chat_heads.json5",
+      "category": "config",
+      "path": "config/chat_heads.json5",
+      "kind": "file",
+      "size": 229,
+      "mtime_ns": 1784143761893945600,
+      "sha256": "e198750061411cf7fca624e38b894ca104ca2cf2c2940da0409ce4240dcc2503",
+      "suggested_document": "components/chat-heads.md",
+      "metadata": {
+        "extension": ".json5",
+        "line_count": 10,
+        "probable_owner": "chat"
+      }
+    },
+    "config:config/chatimpressiveanimation.json": {
+      "id": "config:config/chatimpressiveanimation.json",
+      "category": "config",
+      "path": "config/chatimpressiveanimation.json",
+      "kind": "file",
+      "size": 182,
+      "mtime_ns": 1784143756396967500,
+      "sha256": "13fac7ab2025bc4ada007db2a05822bfefa1bcc4b685505ad528e981ad31525c",
+      "suggested_document": "components/chatimpressiveanimation.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 7,
+        "top_level_keys": [
+          "enableChatSendingAnimation",
+          "chatSendingAnimationFadeTime",
+          "enableChatBarAnimation",
+          "chatBarAnimationFadeTime",
+          "removeMessageIndicator"
+        ],
+        "probable_owner": "chatimpressiveanimation"
+      }
+    },
+    "config:config/chatnotify.json": {
+      "id": "config:config/chatnotify.json",
+      "category": "config",
+      "path": "config/chatnotify.json",
+      "kind": "file",
+      "size": 2510,
+      "mtime_ns": 1784143756476117800,
+      "sha256": "80052a04acbb99107ffb2af8b6b5d56f55eef7afaf38dbd1f3a11eac0cded8dc",
+      "suggested_document": "components/chatnotify.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 106,
+        "top_level_keys": [
+          "version",
+          "debugMode",
+          "notifMode",
+          "restyleMode",
+          "sendMode",
+          "soundSource",
+          "defaultColor",
+          "defaultSound",
+          "detectionMode",
+          "actionBarDetectionMode",
+          "titleDetectionMode",
+          "subtitleDetectionMode",
+          "senderDetectionMode",
+          "checkOwnMessages",
+          "prefixes",
+          "notifications"
+        ],
+        "probable_owner": "chatnotify"
       }
     },
     "config:config/chunky/config.json": {
@@ -1387,6 +3295,93 @@
         "probable_owner": "config"
       }
     },
+    "config:config/clickadv.json": {
+      "id": "config:config/clickadv.json",
+      "category": "config",
+      "path": "config/clickadv.json",
+      "kind": "file",
+      "size": 433,
+      "mtime_ns": 1784143077598437500,
+      "sha256": "fef2a56ec39082f313fc9f3b947a200b1499d510ff031b041b61ae227ba6b211",
+      "suggested_document": "components/clickadv.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 6,
+        "top_level_keys": [
+          "showAllInLocalChat"
+        ],
+        "probable_owner": "clickadv"
+      }
+    },
+    "config:config/collective.json5": {
+      "id": "config:config/collective.json5",
+      "category": "config",
+      "path": "config/collective.json5",
+      "kind": "file",
+      "size": 2471,
+      "mtime_ns": 1784143066479147200,
+      "sha256": "92809d098b5efeca95c37ec4fef9184bd169160d18efecf81f395c4030c0f83f",
+      "suggested_document": "components/collective.md",
+      "metadata": {
+        "extension": ".json5",
+        "line_count": 26,
+        "probable_owner": "collective"
+      }
+    },
+    "config:config/configuration-options.json": {
+      "id": "config:config/configuration-options.json",
+      "category": "config",
+      "path": "config/configuration-options.json",
+      "kind": "file",
+      "size": 27,
+      "mtime_ns": 1784143066449021700,
+      "sha256": "0b68a3b324f4a172d577a10446593b8f64f38e37199c928b0fc5aee152baee00",
+      "suggested_document": "components/configuration-options.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 3,
+        "top_level_keys": [
+          "advancedMode"
+        ],
+        "probable_owner": "configuration"
+      }
+    },
+    "config:config/creativecore-client.json": {
+      "id": "config:config/creativecore-client.json",
+      "category": "config",
+      "path": "config/creativecore-client.json",
+      "kind": "file",
+      "size": 23,
+      "mtime_ns": 1784143798793842200,
+      "sha256": "acb6c8c1394d4d6f2d0c98d5c314c5ef8ad34b8a76f0a420fc596733bcbc51ac",
+      "suggested_document": "components/creativecore-client.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 3,
+        "top_level_keys": [
+          "maxGuiScale"
+        ],
+        "probable_owner": "creativecore"
+      }
+    },
+    "config:config/creativecore.json": {
+      "id": "config:config/creativecore.json",
+      "category": "config",
+      "path": "config/creativecore.json",
+      "kind": "file",
+      "size": 274,
+      "mtime_ns": 1784143796526880800,
+      "sha256": "5f08d0878d7f89c6b4c947a49dce368d7738255d44fecf9aad59ec6ae8a4fcef",
+      "suggested_document": "components/creativecore.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 19,
+        "top_level_keys": [
+          "usergroups"
+        ],
+        "probable_owner": "creativecore"
+      }
+    },
     "config:config/cullleaves.json": {
       "id": "config:config/cullleaves.json",
       "category": "config",
@@ -1406,13 +3401,171 @@
         "probable_owner": "cullleaves"
       }
     },
+    "config:config/cupboard.json": {
+      "id": "config:config/cupboard.json",
+      "category": "config",
+      "path": "config/cupboard.json",
+      "kind": "file",
+      "size": 1304,
+      "mtime_ns": 1784143066606409900,
+      "sha256": "937698438af081495eebab187013f66570218e1443f35db8a2ca0b4cb6d9638b",
+      "suggested_document": "components/cupboard.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 26,
+        "top_level_keys": [
+          "showCommandExecutionErrors",
+          "debugChunkloadAttempts",
+          "skipErrorOnEntityLoad",
+          "logOffthreadEntityAdd",
+          "forceHeapDumpOnOOM",
+          "displayConfigReload"
+        ],
+        "probable_owner": "cupboard"
+      }
+    },
+    "config:config/effectdescriptions-client.toml": {
+      "id": "config:config/effectdescriptions-client.toml",
+      "category": "config",
+      "path": "config/effectdescriptions-client.toml",
+      "kind": "file",
+      "size": 2000,
+      "mtime_ns": 1784142268229675300,
+      "sha256": "7c7af2aadce61e7c90faaf8ef1f663c515a83d50d87893559b52bdeaa31c8961",
+      "suggested_document": "components/effectdescriptions-client.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 39,
+        "top_level_keys": [
+          "description_indentation",
+          "items",
+          "widgets"
+        ],
+        "probable_owner": "effectdescriptions"
+      }
+    },
+    "config:config/effecttimerplus.json": {
+      "id": "config:config/effecttimerplus.json",
+      "category": "config",
+      "path": "config/effecttimerplus.json",
+      "kind": "file",
+      "size": 564,
+      "mtime_ns": 1784143756523009500,
+      "sha256": "d6a4dbdd823eefd0c0800fab06cd0327231668f5432d91f3f3e62f36a3cef8a9",
+      "suggested_document": "components/effecttimerplus.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 23,
+        "top_level_keys": [
+          "version",
+          "scale",
+          "potencyScale",
+          "timerScale",
+          "potencyEnabled",
+          "timerEnabled",
+          "timerEnabledAmbient",
+          "timerWarnEnabled",
+          "timerFlashEnabled",
+          "timerWarnTime",
+          "potencyColor",
+          "potencyShadow",
+          "potencyBack",
+          "potencyBackColor",
+          "timerColor",
+          "timerWarnColor",
+          "timerShadow",
+          "timerBack",
+          "timerBackColor",
+          "potencyLocation",
+          "timerLocation"
+        ],
+        "probable_owner": "effecttimerplus"
+      }
+    },
+    "config:config/effectual.json": {
+      "id": "config:config/effectual.json",
+      "category": "config",
+      "path": "config/effectual.json",
+      "kind": "file",
+      "size": 631,
+      "mtime_ns": 1784143756700791000,
+      "sha256": "8792984e714a0a60d8e18b3da0d7879b78ba096e55142ed8354945587647bc91",
+      "suggested_document": "components/effectual.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 27,
+        "top_level_keys": [
+          "mouthSteam",
+          "dynamicBreathSpeed",
+          "bubbleBreath",
+          "bubbleChests",
+          "bubblePots",
+          "waterDrip",
+          "steamEffect",
+          "blockPlaceEffect",
+          "stripEffect",
+          "fireImprovements",
+          "campfireImprovements",
+          "torchImprovements",
+          "lanternImprovements",
+          "fireEntitySparks",
+          "metalHitSparks",
+          "furnaceSparks",
+          "cauldronFillEffect",
+          "caveDust",
+          "caveDustFrequency",
+          "runDust",
+          "snowFootprints",
+          "snowResidue",
+          "airTrail",
+          "witherDecay",
+          "minecartSparks"
+        ],
+        "probable_owner": "effectual"
+      }
+    },
+    "config:config/extrasounds.json": {
+      "id": "config:config/extrasounds.json",
+      "category": "config",
+      "path": "config/extrasounds.json",
+      "kind": "file",
+      "size": 970,
+      "mtime_ns": 1784143650283905700,
+      "sha256": "764b1720967b62495fb809a1c7b050e07247cb32af2c15ab9efcb35add1e9f50",
+      "suggested_document": "components/extrasounds.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 43,
+        "top_level_keys": [
+          "version",
+          "mixers",
+          "sounds"
+        ],
+        "probable_owner": "extrasounds"
+      }
+    },
+    "config:config/fastsuite.cfg": {
+      "id": "config:config/fastsuite.cfg",
+      "category": "config",
+      "path": "config/fastsuite.cfg",
+      "kind": "file",
+      "size": 918,
+      "mtime_ns": 1784142269645746400,
+      "sha256": "44198ad591572d87a9f71b0b636229d91508a8c971f9dca907bed3c6d6754193",
+      "suggested_document": "components/fastsuite.md",
+      "metadata": {
+        "extension": ".cfg",
+        "line_count": 25,
+        "probable_owner": "fastsuite"
+      }
+    },
     "config:config/ferritecore-mixin.toml": {
       "id": "config:config/ferritecore-mixin.toml",
       "category": "config",
       "path": "config/ferritecore-mixin.toml",
       "kind": "file",
       "size": 1603,
-      "mtime_ns": 1784140162303969200,
+      "mtime_ns": 1784143750715102200,
       "sha256": "1356f9d52b2dcb2afa5a593e53c286d9c1c3778a6f8b1cf761953b185b7dce78",
       "suggested_document": "components/ferritecore-mixin.md",
       "metadata": {
@@ -1435,13 +3588,35 @@
         "probable_owner": "ferritecore"
       }
     },
+    "config:config/flerovium.json": {
+      "id": "config:config/flerovium.json",
+      "category": "config",
+      "path": "config/flerovium.json",
+      "kind": "file",
+      "size": 168,
+      "mtime_ns": 1784143751454184000,
+      "sha256": "b9191d66e27631be50d24e6294603c98d9256d37e499465efe519a37d8c4d187",
+      "suggested_document": "components/flerovium.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 7,
+        "top_level_keys": [
+          "entityBackFaceCulling",
+          "itemBackFaceCulling",
+          "reduceTerrainParticles",
+          "skipEntityTangentCompute",
+          "fastBreakingTexture"
+        ],
+        "probable_owner": "flerovium"
+      }
+    },
     "config:config/fml.toml": {
       "id": "config:config/fml.toml",
       "category": "config",
       "path": "config/fml.toml",
       "kind": "file",
       "size": 1550,
-      "mtime_ns": 1784140159977653300,
+      "mtime_ns": 1784143747359504600,
       "sha256": "cc59fb1039726fda3ab1eb69b06d9b9aebb7496604ea579cfb735bc5377e7825",
       "suggested_document": "components/fml.md",
       "metadata": {
@@ -1466,13 +3641,48 @@
         "probable_owner": "fml"
       }
     },
+    "config:config/fzzy_config/keybinds.toml": {
+      "id": "config:config/fzzy_config/keybinds.toml",
+      "category": "config",
+      "path": "config/fzzy_config/keybinds.toml",
+      "kind": "file",
+      "size": 6403,
+      "mtime_ns": 1784143068101414800,
+      "sha256": "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f",
+      "suggested_document": "components/keybinds.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 236,
+        "top_level_keys": [
+          "version",
+          "pageUp",
+          "pageDown",
+          "home",
+          "end",
+          "copy",
+          "paste",
+          "cut",
+          "save",
+          "undo",
+          "contextMouse",
+          "back",
+          "search",
+          "info",
+          "fullExit",
+          "find",
+          "contextKeyboard",
+          "act"
+        ],
+        "probable_owner": "keybinds"
+      }
+    },
     "config:config/immediatelyfast.json": {
       "id": "config:config/immediatelyfast.json",
       "category": "config",
       "path": "config/immediatelyfast.json",
       "kind": "file",
       "size": 1115,
-      "mtime_ns": 1784140162284787800,
+      "mtime_ns": 1784143750691872700,
       "sha256": "9389453506ed5b8c789154d45defefcaf8afd1f5b13244df3d728ea1e47b1b17",
       "suggested_document": "components/immediatelyfast.md",
       "metadata": {
@@ -1503,6 +3713,36 @@
         "probable_owner": "immediatelyfast"
       }
     },
+    "config:config/inventory_interactions.json5": {
+      "id": "config:config/inventory_interactions.json5",
+      "category": "config",
+      "path": "config/inventory_interactions.json5",
+      "kind": "file",
+      "size": 137,
+      "mtime_ns": 1784143768649036700,
+      "sha256": "bbbb5ea226170096ee3ef5fa3cf2f61401d9b686dd61540b007d68aefd6cd156",
+      "suggested_document": "components/inventory-interactions.md",
+      "metadata": {
+        "extension": ".json5",
+        "line_count": 9,
+        "probable_owner": "inventory"
+      }
+    },
+    "config:config/inventory_particles.json5": {
+      "id": "config:config/inventory_particles.json5",
+      "category": "config",
+      "path": "config/inventory_particles.json5",
+      "kind": "file",
+      "size": 1677,
+      "mtime_ns": 1784143799174878200,
+      "sha256": "0f3d4aa899d3426a3346230b3743d90364ac8735fb70ccb19dfb16437d04e5ca",
+      "suggested_document": "components/inventory-particles.md",
+      "metadata": {
+        "extension": ".json5",
+        "line_count": 73,
+        "probable_owner": "inventory"
+      }
+    },
     "config:config/iris-excluded.json": {
       "id": "config:config/iris-excluded.json",
       "category": "config",
@@ -1527,8 +3767,8 @@
       "path": "config/iris.properties",
       "kind": "file",
       "size": 281,
-      "mtime_ns": 1784140167618937500,
-      "sha256": "7ed614e0ac5899d6a54ae9d8991189144ccd0117505bb58a5b519e4fda240301",
+      "mtime_ns": 1784143756285033500,
+      "sha256": "c355edc06341fc36e867b0a2cf8b07cdc1f859fb40af1e6b8066789f31711f90",
       "suggested_document": "components/iris.md",
       "metadata": {
         "extension": ".properties",
@@ -1663,6 +3903,47 @@
         "probable_owner": "sort"
       }
     },
+    "config:config/jecharacters-client.toml": {
+      "id": "config:config/jecharacters-client.toml",
+      "category": "config",
+      "path": "config/jecharacters-client.toml",
+      "kind": "file",
+      "size": 912,
+      "mtime_ns": 1784142269100254700,
+      "sha256": "fa50334504c91ef5d6de1f5fae40f59f2928498e5c8b1ccbc5b5aa1894e1e216",
+      "suggested_document": "components/jecharacters-client.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 27,
+        "top_level_keys": [
+          "General",
+          "Utilities"
+        ],
+        "probable_owner": "jecharacters"
+      }
+    },
+    "config:config/jecharacters-extra.json": {
+      "id": "config:config/jecharacters-extra.json",
+      "category": "config",
+      "path": "config/jecharacters-extra.json",
+      "kind": "file",
+      "size": 182,
+      "mtime_ns": 1784142218352726400,
+      "sha256": "621f44c75d9c9e038e3a9f2c809342b5fc007e15a443b62e299ada1f2b21fb7a",
+      "suggested_document": "components/jecharacters-extra.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 15,
+        "top_level_keys": [
+          "removals",
+          "contains",
+          "equals",
+          "suffix",
+          "regExp"
+        ],
+        "probable_owner": "jecharacters"
+      }
+    },
     "config:config/jeed-client.toml": {
       "id": "config:config/jeed-client.toml",
       "category": "config",
@@ -1757,7 +4038,7 @@
       "path": "config/jei/jei-client.ini",
       "kind": "file",
       "size": 10302,
-      "mtime_ns": 1784139675996203500,
+      "mtime_ns": 1784143801225730000,
       "sha256": "a2d183d3e078ba8e60fa990edb255e5ea7a7a6e3250d106908573822dec3a2aa",
       "suggested_document": "components/jei-client.md",
       "metadata": {
@@ -1772,7 +4053,7 @@
       "path": "config/jei/jei-colors.ini",
       "kind": "file",
       "size": 1355,
-      "mtime_ns": 1784139675998203400,
+      "mtime_ns": 1784143801227729800,
       "sha256": "37ac7d250a69357afb14cbb7c7d3c67310c208bc9315a2f7f348f51853fe5e83",
       "suggested_document": "components/jei-colors.md",
       "metadata": {
@@ -1787,7 +4068,7 @@
       "path": "config/jei/jei-debug.ini",
       "kind": "file",
       "size": 1262,
-      "mtime_ns": 1784139675993204000,
+      "mtime_ns": 1784143801223657100,
       "sha256": "5fbb28e705d346c4e55c3e3cd10555c2c555d1138fc1c1536c6275b621636697",
       "suggested_document": "components/jei-debug.md",
       "metadata": {
@@ -1802,7 +4083,7 @@
       "path": "config/jei/jei-mod-id-format.ini",
       "kind": "file",
       "size": 477,
-      "mtime_ns": 1784139675992203500,
+      "mtime_ns": 1784143801221656600,
       "sha256": "6af091efbd8c5000e45a48db5957c566dbda6d4323c2ca1f3ca95c29c2bf4b0a",
       "suggested_document": "components/jei-mod-id-format.md",
       "metadata": {
@@ -1831,13 +4112,13 @@
       "category": "config",
       "path": "config/jei/world/local/新的世界/lookupHistory.json",
       "kind": "file",
-      "size": 232,
-      "mtime_ns": 1784139795093724000,
-      "sha256": "d444234d5ee48908091f1071480a82b6427de2333bb9cc7da743d27bee9a6133",
+      "size": 432,
+      "mtime_ns": 1784142425582289000,
+      "sha256": "3aa5b3e495d04b381fcde4e6f53026b337a3206def4dff3fd56bbf2b0ad7d8b0",
       "suggested_document": "components/lookuphistory.md",
       "metadata": {
         "extension": ".json",
-        "line_count": 4,
+        "line_count": 6,
         "probable_owner": "lookupHistory"
       }
     },
@@ -1941,7 +4222,7 @@
       "path": "config/modernfix-mixins.properties",
       "kind": "file",
       "size": 5519,
-      "mtime_ns": 1784140162196969100,
+      "mtime_ns": 1784143750495031900,
       "sha256": "2ceaf383640e546cf4853e2c41508472814d229673ab0bccdb3ab57003b194df",
       "suggested_document": "components/modernfix-mixins.md",
       "metadata": {
@@ -2157,13 +4438,249 @@
         "probable_owner": "README"
       }
     },
+    "config:config/NoChatReports/NCR-Client.json": {
+      "id": "config:config/NoChatReports/NCR-Client.json",
+      "category": "config",
+      "path": "config/NoChatReports/NCR-Client.json",
+      "kind": "file",
+      "size": 565,
+      "mtime_ns": 1784143756719899500,
+      "sha256": "edfe78d985fe67dce28104f3d87673e94c89134144451c291ecedcd2e2c3b480",
+      "suggested_document": "components/ncr-client.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 20,
+        "top_level_keys": [
+          "defaultSigningMode",
+          "enableMod",
+          "showNCRButton",
+          "showReloadButton",
+          "verifiedIconEnabled",
+          "showServerSafety",
+          "hideInsecureMessageIndicators",
+          "hideModifiedMessageIndicators",
+          "hideSystemMessageIndicators",
+          "hideWarningToast",
+          "hideSigningRequestMessage",
+          "alwaysHideReportButton",
+          "skipRealmsWarning",
+          "disableTelemetry",
+          "removeTelemetryButton",
+          "demandOnServer",
+          "verifiedIconOffsetX",
+          "verifiedIconOffsetY"
+        ],
+        "probable_owner": "NCR"
+      }
+    },
+    "config:config/NoChatReports/NCR-Common.json": {
+      "id": "config:config/NoChatReports/NCR-Common.json",
+      "category": "config",
+      "path": "config/NoChatReports/NCR-Common.json",
+      "kind": "file",
+      "size": 230,
+      "mtime_ns": 1784143756718900200,
+      "sha256": "0eaad2630bd70ade719f7810e805810ada25379269ea194e43d3eea30c51dec0",
+      "suggested_document": "components/ncr-common.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 7,
+        "top_level_keys": [
+          "demandOnClientMessage",
+          "demandOnClient",
+          "convertToGameMessage",
+          "addQueryData",
+          "enableDebugLog"
+        ],
+        "probable_owner": "NCR"
+      }
+    },
+    "config:config/NoChatReports/NCR-Encryption.json": {
+      "id": "config:config/NoChatReports/NCR-Encryption.json",
+      "category": "config",
+      "path": "config/NoChatReports/NCR-Encryption.json",
+      "kind": "file",
+      "size": 520,
+      "mtime_ns": 1784143756721899900,
+      "sha256": "0f61ac30bfc78653a30d715f793e30a6a43d6715106706487efd0aea5d43a84c",
+      "suggested_document": "components/ncr-encryption.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 28,
+        "top_level_keys": [
+          "skipWarning",
+          "enableEncryption",
+          "encryptPublic",
+          "showEncryptionButton",
+          "showEncryptionIndicators",
+          "encryptionKey",
+          "encryptionPassphrase",
+          "algorithmName",
+          "encryptableCommands"
+        ],
+        "probable_owner": "NCR"
+      }
+    },
+    "config:config/NoChatReports/NCR-ServerPreferences.json": {
+      "id": "config:config/NoChatReports/NCR-ServerPreferences.json",
+      "category": "config",
+      "path": "config/NoChatReports/NCR-ServerPreferences.json",
+      "kind": "file",
+      "size": 24,
+      "mtime_ns": 1784143756720899500,
+      "sha256": "df32843b853e0a493ef3a9b1e39276818294353fbb0d833f7f61e77da0f5bca1",
+      "suggested_document": "components/ncr-serverpreferences.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 3,
+        "top_level_keys": [
+          "signingModes"
+        ],
+        "probable_owner": "NCR"
+      }
+    },
+    "config:config/NoChatReports/README.md": {
+      "id": "config:config/NoChatReports/README.md",
+      "category": "config",
+      "path": "config/NoChatReports/README.md",
+      "kind": "file",
+      "size": 167,
+      "mtime_ns": 1784143756721899900,
+      "sha256": "c52b76ccad2bd1063a22c7f6bb9e7c5db6b00fb53a6fd605585972ee0e5fc01f",
+      "suggested_document": "components/readme.md",
+      "metadata": {
+        "extension": ".md",
+        "line_count": 4,
+        "probable_owner": "README"
+      }
+    },
+    "config:config/particle_effects.json5": {
+      "id": "config:config/particle_effects.json5",
+      "category": "config",
+      "path": "config/particle_effects.json5",
+      "kind": "file",
+      "size": 25,
+      "mtime_ns": 1784143066544069700,
+      "sha256": "d8e4194f91f8f374d89cd84d06a68dd4e3bef91a655d18330acc99842157df21",
+      "suggested_document": "components/particle-effects.md",
+      "metadata": {
+        "extension": ".json5",
+        "line_count": 3,
+        "probable_owner": "particle"
+      }
+    },
+    "config:config/particular-common.toml": {
+      "id": "config:config/particular-common.toml",
+      "category": "config",
+      "path": "config/particular-common.toml",
+      "kind": "file",
+      "size": 5842,
+      "mtime_ns": 1784143068460329500,
+      "sha256": "683ff3df19e031d701a51f59aeb56a0be74f40bdce4f6c0a7ab48914e0f56e37",
+      "suggested_document": "components/particular-common.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 165,
+        "top_level_keys": [
+          "general"
+        ],
+        "probable_owner": "particular"
+      }
+    },
+    "config:config/placebo.cfg": {
+      "id": "config:config/placebo.cfg",
+      "category": "config",
+      "path": "config/placebo.cfg",
+      "kind": "file",
+      "size": 495,
+      "mtime_ns": 1784142268124491100,
+      "sha256": "eb7e9906d126543f03c2257ca98efa4b845d1e7479dc8b069a12b194c86debcf",
+      "suggested_document": "components/placebo.md",
+      "metadata": {
+        "extension": ".cfg",
+        "line_count": 18,
+        "probable_owner": "placebo"
+      }
+    },
+    "config:config/smoothgui.json": {
+      "id": "config:config/smoothgui.json",
+      "category": "config",
+      "path": "config/smoothgui.json",
+      "kind": "file",
+      "size": 368,
+      "mtime_ns": 1784143206997553700,
+      "sha256": "f74306bbab8ba368c630a1c57d730b888cdb0ef1fd58bbb891a649cfb606c6af",
+      "suggested_document": "components/smoothgui.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 15,
+        "top_level_keys": [
+          "enableAnimation",
+          "animationTime",
+          "animationScale",
+          "animationStyle",
+          "animationDirection",
+          "modifyBackground",
+          "backgroundOpacity",
+          "backgroundFadeTime",
+          "alwaysBlurBackground",
+          "repeatSameScreen",
+          "configMode",
+          "screensForceEnabled",
+          "screensForceDisabled"
+        ],
+        "probable_owner": "smoothgui"
+      }
+    },
+    "config:config/smoothscrolling-client.toml": {
+      "id": "config:config/smoothscrolling-client.toml",
+      "category": "config",
+      "path": "config/smoothscrolling-client.toml",
+      "kind": "file",
+      "size": 1115,
+      "mtime_ns": 1784143068381228900,
+      "sha256": "ea81e12af0032fe20fe87e9bbc4506934e92e20cd90b087add5053094efb6101",
+      "suggested_document": "components/smoothscrolling-client.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 41,
+        "top_level_keys": [
+          "Hotbar",
+          "Chat",
+          "creativeScreen",
+          "entryList",
+          "misc"
+        ],
+        "probable_owner": "smoothscrolling"
+      }
+    },
+    "config:config/smoothswapping.json": {
+      "id": "config:config/smoothswapping.json",
+      "category": "config",
+      "path": "config/smoothswapping.json",
+      "kind": "file",
+      "size": 113,
+      "mtime_ns": 1784143223745134700,
+      "sha256": "921b9f6a9aa4c60d178ef5a05ba4ac8a44488d1a3e016e827d8bfc0c434e0183",
+      "suggested_document": "components/smoothswapping.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 10,
+        "top_level_keys": [
+          "toggle_mod",
+          "animation_speed",
+          "curve_points"
+        ],
+        "probable_owner": "smoothswapping"
+      }
+    },
     "config:config/sodium-extra-options.json": {
       "id": "config:config/sodium-extra-options.json",
       "category": "config",
       "path": "config/sodium-extra-options.json",
       "kind": "file",
       "size": 2136,
-      "mtime_ns": 1784140169599080200,
+      "mtime_ns": 1784143761834471400,
       "sha256": "49897093abfdee204e74740483b2e4d12fa60feb5bca1954e1d5e0fac4c454ba",
       "suggested_document": "components/sodium-extra-options.md",
       "metadata": {
@@ -2237,7 +4754,7 @@
       "path": "config/sodium-options.json",
       "kind": "file",
       "size": 762,
-      "mtime_ns": 1784140168917382000,
+      "mtime_ns": 1784143758317038700,
       "sha256": "44478bef0973f1aa587c0493568a5cbc5426233b611f14bd2be489b5b862fa7f",
       "suggested_document": "components/sodium-options.md",
       "metadata": {
@@ -2278,7 +4795,7 @@
       "path": "config/spark/tmp-client/about.txt",
       "kind": "file",
       "size": 585,
-      "mtime_ns": 1784140180013757500,
+      "mtime_ns": 1784143796456596100,
       "sha256": "d7514c0ddb6ae8611a281527bf04ca6cbcea1fa21758534fdcd08ed0f51c19c0",
       "suggested_document": "components/about.md",
       "metadata": {
@@ -2293,7 +4810,7 @@
       "path": "config/spark/tmp/about.txt",
       "kind": "file",
       "size": 585,
-      "mtime_ns": 1784140169826359800,
+      "mtime_ns": 1784143761944214400,
       "sha256": "d7514c0ddb6ae8611a281527bf04ca6cbcea1fa21758534fdcd08ed0f51c19c0",
       "suggested_document": "components/about.md",
       "metadata": {
@@ -2302,13 +4819,133 @@
         "probable_owner": "about"
       }
     },
+    "config:config/tia-client.toml": {
+      "id": "config:config/tia-client.toml",
+      "category": "config",
+      "path": "config/tia-client.toml",
+      "kind": "file",
+      "size": 260,
+      "mtime_ns": 1784143068377210200,
+      "sha256": "0ca0046fd58e22689a2a94509bd273f019f401f253e872a50d7af6903b6dfb4e",
+      "suggested_document": "components/tia-client.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 9,
+        "top_level_keys": [
+          "animation_speed",
+          "pickup_scale"
+        ],
+        "probable_owner": "tia"
+      }
+    },
+    "config:config/visuality/config.toml": {
+      "id": "config:config/visuality/config.toml",
+      "category": "config",
+      "path": "config/visuality/config.toml",
+      "kind": "file",
+      "size": 280,
+      "mtime_ns": 1784143068413858700,
+      "sha256": "8eb00d7011fe645839281c68c3c67fb28cdc97e4541bc6b45d94426ffd3bfd50",
+      "suggested_document": "components/config.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 18,
+        "top_level_keys": [
+          "slime",
+          "charge",
+          "waterCircle"
+        ],
+        "probable_owner": "config"
+      }
+    },
+    "config:config/visuality/particle_emitters/block_ambient.json": {
+      "id": "config:config/visuality/particle_emitters/block_ambient.json",
+      "category": "config",
+      "path": "config/visuality/particle_emitters/block_ambient.json",
+      "kind": "file",
+      "size": 1293,
+      "mtime_ns": 1784143077529244400,
+      "sha256": "bd951562cd4789494eeadab9cb79d82ca79804969111603f8dc638b70fa8def3",
+      "suggested_document": "components/block-ambient.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 70,
+        "top_level_keys": [
+          "enabled",
+          "interval",
+          "entries"
+        ],
+        "probable_owner": "block"
+      }
+    },
+    "config:config/visuality/particle_emitters/block_step.json": {
+      "id": "config:config/visuality/particle_emitters/block_step.json",
+      "category": "config",
+      "path": "config/visuality/particle_emitters/block_step.json",
+      "kind": "file",
+      "size": 219,
+      "mtime_ns": 1784143077530243800,
+      "sha256": "54d4448f6c45ba1ad311f6c35b55b9b800ad4ae664f075707e05cd798b6eab7b",
+      "suggested_document": "components/block-step.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 15,
+        "top_level_keys": [
+          "enabled",
+          "interval",
+          "entries"
+        ],
+        "probable_owner": "block"
+      }
+    },
+    "config:config/visuality/particle_emitters/entity_armor.json": {
+      "id": "config:config/visuality/particle_emitters/entity_armor.json",
+      "category": "config",
+      "path": "config/visuality/particle_emitters/entity_armor.json",
+      "kind": "file",
+      "size": 737,
+      "mtime_ns": 1784143077528244400,
+      "sha256": "83bcfff6c0eaf573b3cef8fd85e7045b66c91c7a5bf0415942d77c45476e23cc",
+      "suggested_document": "components/entity-armor.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 38,
+        "top_level_keys": [
+          "enabled",
+          "interval",
+          "entries"
+        ],
+        "probable_owner": "entity"
+      }
+    },
+    "config:config/visuality/particle_emitters/entity_hit.json": {
+      "id": "config:config/visuality/particle_emitters/entity_hit.json",
+      "category": "config",
+      "path": "config/visuality/particle_emitters/entity_hit.json",
+      "kind": "file",
+      "size": 683,
+      "mtime_ns": 1784143077527243000,
+      "sha256": "db1fe2d772c0ed136c2d1da0c315bc50ba9760032a60253be6f37ce1d7e38ead",
+      "suggested_document": "components/entity-hit.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 38,
+        "top_level_keys": [
+          "enabled",
+          "min_amount",
+          "max_amount",
+          "entries"
+        ],
+        "probable_owner": "entity"
+      }
+    },
     "config:config/xaero/lib/client.cfg": {
       "id": "config:config/xaero/lib/client.cfg",
       "category": "config",
       "path": "config/xaero/lib/client.cfg",
       "kind": "file",
       "size": 26,
-      "mtime_ns": 1784140167873003500,
+      "mtime_ns": 1784143756957207800,
       "sha256": "43ed9dbfa5b4d6f0f3d2e8c2ced17ad298164b22c68ff11d415257a39b074336",
       "suggested_document": "components/client.md",
       "metadata": {
@@ -2323,7 +4960,7 @@
       "path": "config/xaero/lib/common.cfg",
       "kind": "file",
       "size": 236,
-      "mtime_ns": 1784140167864494500,
+      "mtime_ns": 1784143756952410900,
       "sha256": "98f698d96a6d21d830a455b4ad045b70516fa63c298021742d8499e7f0366cd2",
       "suggested_document": "components/common.md",
       "metadata": {
@@ -2338,7 +4975,7 @@
       "path": "config/xaero/lib/profiles/default.cfg",
       "kind": "file",
       "size": 121,
-      "mtime_ns": 1784140167875004800,
+      "mtime_ns": 1784143756960212600,
       "sha256": "34ae854b17d896d7cb853bdc28c27231a3947e91cb9f0991f372846ee3c2a907",
       "suggested_document": "components/default.md",
       "metadata": {
@@ -2353,7 +4990,7 @@
       "path": "config/xaero/lib/server_profiles/default.cfg",
       "kind": "file",
       "size": 75,
-      "mtime_ns": 1784140167871003800,
+      "mtime_ns": 1784143756955125800,
       "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
       "suggested_document": "components/default.md",
       "metadata": {
@@ -2368,7 +5005,7 @@
       "path": "config/xaero/minimap/client.cfg",
       "kind": "file",
       "size": 235,
-      "mtime_ns": 1784140168003151400,
+      "mtime_ns": 1784143756917899200,
       "sha256": "c0915eff5d1a7905cd1038d646eb9086fd1a29e2f637d53535e4da161de17b9f",
       "suggested_document": "components/client.md",
       "metadata": {
@@ -2383,7 +5020,7 @@
       "path": "config/xaero/minimap/common.cfg",
       "kind": "file",
       "size": 147,
-      "mtime_ns": 1784140167998153300,
+      "mtime_ns": 1784143756912852800,
       "sha256": "2b49df024c03a369c62a303c72755e7fedeb4f4653ff53a12fd37bd83ccd4ed0",
       "suggested_document": "components/common.md",
       "metadata": {
@@ -2450,7 +5087,7 @@
       "path": "config/xaero/minimap/profiles/default.cfg",
       "kind": "file",
       "size": 3921,
-      "mtime_ns": 1784140168016702200,
+      "mtime_ns": 1784143756932947400,
       "sha256": "ecb28f94dc9c2d2ee2a19d3783b05ce4ce5416368dad37f3002fe249f5c8d386",
       "suggested_document": "components/default.md",
       "metadata": {
@@ -2465,7 +5102,7 @@
       "path": "config/xaero/minimap/profiles/entity_radar_categories/default.cfg.json",
       "kind": "file",
       "size": 5626,
-      "mtime_ns": 1784140168014659100,
+      "mtime_ns": 1784143756930947800,
       "sha256": "d68e4249caa60a9d153c3cb1fb76fe1a9f70820aa93c0108902c98a06206fa57",
       "suggested_document": "components/default-cfg.md",
       "metadata": {
@@ -2491,7 +5128,7 @@
       "path": "config/xaero/minimap/profiles/info_display_config/default.cfg.txt",
       "kind": "file",
       "size": 682,
-      "mtime_ns": 1784140168016702200,
+      "mtime_ns": 1784143756932947400,
       "sha256": "6a452ff7c5bb4cb0bc44963ac74e7cdb1104ebd104211ce1cb575a4fc825bb1b",
       "suggested_document": "components/default-cfg.md",
       "metadata": {
@@ -2506,7 +5143,7 @@
       "path": "config/xaero/minimap/server_profiles/default.cfg",
       "kind": "file",
       "size": 75,
-      "mtime_ns": 1784140168000153800,
+      "mtime_ns": 1784143756915899200,
       "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
       "suggested_document": "components/default.md",
       "metadata": {
@@ -2521,7 +5158,7 @@
       "path": "config/xaero/world-map/client.cfg",
       "kind": "file",
       "size": 521,
-      "mtime_ns": 1784140168049826100,
+      "mtime_ns": 1784143756813884000,
       "sha256": "d0f079a8df083f6f60a0e0c1316a25fc841755a91bdcb2f86c66ead8e7d4d13d",
       "suggested_document": "components/client.md",
       "metadata": {
@@ -2536,7 +5173,7 @@
       "path": "config/xaero/world-map/common.cfg",
       "kind": "file",
       "size": 141,
-      "mtime_ns": 1784140168044318100,
+      "mtime_ns": 1784143756804883300,
       "sha256": "0c229eb0daf85bd09af51f21eeeb99497a3bd50a825d5ab1ca695fb21bf6cf9d",
       "suggested_document": "components/common.md",
       "metadata": {
@@ -2551,7 +5188,7 @@
       "path": "config/xaero/world-map/profiles/default.cfg",
       "kind": "file",
       "size": 1619,
-      "mtime_ns": 1784140168051828800,
+      "mtime_ns": 1784143756817916700,
       "sha256": "5422abf9c83fedef6509144293fad20f588d4bb6ce0cf1af78cbcd2bcd0d2ccf",
       "suggested_document": "components/default.md",
       "metadata": {
@@ -2566,7 +5203,7 @@
       "path": "config/xaero/world-map/server_profiles/default.cfg",
       "kind": "file",
       "size": 75,
-      "mtime_ns": 1784140168046827100,
+      "mtime_ns": 1784143756810885200,
       "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
       "suggested_document": "components/default.md",
       "metadata": {
@@ -2581,7 +5218,7 @@
       "path": "config/xaerohud.txt",
       "kind": "file",
       "size": 122,
-      "mtime_ns": 1784140173255684300,
+      "mtime_ns": 1784143766567925400,
       "sha256": "6de57f88c55043cfafb952219205e2080da514284c822a277cd9f1ef804f0def",
       "suggested_document": "components/xaerohud.md",
       "metadata": {
@@ -2602,6 +5239,21 @@
       "metadata": {
         "extension": ".txt",
         "probable_owner": "xaeropatreon"
+      }
+    },
+    "config:config/yacl.json5": {
+      "id": "config:config/yacl.json5",
+      "category": "config",
+      "path": "config/yacl.json5",
+      "kind": "file",
+      "size": 250,
+      "mtime_ns": 1784142268160676500,
+      "sha256": "121b93764159be6fb7dab523b29a844e2bb78400ce8c48f52135a097e9b0006e",
+      "suggested_document": "components/yacl.md",
+      "metadata": {
+        "extension": ".json5",
+        "line_count": 6,
+        "probable_owner": "yacl"
       }
     },
     "script-content:kubejs/assets/kubejs/textures/block/example_block.png": {
@@ -2674,7 +5326,7 @@
       "path": "kubejs/config/common.json",
       "kind": "file",
       "size": 446,
-      "mtime_ns": 1784140165574505800,
+      "mtime_ns": 1784143754578411500,
       "sha256": "e00a67922942660d77c213379b5128a46c5abc894178b0be04006d325ff5f6b3",
       "suggested_document": "components/common.md",
       "metadata": {
@@ -2784,8 +5436,8 @@
       "path": "usercache.json",
       "kind": "file",
       "size": 109,
-      "mtime_ns": 1784140181989571300,
-      "sha256": "a84e891481b5ac5b0b041a66608fef20f863c281b5a3acf5080fc1bf2605dc78",
+      "mtime_ns": 1784143798606853900,
+      "sha256": "c79bd695cec7f05a6b4aec3b5a30634490a6602c889ce7f0b961c75f93f36d50",
       "suggested_document": "components/usercache.md",
       "metadata": {
         "extension": ".json",

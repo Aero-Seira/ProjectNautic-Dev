@@ -1,5 +1,33 @@
 # 设计变更记录
 
+## 2026-07-16 - 加载第三批 QoL、本地化与视听反馈模组
+
+- 新增模组 **约 41 个**（第三批），按设计角色分类：
+  - **性能优化**：BadOptimizations 2.4.1、FastSuite 6.0.7、Flerovium 1.1.2、Cupboard 3.8
+  - **视觉/粒子/音频/动画**：Ambiance 1.1.0、AmbientSounds 6.3.8、Visuality: Reforged 2.1.0、Particular 1.5.5、Effectual 1.4.0、Particle Effects 1.5.0、Inventory Particles 2.6.0、Extra Sounds 1.5.2、Tiny Item Animations 1.2.1、Smooth Swapping 0.9.3.2、SmoothGui 2.0.1、Smooth Scrolling 1.0.1、Chat Impressive Animation 1.6.0
+  - **聊天/社交**：No Chat Reports 2.9.1、Chat Heads 0.15.2、Beautified Chat Server 3.2、ChatNotify 2.6.9
+  - **信息/便利**：Better Advancements 0.4.3.21、Clickable Advancements 3.8、Effect Descriptions 21.1.1、EffectTimerPlus 2.2.7、Screenshot to Clipboard 1.0.10、I18nUpdateMod 3.7.0、Just Enough Characters 4.5.26
+  - **依赖库**：Architectury 13.0.8、Cloth Config v15 15.0.140、Collective 8.39、Configuration 3.1.1、Fzzy Config 0.7.6、Kotlin for Forge 5.12.0、MossyLib 1.5.0、Placebo 9.9.1、Puzzles Lib 21.1.52、TLib 1.5.0、YetAnotherConfigLib 3.8.2
+  - **集成/其他**：AsyncParticles 21.1.2.0
+- 新增资源包：**Minecraft Mod Language Modpack Converted 1.21.1**（社区简体中文翻译包）
+- 新增配置文件：所有新增模组生成的默认/初始配置，包括 NoChatReports 系列、Visuality 粒子发射器、AmbientSounds 声景、Particular 环境粒子、FastSuite 并行配方、Flerovium 剔除选项等
+- 设计文档更新：
+  - 更新 `README.md` 产品阶段、系统地图（新增 41+ 组件条目）、性能预算、跨系统约束
+  - 创建 41 个组件文档（按类别分目录存放），覆盖新增模组与资源包
+- 设计影响：
+  - 整合包从"轻量包"进入"中量包"区间，模组总数约 70
+  - 中文玩家体验基线建立（自动汉化更新 + 社区汉化包 + JEI 拼音搜索）
+  - 聊天/社交体验完整（禁用举报、头像、服务器格式、关键词通知）
+  - 信息查询与进度体验增强（Better Advancements、Clickable Advancements、效果说明/计时器）
+  - 环境视听反馈层完整，但多个粒子/音效模组叠加带来低配设备性能与感知噪音风险
+  - 底层性能优化进一步扩展（配方并行、剔除、微优化），与现有 Sodium/Lithium/ModernFix 形成互补
+- 验证状态：已扫描整合包，所有新增模组元数据、配置文件与资源包已记录；实际启动测试、低配性能测试、多人聊天/社交行为验证尚待完成。
+- 剩余问题：
+  - 多个视听模组在低配硬件上的叠加性能影响需实测并制定关闭建议
+  - I18nUpdateMod 与 Minecraft Mod Language Modpack 的加载顺序/覆盖关系需向玩家明确
+  - 部分粒子模组（Effectual / Particular / Visuality / Ambiance）在火源、灵魂沙、洞穴尘埃等场景存在效果重叠风险
+  - FastSuite 对 KubeJS 动态配方与自定义配方线程安全性的影响需回归验证
+
 ## 2026-07-16 - 加载第二批基础模组与 QoL 扩展
 
 - 新增模组 **20 个**：

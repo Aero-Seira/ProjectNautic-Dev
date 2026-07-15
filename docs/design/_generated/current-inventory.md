@@ -1,6 +1,6 @@
 # Current modpack content inventory
 
-Generated: `2026-07-16T02:43:24+08:00`
+Generated: `2026-07-16T03:37:32+08:00`
 
 This file is generated. Put design intent in the human-maintained component pages.
 
@@ -8,14 +8,41 @@ This file is generated. Put design intent in the human-maintained component page
 
 | Path | Name / ID | Version / format | Size | Suggested design page |
 | --- | --- | --- | ---: | --- |
+| `config/ambiance.json` | ambiance.json | - | 1.8 KiB | `components/ambiance.md` |
+| `config/ambientsounds-client.json` | ambientsounds-client.json | - | 4.1 KiB | `components/ambientsounds-client.md` |
 | `config/appleskin-client.toml` | appleskin-client.toml | - | 1.3 KiB | `components/appleskin-client.md` |
+| `config/asyncparticles/asyncparticles-mixin.properties` | asyncparticles-mixin.properties | - | 2.1 KiB | `components/asyncparticles-mixin.md` |
+| `config/asyncparticles/asyncparticles.json` | asyncparticles.json | - | 1.5 KiB | `components/asyncparticles.md` |
+| `config/badoptimizations.txt` | badoptimizations.txt | - | 3.4 KiB | `components/badoptimizations.md` |
+| `config/beautifiedchatserver.json5` | beautifiedchatserver.json5 | - | 2.0 KiB | `components/beautifiedchatserver.md` |
+| `config/beautifiedchatserver/players.json` | players.json | - | 2 B | `components/players.md` |
+| `config/beautifiedchatserver/ranks.json` | ranks.json | - | 2 B | `components/ranks.md` |
 | `config/better-advanced-tooltips-client.toml` | better-advanced-tooltips-client.toml | - | 142 B | `components/better-advanced-tooltips-client.md` |
+| `config/betteradvancements-client.toml` | betteradvancements-client.toml | - | 939 B | `components/betteradvancements-client.md` |
 | `config/c2me.toml` | c2me.toml | - | 9.3 KiB | `components/c2me.md` |
+| `config/chat_heads.json5` | chat_heads.json5 | - | 229 B | `components/chat-heads.md` |
+| `config/chatimpressiveanimation.json` | chatimpressiveanimation.json | - | 182 B | `components/chatimpressiveanimation.md` |
+| `config/chatnotify.json` | chatnotify.json | - | 2.5 KiB | `components/chatnotify.md` |
 | `config/chunky/config.json` | config.json | - | 146 B | `components/config.md` |
+| `config/clickadv.json` | clickadv.json | - | 433 B | `components/clickadv.md` |
+| `config/collective.json5` | collective.json5 | - | 2.4 KiB | `components/collective.md` |
+| `config/configuration-options.json` | configuration-options.json | - | 27 B | `components/configuration-options.md` |
+| `config/creativecore-client.json` | creativecore-client.json | - | 23 B | `components/creativecore-client.md` |
+| `config/creativecore.json` | creativecore.json | - | 274 B | `components/creativecore.md` |
 | `config/cullleaves.json` | cullleaves.json | - | 42 B | `components/cullleaves.md` |
+| `config/cupboard.json` | cupboard.json | - | 1.3 KiB | `components/cupboard.md` |
+| `config/effectdescriptions-client.toml` | effectdescriptions-client.toml | - | 2.0 KiB | `components/effectdescriptions-client.md` |
+| `config/effecttimerplus.json` | effecttimerplus.json | - | 564 B | `components/effecttimerplus.md` |
+| `config/effectual.json` | effectual.json | - | 631 B | `components/effectual.md` |
+| `config/extrasounds.json` | extrasounds.json | - | 970 B | `components/extrasounds.md` |
+| `config/fastsuite.cfg` | fastsuite.cfg | - | 918 B | `components/fastsuite.md` |
 | `config/ferritecore-mixin.toml` | ferritecore-mixin.toml | - | 1.6 KiB | `components/ferritecore-mixin.md` |
+| `config/flerovium.json` | flerovium.json | - | 168 B | `components/flerovium.md` |
 | `config/fml.toml` | fml.toml | - | 1.5 KiB | `components/fml.md` |
+| `config/fzzy_config/keybinds.toml` | keybinds.toml | - | 6.3 KiB | `components/keybinds.md` |
 | `config/immediatelyfast.json` | immediatelyfast.json | - | 1.1 KiB | `components/immediatelyfast.md` |
+| `config/inventory_interactions.json5` | inventory_interactions.json5 | - | 137 B | `components/inventory-interactions.md` |
+| `config/inventory_particles.json5` | inventory_particles.json5 | - | 1.6 KiB | `components/inventory-particles.md` |
 | `config/iris-excluded.json` | iris-excluded.json | - | 31 B | `components/iris-excluded.md` |
 | `config/iris.properties` | iris.properties | - | 281 B | `components/iris.md` |
 | `config/jade/hide-blocks.json` | hide-blocks.json | - | 149 B | `components/hide-blocks.md` |
@@ -23,6 +50,8 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/jade/jade.json` | jade.json | - | 1.1 KiB | `components/jade.md` |
 | `config/jade/plugins.json` | plugins.json | - | 2.0 KiB | `components/plugins.md` |
 | `config/jade/sort-order.json` | sort-order.json | - | 2.0 KiB | `components/sort-order.md` |
+| `config/jecharacters-client.toml` | jecharacters-client.toml | - | 912 B | `components/jecharacters-client.md` |
+| `config/jecharacters-extra.json` | jecharacters-extra.json | - | 182 B | `components/jecharacters-extra.md` |
 | `config/jeed-client.toml` | jeed-client.toml | - | 697 B | `components/jeed-client.md` |
 | `config/jei-server.toml` | jei-server.toml | - | 324 B | `components/jei-server.md` |
 | `config/jei/blacklist.json` | blacklist.json | - | 19 B | `components/blacklist.md` |
@@ -33,7 +62,7 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/jei/jei-debug.ini` | jei-debug.ini | - | 1.2 KiB | `components/jei-debug.md` |
 | `config/jei/jei-mod-id-format.ini` | jei-mod-id-format.ini | - | 477 B | `components/jei-mod-id-format.md` |
 | `config/jei/recipe-category-sort-order.ini` | recipe-category-sort-order.ini | - | 409 B | `components/recipe-category-sort-order.md` |
-| `config/jei/world/local/新的世界/lookupHistory.json` | lookupHistory.json | - | 232 B | `components/lookuphistory.md` |
+| `config/jei/world/local/新的世界/lookupHistory.json` | lookupHistory.json | - | 432 B | `components/lookuphistory.md` |
 | `config/jeresources-common.toml` | jeresources-common.toml | - | 264 B | `components/jeresources-common.md` |
 | `config/jerintegration-client.toml` | jerintegration-client.toml | - | 503 B | `components/jerintegration-client.md` |
 | `config/lithium.properties` | lithium.properties | - | 267 B | `components/lithium.md` |
@@ -51,6 +80,17 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/newvisualkeybing/keybind_viewer.json` | keybind_viewer.json | - | 156 B | `components/keybind-viewer.md` |
 | `config/newvisualkeybing/ui_textures/pack.json` | pack.json | - | 1.4 KiB | `components/pack.md` |
 | `config/newvisualkeybing/ui_textures/README.md` | README.md | - | 3.8 KiB | `components/readme.md` |
+| `config/NoChatReports/NCR-Client.json` | NCR-Client.json | - | 565 B | `components/ncr-client.md` |
+| `config/NoChatReports/NCR-Common.json` | NCR-Common.json | - | 230 B | `components/ncr-common.md` |
+| `config/NoChatReports/NCR-Encryption.json` | NCR-Encryption.json | - | 520 B | `components/ncr-encryption.md` |
+| `config/NoChatReports/NCR-ServerPreferences.json` | NCR-ServerPreferences.json | - | 24 B | `components/ncr-serverpreferences.md` |
+| `config/NoChatReports/README.md` | README.md | - | 167 B | `components/readme.md` |
+| `config/particle_effects.json5` | particle_effects.json5 | - | 25 B | `components/particle-effects.md` |
+| `config/particular-common.toml` | particular-common.toml | - | 5.7 KiB | `components/particular-common.md` |
+| `config/placebo.cfg` | placebo.cfg | - | 495 B | `components/placebo.md` |
+| `config/smoothgui.json` | smoothgui.json | - | 368 B | `components/smoothgui.md` |
+| `config/smoothscrolling-client.toml` | smoothscrolling-client.toml | - | 1.1 KiB | `components/smoothscrolling-client.md` |
+| `config/smoothswapping.json` | smoothswapping.json | - | 113 B | `components/smoothswapping.md` |
 | `config/sodium-extra-options.json` | sodium-extra-options.json | - | 2.1 KiB | `components/sodium-extra-options.md` |
 | `config/sodium-extra.properties` | sodium-extra.properties | - | 360 B | `components/sodium-extra.md` |
 | `config/sodium-fingerprint.json` | sodium-fingerprint.json | - | 427 B | `components/sodium-fingerprint.md` |
@@ -59,6 +99,12 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/spark/config.json` | config.json | - | 117 B | `components/config.md` |
 | `config/spark/tmp-client/about.txt` | about.txt | - | 585 B | `components/about.md` |
 | `config/spark/tmp/about.txt` | about.txt | - | 585 B | `components/about.md` |
+| `config/tia-client.toml` | tia-client.toml | - | 260 B | `components/tia-client.md` |
+| `config/visuality/config.toml` | config.toml | - | 280 B | `components/config.md` |
+| `config/visuality/particle_emitters/block_ambient.json` | block_ambient.json | - | 1.3 KiB | `components/block-ambient.md` |
+| `config/visuality/particle_emitters/block_step.json` | block_step.json | - | 219 B | `components/block-step.md` |
+| `config/visuality/particle_emitters/entity_armor.json` | entity_armor.json | - | 737 B | `components/entity-armor.md` |
+| `config/visuality/particle_emitters/entity_hit.json` | entity_hit.json | - | 683 B | `components/entity-hit.md` |
 | `config/xaero/lib/client.cfg` | client.cfg | - | 26 B | `components/client.md` |
 | `config/xaero/lib/common.cfg` | common.cfg | - | 236 B | `components/common.md` |
 | `config/xaero/lib/profiles/default.cfg` | default.cfg | - | 121 B | `components/default.md` |
@@ -77,6 +123,7 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/xaero/world-map/server_profiles/default.cfg` | default.cfg | - | 75 B | `components/default.md` |
 | `config/xaerohud.txt` | xaerohud.txt | - | 122 B | `components/xaerohud.md` |
 | `config/xaeropatreon.txt` | xaeropatreon.txt | - | 0 B | `components/xaeropatreon.md` |
+| `config/yacl.json5` | yacl.json5 | - | 250 B | `components/yacl.md` |
 
 ## launcher-profile
 
@@ -94,32 +141,79 @@ This file is generated. Put design intent in the human-maintained component page
 | `mods/[JEI物品管理器] jei-1.21.1-neoforge-19.38.0.366.jar` | jei | 19.38.0.366 | 1.6 MiB | `components/jei.md` |
 | `mods/[JEI药水效果] jeed-1.21-2.3.2.jar` | jeed | 1.21-2.3.2 | 160.2 KiB | `components/jeed.md` |
 | `mods/[JER集成] jerintegration-6.5.0.jar` | jerintegration | 6.5.0 | 29.1 KiB | `components/jerintegration.md` |
+| `mods/[Tiny Item Animations] tia-neoforge-1.21-1.2.1.jar` | tia | 1.2.1 | 18.5 KiB | `components/tia.md` |
 | `mods/[Xaero的小地图] xaerominimap-neoforge-1.21.1-26.3.0.jar` | xaerominimap | 26.3.0 | 2.1 MiB | `components/xaerominimap.md` |
+| `mods/[可点击的进度] clickadv-1.21-3.8.jar` | clickadv | 3.8 | 14.3 KiB | `components/clickadv.md` |
+| `mods/[可视性：重铸] visuality-forge-2.1.0.jar` | visuality | 2.1.0 | 113.1 KiB | `components/visuality.md` |
+| `mods/[平滑转移] smoothswapping-0.9.3.2-1.21.1-neoforge.jar` | smoothswapping | 0.9.3.2 | 61.4 KiB | `components/smoothswapping.md` |
+| `mods/[异步粒子] AsyncParticles-21.1.2.0+1.21.1.jar` | asyncparticles | 21.1.2.0 | 1.1 MiB | `components/asyncparticles.md` |
+| `mods/[截图到剪贴板] screenshot-to-clipboard-neoforge-1.0.10.jar` | screenshotclipboard | 1.0.10 | 13.8 KiB | `components/screenshotclipboard.md` |
+| `mods/[更好的进度] BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar` | betteradvancements | 0.4.3.21 | 96.3 KiB | `components/betteradvancements.md` |
 | `mods/[树叶渲染优化] cullleaves-neoforge-4.1.1+1.21.1.jar` | cullleaves | 4.1.1 | 92.5 KiB | `components/cullleaves.md` |
+| `mods/[氛围！] ambiance-neoforge-1.21-1.1.0.jar` | ambiance | 1.1.0 | 1.4 MiB | `components/ambiance.md` |
 | `mods/[火花] spark-1.10.124-neoforge.jar` | spark | 1.10.124 | 3.5 MiB | `components/spark.md` |
+| `mods/[物品栏粒子] InventoryParticles-2.6.0+1.21.1+neoforge.jar` | inventory_particles | 2.6.0+1.21.1+neoforge | 1.6 MiB | `components/inventory-particles.md` |
 | `mods/[犀牛] rhino-2101.2.7-build.85.jar` | rhino | 2101.2.7-build.85 | 861.4 KiB | `components/rhino.md` |
 | `mods/[玉 🔍] Jade-1.21.1-NeoForge-15.10.5.jar` | jade | 15.10.5+neoforge | 708.7 KiB | `components/jade.md` |
 | `mods/[现代化 UI] ModernUI-NeoForge-1.21.1-3.13.0.1-universal.jar` | modernui | 3.13.0.1 | 24.1 MiB | `components/modernui.md` |
 | `mods/[现代化修复] modernfix-neoforge-5.27.15+mc1.21.1.jar` | modernfix | 5.27.15+mc1.21.1 | 583.3 KiB | `components/modernfix.md` |
+| `mods/[禁用聊天举报] NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar` | nochatreports | 1.21.1-v2.9.1 | 299.5 KiB | `components/nochatreports.md` |
+| `mods/[聊动魅影] ChatImpressiveAnimation-neoforge-1.6.0+mc1.21.5.jar` | chatimpressiveanimation | 1.6.0+mc1.21.5 | 68.8 KiB | `components/chatimpressiveanimation.md` |
+| `mods/[聊天头像] chat_heads-0.15.2-neoforge-1.21.jar` | chat_heads | 0.15.2 | 87.2 KiB | `components/chat-heads.md` |
+| `mods/[自动汉化更新] I18nUpdateMod-3.7.0-all.jar` | i18nupdatemod | 3.7.0 | 48.6 KiB | `components/i18nupdatemod.md` |
+| `mods/[自然音效] AmbientSounds_NEOFORGE_v6.3.8_mc1.21.1.jar` | ambientsounds | 6.3.8 | 80.9 MiB | `components/ambientsounds.md` |
 | `mods/[苹果皮] appleskin-neoforge-mc1.21-3.0.9.jar` | appleskin | 3.0.9+mc1.21 | 74.0 KiB | `components/appleskin.md` |
+| `mods/[通用拼音搜索] jecharacters-1.21.1-neoforge-4.5.26.jar` | jecharacters | 4.5.26 | 244.9 KiB | `components/jecharacters.md` |
+| `mods/[配方性能优化] FastSuite-1.21.1-6.0.7.jar` | fastsuite | 6.0.7 | 27.5 KiB | `components/fastsuite.md` |
+| `mods/[鈇] flerovium-neoforge-1.21.1-1.1.2-all.jar` | flerovium | 1.1.2 | 178.3 KiB | `components/flerovium.md` |
 | `mods/[钠 · 扩展] sodium-extra-neoforge-0.9.3+mc1.21.1.jar` | sodium_extra | 0.9.3+mc1.21.1 | 454.1 KiB | `components/sodium-extra.md` |
 | `mods/[钠] sodium-neoforge-0.8.12+mc1.21.1.jar` | sodium | 0.8.12+mc1.21.1 | 1.2 MiB | `components/sodium.md` |
 | `mods/[铁氧体磁芯] ferritecore-7.0.3-neoforge.jar` | ferritecore | 7.0.3 | 118.7 KiB | `components/ferritecore.md` |
 | `mods/[锂] lithium-neoforge-0.15.4+mc1.21.1.jar` | lithium | 0.15.4+mc1.21.1 | 756.1 KiB | `components/lithium.md` |
 | `mods/[预生成区块] Chunky-NeoForge-1.4.23.jar` | chunky | 1.4.23 | 332.6 KiB | `components/chunky.md` |
 | `mods/[鼠标手势] MouseTweaks-neoforge-mc1.21-2.26.1.jar` | mousetweaks | 2.26.1 | 72.2 KiB | `components/mousetweaks.md` |
+| `mods/architectury-13.0.8-neoforge.jar` | architectury | 13.0.8 | 570.3 KiB | `components/architectury.md` |
+| `mods/BadOptimizations-2.4.1-1.21.1.jar` | badoptimizations | 2.4.1 | 276.9 KiB | `components/badoptimizations.md` |
+| `mods/beautifiedchatserver-1.21.1-3.2.jar` | beautifiedchatserver | 3.2 | 72.4 KiB | `components/beautifiedchatserver.md` |
+| `mods/chatnotify-neoforge-2.6.9+1.21.1.jar` | chatnotify | 2.6.9+1.21.1 | 377.2 KiB | `components/chatnotify.md` |
+| `mods/cloth-config-15.0.140-neoforge.jar` | cloth_config | 15.0.140 | 1.1 MiB | `components/cloth-config.md` |
+| `mods/collective-1.21.1-8.39.jar` | collective | 8.39 | 1.0 MiB | `components/collective.md` |
+| `mods/configuration-neoforge-1.21.1-3.1.1.jar` | configuration | 3.1.1 | 413.3 KiB | `components/configuration.md` |
+| `mods/CreativeCore_NEOFORGE_v2.13.41_mc1.21.1.jar` | creativecore | 2.13.41 | 1.2 MiB | `components/creativecore.md` |
+| `mods/cupboard-1.21.1-3.8.jar` | cupboard | 3.8 | 28.1 KiB | `components/cupboard.md` |
+| `mods/EffectDescriptions-v21.1.1-1.21.1-NeoForge.jar` | effectdescriptions | 21.1.1 | 64.8 KiB | `components/effectdescriptions.md` |
+| `mods/effecttimerplus-neoforge-2.2.7+1.21.jar` | effecttimerplus | 2.2.7+1.21 | 41.1 KiB | `components/effecttimerplus.md` |
+| `mods/effectual-neoforge-1.4.0-1.21.1.jar` | effectual | 1.4.0-1.21.1 | 367.3 KiB | `components/effectual.md` |
+| `mods/extrasounds-1.5.4+1.21.1-neoforge.jar` | extrasounds | 1.5.2 | 363.1 KiB | `components/extrasounds.md` |
+| `mods/fzzy_config-0.7.6+1.21+neoforge.jar` | fzzy_config | 0.7.6+1.21+neoforge | 2.3 MiB | `components/fzzy-config.md` |
 | `mods/ImmediatelyFast-NeoForge-1.6.11+1.21.1.jar` | immediatelyfast | 1.6.11+1.21.1 | 353.3 KiB | `components/immediatelyfast.md` |
 | `mods/iris-neoforge-1.8.14-beta.1+mc1.21.1.jar` | iris | 1.8.14-beta.1+mc1.21.1 | 2.4 MiB | `components/iris.md` |
 | `mods/JadeAddons-1.21.1-NeoForge-6.1.0.jar` | jadeaddons | 6.1.0+neoforge | 72.7 KiB | `components/jadeaddons.md` |
 | `mods/JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar` | jeresources | 1.6.0.17 | 285.2 KiB | `components/jeresources.md` |
+| `mods/kotlinforforge-5.12.0-all.jar` | kotlinforforge-5.12.0-all.jar | - | 6.9 MiB | `components/kotlinforforge-5-12-0-all-jar.md` |
 | `mods/kubejs-neoforge-2101.7.2-build.368.jar` | kubejs | 2101.7.2-build.368 | 2.2 MiB | `components/kubejs.md` |
 | `mods/kubejs_datacomponent-1.0.1.jar` | kubejs_datacomponent | 1.0.1 | 9.0 KiB | `components/kubejs-datacomponent.md` |
 | `mods/kubejsadditions-neoforge-1.21.1-6.0.0.jar` | kubejsadditions | 1.21.1-6.0.0 | 179.7 KiB | `components/kubejsadditions.md` |
 | `mods/lootjs-neoforge-1.21.1-3.7.0.jar` | lootjs | 1.21.1-3.7.0 | 241.9 KiB | `components/lootjs.md` |
 | `mods/midnightlib-neoforge-1.9.3+1.21.1.jar` | midnightlib | 1.9.3 | 59.8 KiB | `components/midnightlib.md` |
+| `mods/MossyLib-1.5.0+1.21.1+neoforge.jar` | mossylib | 1.5.0+1.21.1+neoforge | 175.3 KiB | `components/mossylib.md` |
 | `mods/New Visual Keybing-1.21.1-neoforge-0.6.16.jar` | newvisualkeybing | 0.6.16 | 438.7 KiB | `components/newvisualkeybing.md` |
+| `mods/ParticleEffects-1.5.0+1.21.1+neoforge.jar` | particle_effects | 1.5.0+1.21.1+neoforge | 301.9 KiB | `components/particle-effects.md` |
+| `mods/particular-1.21.1-NeoForge-1.5.5.jar` | particular | 1.5.5 | 307.6 KiB | `components/particular.md` |
+| `mods/Placebo-1.21.1-9.9.1.jar` | placebo | 9.9.1 | 316.5 KiB | `components/placebo.md` |
+| `mods/PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar` | puzzleslib | 21.1.52 | 1.4 MiB | `components/puzzleslib.md` |
 | `mods/ScalableLux-neoforge-0.3.0-alpha.0.6-all.jar` | scalablelux | 0.3.0-alpha.0.6+1.21.1 | 192.4 KiB | `components/scalablelux.md` |
+| `mods/smoothgui-neoforge-2.0.1+mc1.21.jar` | smoothgui | 2.0.1 | 679.4 KiB | `components/smoothgui.md` |
+| `mods/smoothscrolling-1.21.1-NeoForge-1.0.1.jar` | smoothscrolling | 1.0.1 | 39.2 KiB | `components/smoothscrolling.md` |
+| `mods/tlib-neoforge-1.5.0-1.21.1.jar` | tlib | 1.5.0-1.21.1 | 223.2 KiB | `components/tlib.md` |
 | `mods/xaeroworldmap-neoforge-1.21.1-1.43.0.jar` | xaeroworldmap | 1.43.0 | 1.3 MiB | `components/xaeroworldmap.md` |
+| `mods/yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar` | yet_another_config_lib_v3 | 3.8.2+1.21.1-neoforge | 1.1 MiB | `components/yet-another-config-lib-v3.md` |
+
+## resource-pack
+
+| Path | Name / ID | Version / format | Size | Suggested design page |
+| --- | --- | --- | ---: | --- |
+| `resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.21.1.zip` | Minecraft-Mod-Language-Modpack-Converted-1.21.1 | 34 | 5.1 MiB | `components/minecraft-mod-language-modpack-converted-1-21-1.md` |
 
 ## script-content
 

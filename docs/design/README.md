@@ -7,7 +7,7 @@
 - Java 版本：21
 - 目标玩家：待定义
 - 核心体验：待定义
-- 当前阶段：基础性能模组、魔改框架、扩展 QoL 工具与集成插件已加载，第二批基础模组与 QoL 扩展就位
+- 当前阶段：基础性能模组、魔改框架、扩展 QoL 工具与集成插件已加载；第三批以中文本地化、聊天/社交、信息展示、环境视听与底层性能优化为主的 QoL 模组已就位
 
 ## 设计支柱
 
@@ -52,16 +52,62 @@
 | [KubeJS Data Component](components/integration/kubejs-datacomponent.md) | KubeJS DataComponent API 扩展 | active | BOTH；依赖 KubeJS |
 | [LootJS](components/integration/lootjs.md) | KubeJS 战利品表修改扩展 | active | BOTH；依赖 KubeJS |
 | [MidnightLib](components/library/midnightlib.md) | 轻量级配置库，CullLeaves 依赖 | active | BOTH |
+| [BadOptimizations](components/performance/badoptimizations.md) | 小型渲染/逻辑微优化集合 | active | CLIENT |
+| [FastSuite](components/performance/fastsuite.md) | 配方匹配并行化，降低自动合成 tick 压力 | active | BOTH；依赖 Placebo |
+| [Flerovium](components/performance/flerovium.md) | 实体/地形渲染剔除与计算 shortcut | active | CLIENT |
+| [Cupboard](components/performance/cupboard.md) | 底层修复与诊断工具 | active | BOTH |
+| [Ambiance](components/aesthetic/ambiance.md) | 方块/物品/实体环境氛围粒子与音效 | active | CLIENT |
+| [AmbientSounds](components/aesthetic/ambientsounds.md) | 程序化环境声景 | active | CLIENT；依赖 CreativeCore |
+| [Visuality: Reforged](components/aesthetic/visuality.md) | 方块/实体接触点视觉粒子 | active | CLIENT |
+| [Particular](components/aesthetic/particular.md) | 瀑布、落叶、萤火虫等大尺度环境粒子 | active | CLIENT |
+| [Effectual](components/aesthetic/effectual.md) | 玩家状态与环境交互反馈粒子 | active | CLIENT |
+| [Particle Effects](components/aesthetic/particle-effects.md) | 粒子效果配置库 | active | CLIENT；Inventory Particles 依赖 |
+| [Inventory Particles](components/aesthetic/inventory-particles.md) | 物品栏物品移动粒子反馈 | active | CLIENT；依赖 Particle Effects |
+| [Extra Sounds](components/aesthetic/extrasounds.md) | UI/交互音效扩展 | active | CLIENT |
+| [Tiny Item Animations](components/aesthetic/tia.md) | 物品拾取/使用微动画 | active | CLIENT |
+| [Smooth Swapping](components/aesthetic/smoothswapping.md) | 物品栏物品平滑位移动画 | active | CLIENT |
+| [SmoothGui](components/aesthetic/smoothgui.md) | GUI 打开/关闭平滑动画 | active | CLIENT |
+| [Smooth Scrolling Reforged](components/aesthetic/smoothscrolling.md) | 快捷栏/聊天/列表平滑滚动 | active | CLIENT |
+| [CreativeCore](components/aesthetic/creativecore.md) | CreativeMD 系列共享库 | active | BOTH；AmbientSounds 依赖 |
+| [Chat Impressive Animation](components/aesthetic/chatimpressiveanimation.md) | 聊天栏/消息发送动画 | active | CLIENT |
+| [No Chat Reports](components/utility/nochatreports.md) | 禁用微软聊天举报系统 | active | BOTH |
+| [Chat Heads](components/utility/chat-heads.md) | 聊天框显示玩家头像 | active | CLIENT |
+| [Beautified Chat Server](components/utility/beautifiedchatserver.md) | 服务端聊天格式与等级前缀 | active | BOTH；依赖 Collective |
+| [ChatNotify](components/utility/chatnotify.md) | 聊天关键词高亮与通知 | active | CLIENT |
+| [Better Advancements](components/utility/betteradvancements.md) | 改进进度界面可读性 | active | CLIENT |
+| [Clickable Advancements](components/utility/clickadv.md) | 聊天中点击进度名称 | active | CLIENT |
+| [Effect Descriptions](components/utility/effectdescriptions.md) | 物品提示中显示状态效果说明 | active | CLIENT |
+| [EffectTimerPlus](components/utility/effecttimerplus.md) | HUD 效果图标计时器 | active | CLIENT |
+| [Screenshot to Clipboard](components/utility/screenshotclipboard.md) | 截图直接复制到剪贴板 | active | CLIENT |
+| [I18nUpdateMod](components/utility/i18nupdatemod.md) | 自动汉化更新 | active | CLIENT |
+| [Just Enough Characters](components/utility/jecharacters.md) | JEI 拼音搜索 | active | CLIENT；依赖 JEI |
+| [Architectury](components/library/architectury.md) | 多平台抽象库 | active | BOTH |
+| [Cloth Config API](components/library/cloth-config.md) | 配置界面 API | active | CLIENT；大量模组的配置屏幕依赖 |
+| [Collective](components/library/collective.md) | Serilum 系列共享库 | active | BOTH；Beautified Chat Server 依赖 |
+| [Configuration](components/library/configuration.md) | 配置库 | active | BOTH |
+| [Fzzy Config](components/library/fzzy-config.md) | 配置库与键位绑定 | active | CLIENT |
+| [Kotlin for Forge](components/library/kotlinforforge.md) | Kotlin 运行时 | active | BOTH |
+| [MossyLib](components/library/mossylib.md) | MossyMods 共享库 | active | BOTH |
+| [Placebo](components/library/placebo.md) | Shadows_of_Fire 系列共享库 | active | BOTH；FastSuite 依赖 |
+| [PuzzlesLib](components/library/puzzleslib.md) | Fuzs 系列共享库 | active | BOTH |
+| [TLib](components/library/tlib.md) | TLMods 共享库 | active | BOTH |
+| [YetAnotherConfigLib](components/library/yet-another-config-lib-v3.md) | 配置界面库 | active | CLIENT |
+| [AsyncParticles](components/integration/asyncparticles.md) | 粒子 tick 异步化 | active | CLIENT |
+| [Minecraft Mod Language Modpack](components/resourcepacks/minecraft-mod-language-modpack-converted-1-21-1.md) | 社区简体中文翻译资源包 | active | CLIENT |
 
 ## 跨系统约束
 
 - 兼容性：新增模组应明确支持 Minecraft 1.21.1 与 NeoForge 21.1.x。
 - 客户端/服务端范围：当前目录是客户端实例；加入联机或服务端内容时需要单独核对服务端依赖与配置同步方式。所有魔改脚本（KubeJS）须兼容服务端热重载。
 - 存档兼容性：尚无玩法组件，后续加入世界生成、注册表内容或数据包时必须记录移除风险。新模组加入应尽量不影响已生成区块。
-- 性能预算：当前 30 个模组，性能优化矩阵已完整（渲染：Sodium + Iris；客户端 HUD：ImmediatelyFast；逻辑：Lithium；区块：C2ME；光照：ScalableLux；内存：Ferrite Core + ModernFix；树叶剔除：CullLeaves；扩展渲染选项：Sodium Extra）。后续引入大型内容模组时需补充启动耗时与内存影响。参考基准：轻量包 <50 模组、中量包 50-200 模组、服务端内存预算 6-8GB。
+- 性能预算：当前约 70 个模组，已从"轻量包"进入"中量包"区间。性能优化矩阵已覆盖渲染（Sodium + Iris）、客户端 HUD（ImmediatelyFast）、逻辑（Lithium）、配方匹配（FastSuite）、区块（C2ME）、光照（ScalableLux）、内存（Ferrite Core + ModernFix）、树叶剔除（CullLeaves）、扩展渲染选项（Sodium Extra）以及多项微优化与剔除（BadOptimizations、Flerovium、Cupboard）。后续引入大型内容模组时需重点补充启动耗时与内存影响。参考基准：轻量包 <50 模组、中量包 50-200 模组、服务端内存预算 6-8GB、客户端建议 4-6GB。
 - 阶段锁定：所有新增内容模组必须在 Chapters 阶段系统中定义默认解锁状态，确保未来可通过阶段进行内容开关。
 - 着色器兼容性：Iris 已加载，后续渲染相关模组须验证与 Sodium + Iris 的兼容性，避免引入与 Embeddium 相关的冲突模组。
 - 脚本依赖链：KubeJS → Rhino 为硬依赖；KubeJS Additions、KubeJS Data Component、LootJS → KubeJS 为硬依赖。脚本系统面向未来所有内容魔改。
+- 视听叠加风险：第三批同时引入 Ambiance、AmbientSounds、Particular、Visuality、Effectual、Inventory Particles、Extra Sounds、Tiny Item Animations、Smooth GUI/Swapping/Scrolling 等大量视听反馈模组。单个效果开销小，但叠加后在低配设备上可能产生明显的帧率与感知噪音，需在目标硬件上验证并准备关闭清单。
+- 中文本地化双轨：I18nUpdateMod 与 Minecraft Mod Language Modpack 同时提供中文翻译，二者加载顺序与覆盖关系会直接影响玩家看到的文本。需要明确默认推荐顺序并在说明文档中告知玩家。
+- 聊天/社交模组耦合：No Chat Reports、Chat Heads、Beautified Chat Server、ChatNotify 共同作用于聊天系统；服务端配置（NCR、Beautified Chat Server）与客户端配置（Chat Heads、ChatNotify）需保持兼容，避免聊天显示异常或安全提示冲突。
+- 库版本耦合：Placebo → FastSuite、Collective → Beautified Chat Server、CreativeCore → AmbientSounds、Particle Effects → Inventory Particles 等依赖链已建立。升级库模组时必须同步验证下游模组兼容性。
 
 ## 开放问题
 
