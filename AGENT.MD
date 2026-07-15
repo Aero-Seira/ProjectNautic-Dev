@@ -54,8 +54,9 @@
 1. **扫描整合包**：检查 `mods/` 目录新增/变更的文件
 2. **更新 `docs/design/`**：
    - 在 `docs/design/change-log.md` 中记录新增模组（名称、版本、添加理由、设计影响）
-   - 在 `docs/design/README.md` 的「系统地图」中新增或更新对应组件条目
-   - 如有新增配置文件，在 `components/` 下创建对应设计页面（或更新现有页面）
+   - 在 `docs/design/README.md` 的「系统地图」中新增或更新对应组件条目，链接使用分类路径（如 `components/performance/sodium.md`）
+   - 按模组设计角色选择分类目录，创建 `components/<category>/<mod-id>.md`
+   - 将模组的配置文件关联到对应组件文档，不单独为每个配置文件创建组件页
 3. **更新自动生成清单**：
    - 重新生成 `docs/design/_generated/current-inventory.md`
    - 更新 `docs/design/_generated/pending-changes.md`
@@ -74,16 +75,25 @@ git diff --cached   # 最终检查暂存内容
 
 ## 4. 模组分类与文档化
 
-在 `docs/design/README.md` 的「系统地图」中，模组应按以下分类记录：
+在 `docs/design/README.md` 的「系统地图」中，模组应按以下分类记录，且组件文档必须存放在对应的分类子目录中：
 
-| 分类 | 说明 | 示例 |
-|------|------|------|
-| `library` | 其他模组的依赖库 | Architectury API、Cloth Config |
-| `content` | 新增游戏内容（方块、物品、生物等） | Create、Alex's Mobs |
-| `utility` | 辅助工具 / QoL | JEI、Jade、JourneyMap |
-| `performance` | 性能优化 | Embeddium、ModernFix、FerriteCore |
-| `aesthetic` | 视觉 / 音效增强 | Sound Physics、Fresh Animations |
-| `integration` | 跨模组联动/兼容补丁 | 各类 Compat 模组 |
+| 分类 | 目录 | 设计角色 | 示例 |
+|------|------|----------|------|
+| `platform` | `components/platform/` | 运行平台、加载器、基础环境配置 | `platform-runtime.md` |
+| `performance` | `components/performance/` | 性能优化（帧率、延迟、内存） | Sodium、Lithium、ImmediatelyFast |
+| `aesthetic` | `components/aesthetic/` | 视觉 / 音效 / UI 风格 | Iris、ModernUI、Sound Physics |
+| `utility` | `components/utility/` | 辅助工具 / QoL | JEI、Jade、JourneyMap |
+| `content` | `components/content/` | 新增游戏内容（方块、物品、生物等） | Create、Alex's Mobs |
+| `integration` | `components/integration/` | 跨模组联动 / 兼容补丁 / API 扩展 | KubeJS Additions、Compat 模组 |
+| `library` | `components/library/` | 依赖库 / 运行时，对玩家不可见 | Rhino、Architectury API、Cloth Config |
+| `other` | `components/other/` | 无法归入上述类别的特殊组件 | 混合用途模组 |
+
+**文档创建规则：**
+1. 添加模组前，先确定其**设计角色**（不是技术实现），选择对应分类。
+2. 若分类目录不存在，使用 `mkdir -p` 创建。
+3. 在对应分类目录下创建 `components/<category>/<mod-id>.md`。
+4. 系统地图中的链接必须包含分类路径，如 `[Sodium](components/performance/sodium.md)`。
+5. 一个模组只能属于一个分类。若模组合并多种角色，按**主要设计意图**归类。
 
 ---
 

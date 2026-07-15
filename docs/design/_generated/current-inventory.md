@@ -1,6 +1,6 @@
 # Current modpack content inventory
 
-Generated: `2026-07-15T20:34:27+08:00`
+Generated: `2026-07-15T22:12:34+08:00`
 
 This file is generated. Put design intent in the human-maintained component pages.
 
