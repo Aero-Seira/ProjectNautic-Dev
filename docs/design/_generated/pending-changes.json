@@ -1,0 +1,1260 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-15T20:34:27+08:00",
+  "root": "C:\\Users\\aeroseira\\Desktop\\MC\\Versions\\ProjectNautic-Dev",
+  "profile": {
+    "pack_name": "ProjectNautic-Dev",
+    "name": "usernamecache",
+    "minecraft_version": "1.21.1",
+    "neoforge_version": "21.1.235",
+    "fml_version": "4.0.42",
+    "java_version": 21,
+    "observed_mod_loaders": {
+      "neoforge": 9,
+      "fabric": 1
+    },
+    "content_counts": {
+      "mod": 10,
+      "config": 30,
+      "script-content": 9,
+      "launcher-profile": 3
+    }
+  },
+  "summary": {
+    "added": 0,
+    "modified": 0,
+    "removed": 0
+  },
+  "changes": {
+    "added": [],
+    "modified": [],
+    "removed": []
+  },
+  "inventory": {
+    "mod:mods/[JEI物品管理器] jei-1.21.1-neoforge-19.38.0.366.jar": {
+      "id": "mod:mods/[JEI物品管理器] jei-1.21.1-neoforge-19.38.0.366.jar",
+      "category": "mod",
+      "path": "mods/[JEI物品管理器] jei-1.21.1-neoforge-19.38.0.366.jar",
+      "kind": "file",
+      "size": 1628259,
+      "mtime_ns": 1784117017711332700,
+      "sha256": "bdd030215036fa4d15fb26e8ed9c12a2ed613ab527fc83f640ba3969ab10202a",
+      "suggested_document": "components/jei.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[JEI物品管理器] jei-1.21.1-neoforge-19.38.0.366.jar",
+        "loader": "neoforge",
+        "mod_id": "jei",
+        "name": "Just Enough Items",
+        "version": "19.38.0.366",
+        "description": "JEI is an item and recipe viewing mod for Minecraft, built from the ground up for stability and performance.",
+        "authors": "mezz",
+        "license": "The MIT License (MIT)",
+        "dependencies": {
+          "jei": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.0.118-beta,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21, 1.21.1)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "manifest_title": "jar",
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/[犀牛] rhino-2101.2.7-build.85.jar": {
+      "id": "mod:mods/[犀牛] rhino-2101.2.7-build.85.jar",
+      "category": "mod",
+      "path": "mods/[犀牛] rhino-2101.2.7-build.85.jar",
+      "kind": "file",
+      "size": 882075,
+      "mtime_ns": 1784116962771691200,
+      "sha256": "95df92ce578b2504cb16d8c9fc285303bf062eb15452246a18e57b7cf091c19a",
+      "suggested_document": "components/rhino.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[犀牛] rhino-2101.2.7-build.85.jar",
+        "loader": "fabric",
+        "mod_id": "rhino",
+        "name": "Rhino",
+        "version": "2101.2.7-build.85",
+        "description": "A fork of Mozilla's Rhino library, modified for use in mods",
+        "authors": [
+          "latvian.dev",
+          "Mozilla"
+        ],
+        "environment": "*",
+        "manifest_title": "Rhino-1.21",
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/[玉 🔍] Jade-1.21.1-NeoForge-15.10.5.jar": {
+      "id": "mod:mods/[玉 🔍] Jade-1.21.1-NeoForge-15.10.5.jar",
+      "category": "mod",
+      "path": "mods/[玉 🔍] Jade-1.21.1-NeoForge-15.10.5.jar",
+      "kind": "file",
+      "size": 725742,
+      "mtime_ns": 1784117993199648100,
+      "sha256": "067bb4b007e1d6f6b79f0afe99c91252aa825472b99a76d33a60d24442f9e92d",
+      "suggested_document": "components/jade.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[玉 🔍] Jade-1.21.1-NeoForge-15.10.5.jar",
+        "loader": "neoforge",
+        "mod_id": "jade",
+        "name": "Jade",
+        "version": "15.10.5+neoforge",
+        "description": "Minecraft mod shows what you are looking at. (Hwyla fork)",
+        "authors": "Snownee",
+        "license": "CC-BY-NC-SA-4.0",
+        "dependencies": {
+          "jade": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.0.143, )",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "manifest_title": "Jade",
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/[现代化 UI] ModernUI-NeoForge-1.21.1-3.13.0.1-universal.jar": {
+      "id": "mod:mods/[现代化 UI] ModernUI-NeoForge-1.21.1-3.13.0.1-universal.jar",
+      "category": "mod",
+      "path": "mods/[现代化 UI] ModernUI-NeoForge-1.21.1-3.13.0.1-universal.jar",
+      "kind": "file",
+      "size": 25228113,
+      "mtime_ns": 1784117726104391700,
+      "sha256": "258623778012daad6fdd8793add3324b970df62a07c477697c43fe85deef1db6",
+      "suggested_document": "components/modernui.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[现代化 UI] ModernUI-NeoForge-1.21.1-3.13.0.1-universal.jar",
+        "loader": "neoforge",
+        "mod_id": "modernui",
+        "name": "Modern UI",
+        "version": "3.13.0.1",
+        "description": "Modern desktop framework from low-level 3D graphics API to high-level view model, for development of 2D/3D rendering software or game engine, with internationalization support and many new technologies. Modern UI is a desktop application f…",
+        "authors": "BloCamLimb",
+        "license": "LGPL-3.0-or-later",
+        "dependencies": {
+          "modernui": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.0,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21, 1.21.2)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "tipthescales",
+              "type": "discouraged"
+            }
+          ]
+        },
+        "manifest_title": "ModernUI-NeoForge",
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/[钠] sodium-neoforge-0.8.12+mc1.21.1.jar": {
+      "id": "mod:mods/[钠] sodium-neoforge-0.8.12+mc1.21.1.jar",
+      "category": "mod",
+      "path": "mods/[钠] sodium-neoforge-0.8.12+mc1.21.1.jar",
+      "kind": "file",
+      "size": 1291418,
+      "mtime_ns": 1784116708250577400,
+      "sha256": "2f9e69ec9521e657100ef83b3bdf3f18dba6078d57f9853722d7643a577b2266",
+      "suggested_document": "components/sodium.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[钠] sodium-neoforge-0.8.12+mc1.21.1.jar",
+        "loader": "neoforge",
+        "mod_id": "sodium",
+        "name": "Sodium",
+        "version": "0.8.12+mc1.21.1",
+        "description": "Sodium is a powerful rendering engine for Minecraft which improves frame rates and reduces lag spikes.",
+        "authors": "JellySquid (jellysquid3), IMS212",
+        "license": "Polyform-Shield-1.0.0",
+        "dependencies": {
+          "sodium": [
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "1.21.1",
+              "ordering": "NONE",
+              "side": "CLIENT"
+            },
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.1.82,)",
+              "ordering": "NONE",
+              "side": "CLIENT"
+            },
+            {
+              "modId": "embeddium",
+              "type": "incompatible",
+              "reason": "Sodium and Embeddium cannot be used together. Please remove Embeddium.",
+              "versionRange": "[0.0.1,)",
+              "ordering": "NONE",
+              "side": "CLIENT"
+            }
+          ]
+        },
+        "contained_jars": 5
+      }
+    },
+    "mod:mods/[锂] lithium-neoforge-0.15.4+mc1.21.1.jar": {
+      "id": "mod:mods/[锂] lithium-neoforge-0.15.4+mc1.21.1.jar",
+      "category": "mod",
+      "path": "mods/[锂] lithium-neoforge-0.15.4+mc1.21.1.jar",
+      "kind": "file",
+      "size": 774220,
+      "mtime_ns": 1784116921027855700,
+      "sha256": "488f33216030c1cb0baa33e59de3d657d08d5795a6c2080c8c8bbbc133fc8757",
+      "suggested_document": "components/lithium.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "[锂] lithium-neoforge-0.15.4+mc1.21.1.jar",
+        "loader": "neoforge",
+        "mod_id": "lithium",
+        "name": "Lithium",
+        "version": "0.15.4+mc1.21.1",
+        "description": "Lithium is a free and open-source optimization mod for Minecraft which makes a wide range of performance improvements to the game.",
+        "authors": "2No2Name, JellySquid",
+        "license": "LGPL-3.0-only",
+        "dependencies": {
+          "lithium": [
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21, 1.21.1]",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/ImmediatelyFast-NeoForge-1.6.11+1.21.1.jar": {
+      "id": "mod:mods/ImmediatelyFast-NeoForge-1.6.11+1.21.1.jar",
+      "category": "mod",
+      "path": "mods/ImmediatelyFast-NeoForge-1.6.11+1.21.1.jar",
+      "kind": "file",
+      "size": 361795,
+      "mtime_ns": 1784116940097800200,
+      "sha256": "336df12f099d1a441a3e06850bea86e9c2d0c8bc022d3d9a201870a201562a04",
+      "suggested_document": "components/immediatelyfast.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "ImmediatelyFast-NeoForge-1.6.11+1.21.1.jar",
+        "loader": "neoforge",
+        "mod_id": "immediatelyfast",
+        "name": "ImmediatelyFast",
+        "version": "1.6.11+1.21.1",
+        "description": "Speed up and optimize immediate mode rendering in Minecraft",
+        "authors": "RK_01",
+        "license": "LGPL-3.0-or-later",
+        "dependencies": {
+          "immediatelyfast": [
+            {
+              "modId": "minecraft",
+              "versionRange": "[1.21,1.21.1]",
+              "side": "CLIENT"
+            },
+            {
+              "modId": "neoforge",
+              "versionRange": "[21.0.0,)",
+              "side": "CLIENT"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "mod:mods/iris-neoforge-1.8.14-beta.1+mc1.21.1.jar": {
+      "id": "mod:mods/iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+      "category": "mod",
+      "path": "mods/iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+      "kind": "file",
+      "size": 2540723,
+      "mtime_ns": 1784116725136414500,
+      "sha256": "60d5f8bf52f25e9986440f4a4270a6bd986d9cff994510e1108ac1547063b314",
+      "suggested_document": "components/iris.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+        "loader": "neoforge",
+        "mod_id": "iris",
+        "name": "Iris",
+        "version": "1.8.14-beta.1+mc1.21.1",
+        "description": "Iris is a modern shaders mod for Minecraft intended to be compatible with existing OptiFine shader packs.",
+        "authors": "coderbot, IMS212",
+        "license": "LGPL-3.0-only",
+        "dependencies": {
+          "iris": [
+            {
+              "modId": "minecraft",
+              "type": "required",
+              "versionRange": "[1.21,1.21.1)",
+              "ordering": "NONE",
+              "side": "CLIENT"
+            },
+            {
+              "modId": "embeddium",
+              "type": "incompatible",
+              "reason": "Iris and Embeddium cannot be used together. Please use Sodium 0.8 instead.",
+              "versionRange": "[0.0.1,)",
+              "ordering": "NONE",
+              "side": "CLIENT"
+            }
+          ]
+        },
+        "contained_jars": 6
+      }
+    },
+    "mod:mods/kubejs-neoforge-2101.7.2-build.368.jar": {
+      "id": "mod:mods/kubejs-neoforge-2101.7.2-build.368.jar",
+      "category": "mod",
+      "path": "mods/kubejs-neoforge-2101.7.2-build.368.jar",
+      "kind": "file",
+      "size": 2281720,
+      "mtime_ns": 1784116967035662000,
+      "sha256": "28867299e7a9f02cfd74e34745fdbbb073fe4887fddbc98fd6c1ed2e87b01482",
+      "suggested_document": "components/kubejs.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "kubejs-neoforge-2101.7.2-build.368.jar",
+        "loader": "neoforge",
+        "mod_id": "kubejs",
+        "name": "KubeJS",
+        "version": "2101.7.2-build.368",
+        "description": "Customize your modpack or server with JavaScript!",
+        "authors": "latvian.dev",
+        "license": "GNU LGPLv3",
+        "dependencies": {
+          "kubejs": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.1.199,)",
+              "ordering": "AFTER",
+              "side": "BOTH"
+            },
+            {
+              "modId": "rhino",
+              "type": "required",
+              "versionRange": "[2101.2.7-build.81,)",
+              "ordering": "AFTER",
+              "side": "BOTH"
+            },
+            {
+              "modId": "jei",
+              "type": "optional",
+              "versionRange": "[19.25.0.322,)",
+              "ordering": "AFTER",
+              "side": "CLIENT"
+            },
+            {
+              "modId": "roughlyenoughitems",
+              "type": "optional",
+              "versionRange": "[16.0.799,)",
+              "ordering": "AFTER",
+              "side": "CLIENT"
+            },
+            {
+              "modId": "emi",
+              "type": "optional",
+              "versionRange": "[1.1.22,)",
+              "ordering": "AFTER",
+              "side": "CLIENT"
+            },
+            {
+              "modId": "betteradvancedtooltips",
+              "type": "optional",
+              "versionRange": "[2101.1.0-build.1,)",
+              "ordering": "BEFORE",
+              "side": "CLIENT"
+            }
+          ]
+        },
+        "manifest_title": "KubeJS-1.21.1",
+        "contained_jars": 3
+      }
+    },
+    "mod:mods/kubejsadditions-neoforge-1.21.1-6.0.0.jar": {
+      "id": "mod:mods/kubejsadditions-neoforge-1.21.1-6.0.0.jar",
+      "category": "mod",
+      "path": "mods/kubejsadditions-neoforge-1.21.1-6.0.0.jar",
+      "kind": "file",
+      "size": 183984,
+      "mtime_ns": 1784117012780001000,
+      "sha256": "9f79c78f1abbce6ba55410e8fb9fb222f359c6253d08229efa7bf7c03a64288f",
+      "suggested_document": "components/kubejsadditions.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "kubejsadditions-neoforge-1.21.1-6.0.0.jar",
+        "loader": "neoforge",
+        "mod_id": "kubejsadditions",
+        "name": "KubeJS Additions",
+        "version": "1.21.1-6.0.0",
+        "description": "A mod that adds a bunch of additional features to KubeJS.",
+        "authors": "ILIKEPIEFOO2",
+        "license": "All Rights Reserved",
+        "dependencies": {
+          "kubejsadditions": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "versionRange": "[21.1.31,)",
+              "ordering": "AFTER",
+              "side": "BOTH"
+            },
+            {
+              "modId": "kubejs",
+              "type": "required",
+              "versionRange": "[2101.7.1-build.192,)",
+              "ordering": "AFTER",
+              "side": "BOTH"
+            },
+            {
+              "modId": "jei",
+              "type": "optional",
+              "versionRange": "[19.14.1.143,)",
+              "ordering": "AFTER",
+              "side": "CLIENT"
+            },
+            {
+              "modId": "jade",
+              "type": "optional",
+              "versionRange": "[15.10.5+neoforge,)",
+              "ordering": "AFTER",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
+    "config:config/better-advanced-tooltips-client.toml": {
+      "id": "config:config/better-advanced-tooltips-client.toml",
+      "category": "config",
+      "path": "config/better-advanced-tooltips-client.toml",
+      "kind": "file",
+      "size": 142,
+      "mtime_ns": 1784118030099693700,
+      "sha256": "5b0da765c45397402cffe340f632544a8e740a767937f353a3a8206b6cdde0fa",
+      "suggested_document": "components/better-advanced-tooltips-client.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 6,
+        "top_level_keys": [
+          "remove_creative_tab_tooltip",
+          "remove_component_count_tooltip",
+          "fuel_tooltip",
+          "tag_tooltip",
+          "component_tooltip"
+        ],
+        "probable_owner": "better"
+      }
+    },
+    "config:config/fml.toml": {
+      "id": "config:config/fml.toml",
+      "category": "config",
+      "path": "config/fml.toml",
+      "kind": "file",
+      "size": 1550,
+      "mtime_ns": 1784118021386255700,
+      "sha256": "cc59fb1039726fda3ab1eb69b06d9b9aebb7496604ea579cfb735bc5377e7825",
+      "suggested_document": "components/fml.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 33,
+        "top_level_keys": [
+          "disableConfigWatcher",
+          "earlyWindowControl",
+          "maxThreads",
+          "versionCheck",
+          "defaultConfigPath",
+          "disableOptimizedDFU",
+          "earlyWindowProvider",
+          "earlyWindowWidth",
+          "earlyWindowHeight",
+          "earlyWindowFBScale",
+          "earlyWindowMaximized",
+          "earlyWindowSkipGLVersions",
+          "earlyWindowSquir",
+          "dependencyOverrides"
+        ],
+        "probable_owner": "fml"
+      }
+    },
+    "config:config/immediatelyfast.json": {
+      "id": "config:config/immediatelyfast.json",
+      "category": "config",
+      "path": "config/immediatelyfast.json",
+      "kind": "file",
+      "size": 1114,
+      "mtime_ns": 1784118022290211900,
+      "sha256": "a6c9d147a51c9e432c5c74c00285cfc5ba8b6fa4a0c6686051a7168b158d0d7a",
+      "suggested_document": "components/immediatelyfast.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 22,
+        "top_level_keys": [
+          "REGULAR_INFO",
+          "font_atlas_resizing",
+          "map_atlas_generation",
+          "hud_batching",
+          "fast_text_lookup",
+          "fast_buffer_upload",
+          "COSMETIC_INFO",
+          "dont_add_info_into_debug_hud",
+          "EXPERIMENTAL_INFO",
+          "experimental_disable_error_checking",
+          "experimental_disable_resource_pack_conflict_handling",
+          "experimental_sign_text_buffering",
+          "experimental_screen_batching",
+          "DEBUG_INFO",
+          "debug_only_and_not_recommended_disable_universal_batching",
+          "debug_only_and_not_recommended_disable_mod_conflict_handling",
+          "debug_only_and_not_recommended_disable_hardware_conflict_handling",
+          "debug_only_print_additional_error_information",
+          "debug_only_use_last_usage_for_batch_ordering",
+          "debug_only_detailed_memory_leak_detection"
+        ],
+        "probable_owner": "immediatelyfast"
+      }
+    },
+    "config:config/iris-excluded.json": {
+      "id": "config:config/iris-excluded.json",
+      "category": "config",
+      "path": "config/iris-excluded.json",
+      "kind": "file",
+      "size": 31,
+      "mtime_ns": 1784118028332595800,
+      "sha256": "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb",
+      "suggested_document": "components/iris-excluded.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 1,
+        "top_level_keys": [
+          "excluded"
+        ],
+        "probable_owner": "iris"
+      }
+    },
+    "config:config/iris.properties": {
+      "id": "config:config/iris.properties",
+      "category": "config",
+      "path": "config/iris.properties",
+      "kind": "file",
+      "size": 281,
+      "mtime_ns": 1784118028685190900,
+      "sha256": "fcc96c10a7c0eb89291d59dd82bc3bb009e536e32301f73fcc5ae69208b57cc6",
+      "suggested_document": "components/iris.md",
+      "metadata": {
+        "extension": ".properties",
+        "line_count": 10,
+        "probable_owner": "iris"
+      }
+    },
+    "config:config/jade/hide-blocks.json": {
+      "id": "config:config/jade/hide-blocks.json",
+      "category": "config",
+      "path": "config/jade/hide-blocks.json",
+      "kind": "file",
+      "size": 149,
+      "mtime_ns": 1784118031984866500,
+      "sha256": "309df4ae96864c19eae41b646d58497c85a73b1fc3c584e772ef4d5822794baa",
+      "suggested_document": "components/hide-blocks.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 6,
+        "top_level_keys": [
+          "__comment",
+          "values"
+        ],
+        "probable_owner": "hide"
+      }
+    },
+    "config:config/jade/hide-entities.json": {
+      "id": "config:config/jade/hide-entities.json",
+      "category": "config",
+      "path": "config/jade/hide-entities.json",
+      "kind": "file",
+      "size": 243,
+      "mtime_ns": 1784118031983790700,
+      "sha256": "3741bb54a4535fb5a00fb0ee1f4386f3dd17834aebdf9e89c21fcd3307109709",
+      "suggested_document": "components/hide-entities.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 10,
+        "top_level_keys": [
+          "__comment",
+          "values"
+        ],
+        "probable_owner": "hide"
+      }
+    },
+    "config:config/jade/jade.json": {
+      "id": "config:config/jade/jade.json",
+      "category": "config",
+      "path": "config/jade/jade.json",
+      "kind": "file",
+      "size": 1089,
+      "mtime_ns": 1784118032459517700,
+      "sha256": "f9f68a1557cdfab8394d2f4b54a2756d96451dcdddea4f5e04cb912b516ffa05",
+      "suggested_document": "components/jade.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 47,
+        "top_level_keys": [
+          "general",
+          "overlay",
+          "formatting",
+          "history"
+        ],
+        "probable_owner": "jade"
+      }
+    },
+    "config:config/jade/plugins.json": {
+      "id": "config:config/jade/plugins.json",
+      "category": "config",
+      "path": "config/jade/plugins.json",
+      "kind": "file",
+      "size": 1970,
+      "mtime_ns": 1784118031992665600,
+      "sha256": "b3c0a9bd26fa5d8eb7c629595f2792399a83337bee40fa80c0434e9c31db1c4a",
+      "suggested_document": "components/plugins.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 73,
+        "top_level_keys": [
+          "minecraft",
+          "jade_access",
+          "jade"
+        ],
+        "probable_owner": "plugins"
+      }
+    },
+    "config:config/jade/sort-order.json": {
+      "id": "config:config/jade/sort-order.json",
+      "category": "config",
+      "path": "config/jade/sort-order.json",
+      "kind": "file",
+      "size": 2017,
+      "mtime_ns": 1784118031975473500,
+      "sha256": "c302f4304f9e843e2371a5ab849424ebdaed21f989ceb355f9e8f8421eec25d8",
+      "suggested_document": "components/sort-order.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 62,
+        "top_level_keys": [
+          "jade:block_face",
+          "jade:block_properties",
+          "jade:block_states",
+          "jade:distance",
+          "jade:mod_name",
+          "jade:object_name",
+          "jade:registry_name",
+          "jade_access:block",
+          "jade_access:block_amount",
+          "jade_access:block_body",
+          "jade_access:entity",
+          "jade_access:entity_body",
+          "jade_access:entity_variant",
+          "jade_access:held_item",
+          "jade_access:sign",
+          "minecraft:animal_owner",
+          "minecraft:armor_stand",
+          "minecraft:beehive",
+          "minecraft:block_display",
+          "minecraft:brewing_stand",
+          "minecraft:campfire",
+          "minecraft:chiseled_bookshelf",
+          "minecraft:command_block",
+          "minecraft:crop_progress",
+          "minecraft:enchantment_power",
+          "minecraft:energy_storage",
+          "minecraft:energy_storage.default",
+          "minecraft:entity_armor",
+          "minecraft:entity_health",
+          "minecraft:falling_block"
+        ],
+        "probable_owner": "sort"
+      }
+    },
+    "config:config/jei-server.toml": {
+      "id": "config:config/jei-server.toml",
+      "category": "config",
+      "path": "config/jei-server.toml",
+      "kind": "file",
+      "size": 324,
+      "mtime_ns": 1784118064678265200,
+      "sha256": "702acd04d99445bce659d04fcc488e1a98c8a803983c31ae262b0f3a47fdc8d3",
+      "suggested_document": "components/jei-server.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 8,
+        "top_level_keys": [
+          "cheat mode"
+        ],
+        "probable_owner": "jei"
+      }
+    },
+    "config:config/jei/blacklist.json": {
+      "id": "config:config/jei/blacklist.json",
+      "category": "config",
+      "path": "config/jei/blacklist.json",
+      "kind": "file",
+      "size": 19,
+      "mtime_ns": 1784118070548202900,
+      "sha256": "b4174dc6e985aa90be5002c14e94b956d8d586683c44b7b6710c44d08fb13648",
+      "suggested_document": "components/blacklist.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 3,
+        "probable_owner": "blacklist"
+      }
+    },
+    "config:config/jei/ingredient-list-mod-sort-order.ini": {
+      "id": "config:config/jei/ingredient-list-mod-sort-order.ini",
+      "category": "config",
+      "path": "config/jei/ingredient-list-mod-sort-order.ini",
+      "kind": "file",
+      "size": 11,
+      "mtime_ns": 1784118071166180000,
+      "sha256": "859930e5e77f33badddd34c5ad6d220330e6e997793eabe12280fff73d604228",
+      "suggested_document": "components/ingredient-list-mod-sort-order.md",
+      "metadata": {
+        "extension": ".ini",
+        "line_count": 2,
+        "probable_owner": "ingredient"
+      }
+    },
+    "config:config/jei/ingredient-list-type-sort-order.ini": {
+      "id": "config:config/jei/ingredient-list-type-sort-order.ini",
+      "category": "config",
+      "path": "config/jei/ingredient-list-type-sort-order.ini",
+      "kind": "file",
+      "size": 78,
+      "mtime_ns": 1784118071167694500,
+      "sha256": "9be9f5ca14028eda8df857922eea736a3d1e76a85661ba90edae2682eeb0b502",
+      "suggested_document": "components/ingredient-list-type-sort-order.md",
+      "metadata": {
+        "extension": ".ini",
+        "line_count": 3,
+        "probable_owner": "ingredient"
+      }
+    },
+    "config:config/jei/jei-client.ini": {
+      "id": "config:config/jei/jei-client.ini",
+      "category": "config",
+      "path": "config/jei/jei-client.ini",
+      "kind": "file",
+      "size": 10302,
+      "mtime_ns": 1784118072328879200,
+      "sha256": "a2d183d3e078ba8e60fa990edb255e5ea7a7a6e3250d106908573822dec3a2aa",
+      "suggested_document": "components/jei-client.md",
+      "metadata": {
+        "extension": ".ini",
+        "line_count": 330,
+        "probable_owner": "jei"
+      }
+    },
+    "config:config/jei/jei-colors.ini": {
+      "id": "config:config/jei/jei-colors.ini",
+      "category": "config",
+      "path": "config/jei/jei-colors.ini",
+      "kind": "file",
+      "size": 1355,
+      "mtime_ns": 1784118072329905400,
+      "sha256": "37ac7d250a69357afb14cbb7c7d3c67310c208bc9315a2f7f348f51853fe5e83",
+      "suggested_document": "components/jei-colors.md",
+      "metadata": {
+        "extension": ".ini",
+        "line_count": 10,
+        "probable_owner": "jei"
+      }
+    },
+    "config:config/jei/jei-debug.ini": {
+      "id": "config:config/jei/jei-debug.ini",
+      "category": "config",
+      "path": "config/jei/jei-debug.ini",
+      "kind": "file",
+      "size": 1262,
+      "mtime_ns": 1784118072322657300,
+      "sha256": "5fbb28e705d346c4e55c3e3cd10555c2c555d1138fc1c1536c6275b621636697",
+      "suggested_document": "components/jei-debug.md",
+      "metadata": {
+        "extension": ".ini",
+        "line_count": 45,
+        "probable_owner": "jei"
+      }
+    },
+    "config:config/jei/jei-mod-id-format.ini": {
+      "id": "config:config/jei/jei-mod-id-format.ini",
+      "category": "config",
+      "path": "config/jei/jei-mod-id-format.ini",
+      "kind": "file",
+      "size": 477,
+      "mtime_ns": 1784118072319651600,
+      "sha256": "6af091efbd8c5000e45a48db5957c566dbda6d4323c2ca1f3ca95c29c2bf4b0a",
+      "suggested_document": "components/jei-mod-id-format.md",
+      "metadata": {
+        "extension": ".ini",
+        "line_count": 13,
+        "probable_owner": "jei"
+      }
+    },
+    "config:config/jei/recipe-category-sort-order.ini": {
+      "id": "config:config/jei/recipe-category-sort-order.ini",
+      "category": "config",
+      "path": "config/jei/recipe-category-sort-order.ini",
+      "kind": "file",
+      "size": 265,
+      "mtime_ns": 1784118070665767700,
+      "sha256": "f6189d1ae445aa0632fb15115965e9ee418396cae1e4e7a7b3888ea077b02a76",
+      "suggested_document": "components/recipe-category-sort-order.md",
+      "metadata": {
+        "extension": ".ini",
+        "line_count": 14,
+        "probable_owner": "recipe"
+      }
+    },
+    "config:config/lithium.properties": {
+      "id": "config:config/lithium.properties",
+      "category": "config",
+      "path": "config/lithium.properties",
+      "kind": "file",
+      "size": 267,
+      "mtime_ns": 1784118022369630000,
+      "sha256": "6cf6f83720071fd1657c8e79b357caf68d40f410ae123e5f922483eb1d1d25be",
+      "suggested_document": "components/lithium.md",
+      "metadata": {
+        "extension": ".properties",
+        "line_count": 7,
+        "probable_owner": "lithium"
+      }
+    },
+    "config:config/ModernUI/bootstrap.properties": {
+      "id": "config:config/ModernUI/bootstrap.properties",
+      "category": "config",
+      "path": "config/ModernUI/bootstrap.properties",
+      "kind": "file",
+      "size": 0,
+      "mtime_ns": 1784118022326445600,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "suggested_document": "components/bootstrap.md",
+      "metadata": {
+        "extension": ".properties",
+        "probable_owner": "bootstrap"
+      }
+    },
+    "config:config/ModernUI/client.toml": {
+      "id": "config:config/ModernUI/client.toml",
+      "category": "config",
+      "path": "config/ModernUI/client.toml",
+      "kind": "file",
+      "size": 9610,
+      "mtime_ns": 1784118030070629400,
+      "sha256": "9e985d16c94a12a5661934e3f20c6a8bf0fa0a55562c4c52295012f0b8f095f2",
+      "suggested_document": "components/client.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 218,
+        "top_level_keys": [
+          "screen",
+          "tooltip",
+          "general",
+          "view",
+          "font"
+        ],
+        "probable_owner": "client"
+      }
+    },
+    "config:config/ModernUI/common.toml": {
+      "id": "config:config/ModernUI/common.toml",
+      "category": "config",
+      "path": "config/ModernUI/common.toml",
+      "kind": "file",
+      "size": 351,
+      "mtime_ns": 1784118030101693000,
+      "sha256": "25f3610a946a2c22a1a369339f78a655dbd94319666ac1c59529421d9760e4a0",
+      "suggested_document": "components/common.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 15,
+        "top_level_keys": [
+          "developer",
+          "autoShutdown"
+        ],
+        "probable_owner": "common"
+      }
+    },
+    "config:config/ModernUI/text.toml": {
+      "id": "config:config/ModernUI/text.toml",
+      "category": "config",
+      "path": "config/ModernUI/text.toml",
+      "kind": "file",
+      "size": 6172,
+      "mtime_ns": 1784118030087135800,
+      "sha256": "e1b912518100e42af60cfea0fd5eaa663dac38df013d72b47dba02dcc55cadd8",
+      "suggested_document": "components/text.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 108,
+        "top_level_keys": [
+          "text"
+        ],
+        "probable_owner": "text"
+      }
+    },
+    "config:config/neoforge-client.toml": {
+      "id": "config:config/neoforge-client.toml",
+      "category": "config",
+      "path": "config/neoforge-client.toml",
+      "kind": "file",
+      "size": 578,
+      "mtime_ns": 1783940231580050000,
+      "sha256": "d58d93e2c429410d0abf25507d1679f732e1023b03bb52414348efcf5cf3ddb0",
+      "suggested_document": "components/neoforge-client.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 9,
+        "top_level_keys": [
+          "experimentalForgeLightPipelineEnabled",
+          "showLoadWarnings",
+          "useCombinedDepthStencilAttachment",
+          "logUntranslatedConfigurationWarnings"
+        ],
+        "probable_owner": "neoforge"
+      }
+    },
+    "config:config/neoforge-common.toml": {
+      "id": "config:config/neoforge-common.toml",
+      "category": "config",
+      "path": "config/neoforge-common.toml",
+      "kind": "file",
+      "size": 772,
+      "mtime_ns": 1783940231592817900,
+      "sha256": "fe878a2717a145cd890621eac5b3be1e1fd656f7ff9abc6e8d53f670d37474c4",
+      "suggested_document": "components/neoforge-common.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 9,
+        "top_level_keys": [
+          "logUntranslatedItemTagWarnings",
+          "logLegacyTagWarnings",
+          "attributeAdvancedTooltipDebugInfo"
+        ],
+        "probable_owner": "neoforge"
+      }
+    },
+    "config:config/neoforge-server.toml": {
+      "id": "config:config/neoforge-server.toml",
+      "category": "config",
+      "path": "config/neoforge-server.toml",
+      "kind": "file",
+      "size": 1177,
+      "mtime_ns": 1784118064680262300,
+      "sha256": "b1e3b38d612295f8d9dfa0fbdb538a992b7a1a3b7a766c491b4e9fdf3823396f",
+      "suggested_document": "components/neoforge-server.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 11,
+        "top_level_keys": [
+          "removeErroringBlockEntities",
+          "removeErroringEntities",
+          "fullBoundingBoxLadders",
+          "permissionHandler",
+          "advertiseDedicatedServerToLan"
+        ],
+        "probable_owner": "neoforge"
+      }
+    },
+    "config:config/sodium-fingerprint.json": {
+      "id": "config:config/sodium-fingerprint.json",
+      "category": "config",
+      "path": "config/sodium-fingerprint.json",
+      "kind": "file",
+      "size": 427,
+      "mtime_ns": 1784118030189666300,
+      "sha256": "79aed44daa47106c4526c88a4a328b978293429066fcb30e8cd9356a9060c6c8",
+      "suggested_document": "components/sodium-fingerprint.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 1,
+        "top_level_keys": [
+          "v",
+          "s",
+          "u",
+          "p",
+          "t"
+        ],
+        "probable_owner": "sodium"
+      }
+    },
+    "config:config/sodium-mixins.properties": {
+      "id": "config:config/sodium-mixins.properties",
+      "category": "config",
+      "path": "config/sodium-mixins.properties",
+      "kind": "file",
+      "size": 258,
+      "mtime_ns": 1784118022330682600,
+      "sha256": "b627c4456e6fa0bc4b5f85e2f1cd949faedae3cb9afdaf2a5f52e6f3b6ae1f01",
+      "suggested_document": "components/sodium-mixins.md",
+      "metadata": {
+        "extension": ".properties",
+        "line_count": 7,
+        "probable_owner": "sodium"
+      }
+    },
+    "config:config/sodium-options.json": {
+      "id": "config:config/sodium-options.json",
+      "category": "config",
+      "path": "config/sodium-options.json",
+      "kind": "file",
+      "size": 762,
+      "mtime_ns": 1784118030190665600,
+      "sha256": "44478bef0973f1aa587c0493568a5cbc5426233b611f14bd2be489b5b862fa7f",
+      "suggested_document": "components/sodium-options.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 30,
+        "top_level_keys": [
+          "quality",
+          "advanced",
+          "performance",
+          "notifications",
+          "debug"
+        ],
+        "probable_owner": "sodium"
+      }
+    },
+    "script-content:kubejs/assets/kubejs/textures/block/example_block.png": {
+      "id": "script-content:kubejs/assets/kubejs/textures/block/example_block.png",
+      "category": "script-content",
+      "path": "kubejs/assets/kubejs/textures/block/example_block.png",
+      "kind": "file",
+      "size": 247,
+      "mtime_ns": 1784118030179699000,
+      "sha256": "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc",
+      "suggested_document": "components/example-block.md",
+      "metadata": {
+        "extension": ".png",
+        "line_count": 4
+      }
+    },
+    "script-content:kubejs/assets/kubejs/textures/item/example_item.png": {
+      "id": "script-content:kubejs/assets/kubejs/textures/item/example_item.png",
+      "category": "script-content",
+      "path": "kubejs/assets/kubejs/textures/item/example_item.png",
+      "kind": "file",
+      "size": 372,
+      "mtime_ns": 1784118030179699000,
+      "sha256": "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b",
+      "suggested_document": "components/example-item.md",
+      "metadata": {
+        "extension": ".png",
+        "line_count": 6
+      }
+    },
+    "script-content:kubejs/client_scripts/main.js": {
+      "id": "script-content:kubejs/client_scripts/main.js",
+      "category": "script-content",
+      "path": "kubejs/client_scripts/main.js",
+      "kind": "file",
+      "size": 116,
+      "mtime_ns": 1784118029661245800,
+      "sha256": "3df46f0add819bf2602642215b5c62f0581ffdaaf97e77c80a8c4d966e05adcf",
+      "suggested_document": "components/main.md",
+      "metadata": {
+        "extension": ".js",
+        "line_count": 4
+      }
+    },
+    "script-content:kubejs/config/client.json": {
+      "id": "script-content:kubejs/config/client.json",
+      "category": "script-content",
+      "path": "kubejs/config/client.json",
+      "kind": "file",
+      "size": 184,
+      "mtime_ns": 1784118028456077200,
+      "sha256": "0aeb4cb329b896e33a0777a1683b0b813a6f2f0adc5bc2cf3e6d10e18e442fef",
+      "suggested_document": "components/client.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 8,
+        "top_level_keys": [
+          "window_title",
+          "disable_recipe_book",
+          "export_atlases",
+          "blur_scaled_pack_icon",
+          "custom_stack_size_text",
+          "shrink_stack_size_text"
+        ]
+      }
+    },
+    "script-content:kubejs/config/common.json": {
+      "id": "script-content:kubejs/config/common.json",
+      "category": "script-content",
+      "path": "kubejs/config/common.json",
+      "kind": "file",
+      "size": 446,
+      "mtime_ns": 1784118026882505900,
+      "sha256": "e00a67922942660d77c213379b5128a46c5abc894178b0be04006d325ff5f6b3",
+      "suggested_document": "components/common.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 16,
+        "top_level_keys": [
+          "hide_server_script_errors",
+          "server_only",
+          "announce_reload",
+          "packmode",
+          "save_dev_properties_in_config",
+          "allow_async_streams",
+          "match_json_recipes",
+          "ignore_custom_unique_recipe_ids",
+          "startup_error_gui",
+          "startup_error_report_url",
+          "remove_slot_limit",
+          "default_max_stack_size",
+          "creative_mode_tab_icon",
+          "creative_mode_tab_name"
+        ]
+      }
+    },
+    "script-content:kubejs/config/web_server.json": {
+      "id": "script-content:kubejs/config/web_server.json",
+      "category": "script-content",
+      "path": "kubejs/config/web_server.json",
+      "kind": "file",
+      "size": 120,
+      "mtime_ns": 1784118031027624100,
+      "sha256": "45dbc0a43989a39e7fce860e3eeb2a9533933a6646eb99c2b382af4ed70df54d",
+      "suggested_document": "components/web-server.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 6,
+        "top_level_keys": [
+          "enabled",
+          "port",
+          "public_address",
+          "auth"
+        ]
+      }
+    },
+    "script-content:kubejs/README.txt": {
+      "id": "script-content:kubejs/README.txt",
+      "category": "script-content",
+      "path": "kubejs/README.txt",
+      "kind": "file",
+      "size": 1203,
+      "mtime_ns": 1784118029213718000,
+      "sha256": "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af",
+      "suggested_document": "components/readme.md",
+      "metadata": {
+        "extension": ".txt",
+        "line_count": 15
+      }
+    },
+    "script-content:kubejs/server_scripts/main.js": {
+      "id": "script-content:kubejs/server_scripts/main.js",
+      "category": "script-content",
+      "path": "kubejs/server_scripts/main.js",
+      "kind": "file",
+      "size": 116,
+      "mtime_ns": 1784118061968939600,
+      "sha256": "dae099ae3be7f033c0c190ee8c3b023b42f6b235d9d0591be5926e8435dbd67f",
+      "suggested_document": "components/main.md",
+      "metadata": {
+        "extension": ".js",
+        "line_count": 4
+      }
+    },
+    "script-content:kubejs/startup_scripts/main.js": {
+      "id": "script-content:kubejs/startup_scripts/main.js",
+      "category": "script-content",
+      "path": "kubejs/startup_scripts/main.js",
+      "kind": "file",
+      "size": 117,
+      "mtime_ns": 1784118029320118100,
+      "sha256": "5c4659e7bb368960801ccfce24ac3493fa14aae88a7e17b2a9cdfe1931985ffe",
+      "suggested_document": "components/main.md",
+      "metadata": {
+        "extension": ".js",
+        "line_count": 4
+      }
+    },
+    "launcher-profile:ProjectNautic-Dev.json": {
+      "id": "launcher-profile:ProjectNautic-Dev.json",
+      "category": "launcher-profile",
+      "path": "ProjectNautic-Dev.json",
+      "kind": "file",
+      "size": 75611,
+      "mtime_ns": 1783873383246021400,
+      "sha256": "06fb006be4575682402ba9bb87c47617916d071234f936a97168f96a6db520dc",
+      "suggested_document": "components/projectnautic-dev.md",
+      "metadata": {
+        "name": "ProjectNautic-Dev",
+        "main_class": "cpw.mods.bootstraplauncher.BootstrapLauncher",
+        "java_version": 21,
+        "minecraft_version": "1.21.1",
+        "neoforge_version": "21.1.235",
+        "fml_version": "4.0.42"
+      }
+    },
+    "launcher-profile:usercache.json": {
+      "id": "launcher-profile:usercache.json",
+      "category": "launcher-profile",
+      "path": "usercache.json",
+      "kind": "file",
+      "size": 109,
+      "mtime_ns": 1784118069800818400,
+      "sha256": "da449cc97def42db2e21da9af29df7e1f12873d3460ec406e00f00459dad3d2f",
+      "suggested_document": "components/usercache.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 1
+      }
+    },
+    "launcher-profile:usernamecache.json": {
+      "id": "launcher-profile:usernamecache.json",
+      "category": "launcher-profile",
+      "path": "usernamecache.json",
+      "kind": "file",
+      "size": 58,
+      "mtime_ns": 1784118069917820900,
+      "sha256": "faaa953f33410f53b7bfffc9106c57925e0bf99a496d0c26d73eb5fdfd90ef0e",
+      "suggested_document": "components/usernamecache.md",
+      "metadata": {
+        "name": "usernamecache"
+      }
+    }
+  }
+}
