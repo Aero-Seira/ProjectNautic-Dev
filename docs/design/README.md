@@ -7,7 +7,7 @@
 - Java 版本：21
 - 目标玩家：待定义
 - 核心体验：待定义
-- 当前阶段：基础性能模组与魔改框架已加载，首批 QoL 与脚本基础设施就位
+- 当前阶段：基础性能模组、魔改框架、扩展 QoL 工具与集成插件已加载，第二批基础模组与 QoL 扩展就位
 
 ## 设计支柱
 
@@ -32,16 +32,36 @@
 | [KubeJS](components/content/kubejs.md) | 脚本系统，自定义配方、事件、内容 | active | BOTH；依赖 Rhino |
 | [KubeJS Additions](components/integration/kubejsadditions.md) | KubeJS 扩展功能，补充事件与 API | active | BOTH；依赖 KubeJS |
 | [Rhino](components/library/rhino.md) | Mozilla Rhino JS 运行时，KubeJS 核心依赖 | active | BOTH |
+| [C2ME](components/performance/c2me.md) | 并发区块管理引擎，优化区块加载与生成 | active | BOTH；alpha 版本 |
+| [ModernFix](components/performance/modernfix.md) | 综合性能与启动优化 | active | BOTH |
+| [Ferrite Core](components/performance/ferritecore.md) | 内存占用优化 | active | BOTH |
+| [CullLeaves](components/performance/cullleaves.md) | 树叶渲染剔除优化 | active | CLIENT；依赖 MidnightLib |
+| [Sodium Extra](components/performance/sodium-extra.md) | Sodium 扩展设置与 FPS 覆盖层 | active | CLIENT；依赖 Sodium |
+| [ScalableLux](components/performance/scalablelux.md) | 光照引擎重写，修复光照性能与错误 | active | BOTH；alpha 版本 |
+| [NewVisualKeybing](components/aesthetic/newvisualkeybing.md) | 键位可视化面板 | active | CLIENT |
+| [Mouse Tweaks](components/utility/mousetweaks.md) | 鼠标手势库存管理 | active | CLIENT |
+| [AppleSkin](components/utility/appleskin.md) | 食物与饥饿 HUD 信息增强 | active | CLIENT |
+| [Just Enough Resources](components/utility/jeresources.md) | JEI 资源与世界生成信息扩展 | active | BOTH；依赖 JEI |
+| [Just Enough Effects Descriptions](components/utility/jeed.md) | JEI 状态效果描述扩展 | active | BOTH；依赖 JEI |
+| [Xaero's Minimap](components/utility/xaerominimap.md) | 小地图与导航 | active | CLIENT；可选 xaeroworldmap |
+| [Xaero's World Map](components/utility/xaeroworldmap.md) | 全屏世界地图 | active | CLIENT；可选 xaerominimap |
+| [Chunky](components/utility/chunky.md) | 区块预生成管理工具 | active | BOTH |
+| [spark](components/utility/spark.md) | 性能剖析与诊断工具 | active | BOTH |
+| [Jade Addons](components/integration/jadeaddons.md) | Jade 提示扩展（Create/Tinkers'/Lootr 等） | active | BOTH；依赖 Jade |
+| [JER Integration](components/integration/jerintegration.md) | JER 与科技模组集成补丁 | active | CLIENT；依赖 JER |
+| [KubeJS Data Component](components/integration/kubejs-datacomponent.md) | KubeJS DataComponent API 扩展 | active | BOTH；依赖 KubeJS |
+| [LootJS](components/integration/lootjs.md) | KubeJS 战利品表修改扩展 | active | BOTH；依赖 KubeJS |
+| [MidnightLib](components/library/midnightlib.md) | 轻量级配置库，CullLeaves 依赖 | active | BOTH |
 
 ## 跨系统约束
 
 - 兼容性：新增模组应明确支持 Minecraft 1.21.1 与 NeoForge 21.1.x。
 - 客户端/服务端范围：当前目录是客户端实例；加入联机或服务端内容时需要单独核对服务端依赖与配置同步方式。所有魔改脚本（KubeJS）须兼容服务端热重载。
 - 存档兼容性：尚无玩法组件，后续加入世界生成、注册表内容或数据包时必须记录移除风险。新模组加入应尽量不影响已生成区块。
-- 性能预算：当前 10 个模组，其中 3 个渲染优化（Sodium、ImmediatelyFast、Iris）、1 个逻辑优化（Lithium），构成性能基线。后续引入大型内容模组时需补充启动耗时与内存影响。参考基准：轻量包 <50 模组、中量包 50-200 模组、服务端内存预算 6-8GB。
+- 性能预算：当前 30 个模组，性能优化矩阵已完整（渲染：Sodium + Iris；客户端 HUD：ImmediatelyFast；逻辑：Lithium；区块：C2ME；光照：ScalableLux；内存：Ferrite Core + ModernFix；树叶剔除：CullLeaves；扩展渲染选项：Sodium Extra）。后续引入大型内容模组时需补充启动耗时与内存影响。参考基准：轻量包 <50 模组、中量包 50-200 模组、服务端内存预算 6-8GB。
 - 阶段锁定：所有新增内容模组必须在 Chapters 阶段系统中定义默认解锁状态，确保未来可通过阶段进行内容开关。
 - 着色器兼容性：Iris 已加载，后续渲染相关模组须验证与 Sodium + Iris 的兼容性，避免引入与 Embeddium 相关的冲突模组。
-- 脚本依赖链：KubeJS → Rhino 为硬依赖；KubeJS Additions → KubeJS 为硬依赖。脚本系统面向未来所有内容魔改。
+- 脚本依赖链：KubeJS → Rhino 为硬依赖；KubeJS Additions、KubeJS Data Component、LootJS → KubeJS 为硬依赖。脚本系统面向未来所有内容魔改。
 
 ## 开放问题
 

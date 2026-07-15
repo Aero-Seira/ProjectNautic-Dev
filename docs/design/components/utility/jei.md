@@ -43,6 +43,7 @@ JEI 是整合包**QoL（生活质量）核心**组件。作为物品与配方查
 - **NeoForge** `>=21.0.118-beta`（required, BOTH）
 - **Minecraft** `[1.21, 1.21.1)`（required, BOTH）
 - **KubeJS**（间接关系）：KubeJS 自定义配方必须调用 JEI 集成 API 注册/隐藏配方。KubeJS 将 JEI 列为可选客户端依赖（`>=19.25.0.322`），意味着 KubeJS 的脚本有能力在 JEI 存在时注册额外信息。
+- **JER / JEED / JER Integration**（扩展插件）：Just Enough Resources 新增世界生成、生物掉落、村民交易等配方分类；Just Enough Effects Descriptions 新增状态效果说明分类；JER Integration 为 Create、Thermal、Tinkers' Construct 等科技模组预留数据补丁。这些插件均通过 JEI 的配方查看界面展示。
 
 ### 冲突
 - 与 REI、EMI 等同类物品查看器不兼容。整合包只应保留一个配方查看器。当前选择 JEI 作为官方推荐方案。
@@ -80,11 +81,14 @@ JEI 是整合包**QoL（生活质量）核心**组件。作为物品与配方查
 ### `config/jei/blacklist.json`
 - 当前为空（19 B），预留用于后续 KubeJS 魔改中隐藏未使用的中间产物或调试物品。
 
-### `config/jei/ingredient-list-mod-sort-order.ini` 与 `ingredient-list-type-sort-order.ini`
-- 定义物品列表的排序优先级。整合包暂未重排，使用默认排序。未来若添加大量 KubeJS 自定义物品，可能需要调整以确保新物品在合理位置出现。
+### `config/jei/ingredient-list-mod-sort-order.ini`
+- 当前显式列出 `Minecraft`、`Xaero's Minimap`、`Xaero's World Map` 的排序位置。其余模组按默认字母顺序排列。该配置确保原版与地图模组物品在列表中处于预期位置，后续若添加大量 KubeJS 自定义物品或内容模组，可继续扩展此排序。
+
+### `config/jei/ingredient-list-type-sort-order.ini`
+- 定义物品、流体、状态效果等类型的排序优先级。当前保留默认顺序（`ItemStack`、`FluidStack`、`MobEffectInstance`），后续若整合包强调流体或效果类内容，可调整优先级。
 
 ### `config/jei/recipe-category-sort-order.ini`
-- 控制配方分类的显示顺序。例如：合成台配方优先于熔炉配方。当前使用默认顺序，后续魔改若添加自定义配方分类，需在此注册排序位置。
+- 控制配方分类的显示顺序。当前顺序为原版配方分类（合成、铁砧、熔炼、酿造等）在前，JEI 信息分类居中，JER 分类（地牢、附魔、生物、植物、村民、世界生成）与 JEED 效果说明分类在后。该排序确保玩家先看到核心配方，再查看扩展信息。
 
 ### `config/jei/jei-colors.ini`
 - 配置搜索高亮、选中状态的颜色主题。当前使用默认暗色主题，与整合包整体 UI 色调保持一致。
@@ -129,4 +133,5 @@ JEI 是整合包**QoL（生活质量）核心**组件。作为物品与配方查
 
 ## 历史
 
+- 2026-07-16: 更新集成关系与配置说明：新增 JER / JEED / JER Integration 扩展插件；更新物品列表与配方分类排序配置说明
 - 2026-07-15: 作为基础 QoL 与魔改框架批次添加

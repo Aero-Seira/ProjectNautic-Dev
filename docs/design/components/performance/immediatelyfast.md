@@ -51,7 +51,7 @@ ImmediatelyFast 的配置文件 `config/immediatelyfast.json` 经过以下深思
 - `map_atlas_generation: true` — 启用地图纹理图集化，将多张地图合并到单个纹理图集中，大幅降低地图渲染时的 draw call 数量。
 - `hud_batching: true` — 启用 HUD 批量渲染，将多个 HUD 元素（血条、饥饿条、经验条、状态效果图标等）合并为更少的绘制调用，是模组最核心的优化之一。
 - `fast_text_lookup: true` — 启用快速文本查找，优化字体渲染中的字形索引性能，加速聊天框、物品名称等文本渲染。
-- `fast_buffer_upload: true` — 启用快速缓冲区上传，采用更高效的 OpenGL 缓冲区策略减少 CPU-GPU 同步等待时间。
+- `fast_buffer_upload: false` — 禁用快速缓冲区上传。当前配置选择保守策略，避免在某些驱动或 GPU 组合上因缓冲区路径变更导致的渲染异常；以少量潜在性能收益换取更高稳定性。
 
 ### 实验性功能（EXPERIMENTAL）
 所有实验性功能均保持 `false`，体现保守且稳定优先的配置策略：
@@ -99,4 +99,5 @@ ImmediatelyFast 的配置文件 `config/immediatelyfast.json` 经过以下深思
 
 ## 历史
 
+- 2026-07-16: 更新配置说明：`fast_buffer_upload` 实际为 `false`，采用保守策略以换取稳定性
 - 2026-07-15: 作为基础性能模组批次添加

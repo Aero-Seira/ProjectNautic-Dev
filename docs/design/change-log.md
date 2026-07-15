@@ -1,5 +1,32 @@
 # 设计变更记录
 
+## 2026-07-16 - 加载第二批基础模组与 QoL 扩展
+
+- 新增模组 **20 个**：
+  - **性能优化**：C2ME 0.4.0-alpha.0.115、ModernFix 5.27.15、Ferrite Core 7.0.3、CullLeaves 4.1.1、Sodium Extra 0.9.3、ScalableLux 0.3.0-alpha.0.6
+  - **视觉/UI**：NewVisualKeybing 0.6.16
+  - **QoL 工具**：Mouse Tweaks 2.26.1、AppleSkin 3.0.9、Just Enough Resources 1.6.0.17、Just Enough Effects Descriptions 2.3.2、Xaero's Minimap 26.3.0、Xaero's World Map 1.43.0、Chunky 1.4.23、spark 1.10.124
+  - **集成扩展**：Jade Addons 6.1.0、JER Integration 6.5.0、KubeJS Data Component 1.0.1、LootJS 3.7.0
+  - **依赖库**：MidnightLib 1.9.3
+- 新增配置文件：C2ME、ModernFix、Ferrite Core、CullLeaves、Sodium Extra、NewVisualKeybing、Mouse Tweaks、AppleSkin、JER、JEED、JER Integration、Xaero 系列、Chunky、spark、MidnightLib 等模组配置
+- 设计文档更新：
+  - 更新 `README.md` 系统地图，添加 20 个新组件条目
+  - 更新性能预算说明，完整覆盖渲染/HUD/逻辑/区块/光照/内存/树叶剔除维度
+  - 更新脚本依赖链，纳入 KubeJS Data Component 与 LootJS
+  - 创建 20 个组件文档：`c2me.md`、`modernfix.md`、`ferritecore.md`、`cullleaves.md`、`sodium-extra.md`、`scalablelux.md`、`newvisualkeybing.md`、`mousetweaks.md`、`appleskin.md`、`jeresources.md`、`jeed.md`、`xaerominimap.md`、`xaeroworldmap.md`、`chunky.md`、`spark.md`、`jadeaddons.md`、`jerintegration.md`、`kubejs-datacomponent.md`、`lootjs.md`、`midnightlib.md`
+- 设计影响：
+  - 性能优化矩阵已完整，覆盖渲染、逻辑、区块、光照、内存与客户端剔除
+  - QoL 信息查询体系建立（JEI + JER + JEED + Jade），为后续内容模组提供信息展示基础
+  - 导航与运维工具就位（Xaero 地图、Chunky、spark），支撑长期服务器运营
+  - KubeJS 魔改生态扩展至 DataComponent 与战利品表，为阶段化内容与平衡调整提供基础设施
+  - 多个集成模组（Jade Addons、JER Integration）作为前向兼容钩子，为未来的 Create、Thermal、Tinkers' 等内容模组预留集成点
+- 验证状态：已扫描整合包，所有新增模组元数据与配置文件已记录；实际兼容性、性能测试与多人验证尚待完成。
+- 剩余问题：
+  - C2ME 与 ScalableLux 为 alpha 版本，需密切关注稳定性更新
+  - Xaero 地图缓存与 HUD 布局需在实际多人环境中验证
+  - KubeJS Data Component 与 LootJS 的脚本 API 覆盖度需在后续魔改开发中验证
+  - 前向兼容的集成模组（Jade Addons、JER Integration）在目标内容模组未安装时处于空窗期，需向玩家/运营者说明
+
 ## 2026-07-15 - 加载首批基础模组与魔改框架
 
 - 新增模组 **10 个**：

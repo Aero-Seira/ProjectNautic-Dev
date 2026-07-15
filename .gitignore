@@ -135,3 +135,21 @@ local/kubejs/dev.json
 
 # KubeJS 日志输出
 logs/kubejs/
+
+# --------------------------------------------------
+# 9. 其他运行时 / 个人数据
+# --------------------------------------------------
+
+# Xaero 地图缓存与路径点（个人本地数据）
+xaero/
+XaeroWaypoints_BACKUP*/
+
+# JEI 本地世界搜索历史
+config/jei/world/
+
+# 扫描器临时工具（portable Python 运行时）
+python/
+
+# spark 临时采样目录
+config/spark/tmp/
+config/spark/tmp-client/

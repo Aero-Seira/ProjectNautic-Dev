@@ -58,6 +58,11 @@ KubeJS 在整个整合包技术栈中的角色：
 - **EMI** `>=1.1.22`（optional, AFTER, CLIENT）—— 备用配方查看器支持
 - **BetterAdvancedTooltips** `>=2101.1.0-build.1`（optional, BEFORE, CLIENT）—— 增强工具提示集成
 
+### 扩展插件
+- **KubeJS Additions**：补充额外事件与 API，扩展 KubeJS 的能力边界。
+- **KubeJS Data Component**：为 KubeJS 提供 DataComponent API 支持，便于脚本操作 1.20.5+ 引入的物品数据组件。
+- **LootJS**：通过 KubeJS 脚本修改战利品表，用于控制掉落、宝箱内容与阶段化奖励。
+
 ### 冲突
 - 与 CraftTweaker 存在功能重叠，不建议同时安装。整合包选择 KubeJS 作为唯一脚本框架。
 - 某些硬编码修改游戏机制的模组可能与 KubeJS 的事件监听器竞争，导致行为不可预测。
@@ -208,4 +213,5 @@ kubejs/
 
 ## 历史
 
+- 2026-07-16: 更新集成关系：补充 KubeJS Additions、KubeJS Data Component、LootJS 扩展插件说明
 - 2026-07-15: 作为基础 QoL 与魔改框架批次添加
