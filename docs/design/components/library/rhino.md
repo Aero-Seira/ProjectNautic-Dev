@@ -5,8 +5,8 @@
 - 类型：library
 - 状态：active
 - 证据可信度：verified
-- 来源路径：`mods/[犀牛] rhino-2101.2.7-build.85.jar`
-- 标识与版本：mod_id = `rhino`；版本 `2101.2.7-build.85`
+- 来源路径：`mods/[犀牛] rhino-2101.2.8-build.91.jar`
+- 标识与版本：mod_id = `rhino`；版本 `2101.2.8-build.91`
 - 加载器或包格式：扫描器报告为 fabric loader，但实际作为跨加载器库在 NeoForge 环境运行
 
 ## 设计作用
@@ -69,4 +69,5 @@ Rhino 本身不暴露 Minecraft 级别的配置文件。其行为由以下因素
 
 ## 历史
 
+- 2026-07-20: 升级 2101.2.7-build.85 → 2101.2.8-build.91（例行小版本升级，替换旧 jar；KubeJS 硬依赖，升级后需回归脚本系统）
 - 2026-07-15: 作为基础 QoL 与魔改框架批次添加

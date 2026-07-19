@@ -7,7 +7,7 @@
 - Java 版本：21
 - 目标玩家：待定义
 - 核心体验：待定义
-- 当前阶段：基础性能模组、魔改框架、扩展 QoL 工具与集成插件已加载；第三批以中文本地化、聊天/社交、信息展示、环境视听与底层性能优化为主的 QoL 模组已就位；第四批确立官方默认光影（Complementary + EuphoriaPatches）并引入多人协作标记、越肩视角、实体纹理与 tooltip 视觉增强
+- 当前阶段：基础性能模组、魔改框架、扩展 QoL 工具与集成插件已加载；第三批以中文本地化、聊天/社交、信息展示、环境视听与底层性能优化为主的 QoL 模组已就位；第四批确立官方默认光影（Complementary + EuphoriaPatches）并引入多人协作标记、越肩视角、实体纹理与 tooltip 视觉增强；第五批补充输入/HUD/日志维度性能优化（Ixeris、Gnetum、Async Logger）与启动体验 QoL（Progress Peek）
 
 ## 设计支柱
 
@@ -95,6 +95,10 @@
 | [YetAnotherConfigLib](components/library/yet-another-config-lib-v3.md) | 配置界面库 | active | CLIENT |
 | [AsyncParticles](components/integration/asyncparticles.md) | 粒子 tick 异步化 | active | CLIENT |
 | [Minecraft Mod Language Modpack](components/resourcepacks/minecraft-mod-language-modpack-converted-1-21-1.md) | 社区简体中文翻译资源包 | active | CLIENT |
+| [Ixeris](components/performance/ixeris.md) | 输入缓冲与线程化事件轮询 | active | CLIENT |
+| [Async Logger](components/performance/asynclogger.md) | 日志异步化与过滤 | active | BOTH |
+| [Gnetum](components/performance/gnetum.md) | HUD 更新分帧 | active | CLIENT |
+| [Progress Peek](components/utility/progresspeek.md) | 任务栏显示游戏加载进度 | active | CLIENT |
 | [Euphoria Patcher](components/aesthetic/euphoria-patcher.md) | 游戏内应用 Euphoria Patches 光影补丁 | active | CLIENT；依赖 Iris |
 | [Complementary + EuphoriaPatches 光影](components/aesthetic/complementary-euphoria-shaders.md) | 官方默认光影（Unbound r5.8.1 + EuphoriaPatches 1.9.3） | active | CLIENT；Iris 加载 |
 | [Ping Wheel](components/utility/pingwheel.md) | 多人位置标记（ping）系统 | active | BOTH |
@@ -115,7 +119,7 @@
 - 兼容性：新增模组应明确支持 Minecraft 1.21.1 与 NeoForge 21.1.x。
 - 客户端/服务端范围：当前目录是客户端实例；加入联机或服务端内容时需要单独核对服务端依赖与配置同步方式。所有魔改脚本（KubeJS）须兼容服务端热重载。
 - 存档兼容性：尚无玩法组件，后续加入世界生成、注册表内容或数据包时必须记录移除风险。新模组加入应尽量不影响已生成区块。
-- 性能预算：当前约 85 个模组，处于"中量包"区间。性能优化矩阵已覆盖渲染（Sodium + Iris）、客户端 HUD（ImmediatelyFast）、逻辑（Lithium）、配方匹配（FastSuite）、区块（C2ME）、光照（ScalableLux）、内存（Ferrite Core + ModernFix）、树叶剔除（CullLeaves）、扩展渲染选项（Sodium Extra）以及多项微优化与剔除（BadOptimizations、Flerovium、Cupboard）。后续引入大型内容模组时需重点补充启动耗时与内存影响。参考基准：轻量包 <50 模组、中量包 50-200 模组、服务端内存预算 6-8GB、客户端建议 4-6GB。
+- 性能预算：当前约 90 个模组，处于"中量包"区间。性能优化矩阵已覆盖渲染（Sodium + Iris）、客户端 HUD（ImmediatelyFast、Gnetum）、逻辑（Lithium）、配方匹配（FastSuite）、区块（C2ME）、光照（ScalableLux）、内存（Ferrite Core + ModernFix）、树叶剔除（CullLeaves）、扩展渲染选项（Sodium Extra）、输入管线（Ixeris）、日志异步化（Async Logger）以及多项微优化与剔除（BadOptimizations、Flerovium、Cupboard）。后续引入大型内容模组时需重点补充启动耗时与内存影响。参考基准：轻量包 <50 模组、中量包 50-200 模组、服务端内存预算 6-8GB、客户端建议 4-6GB。
 - 阶段锁定：所有新增内容模组必须在 Chapters 阶段系统中定义默认解锁状态，确保未来可通过阶段进行内容开关。
 - 着色器兼容性：Iris 已加载并预置官方默认光影（Complementary Unbound r5.8.1 + EuphoriaPatches 1.9.3，经 Euphoria Patcher 游戏内补丁）。后续渲染相关模组须验证与该光影管线的兼容性，避免引入与 Embeddium 相关的冲突模组；光影设置文件随包分发，升级策略待明确。
 - 脚本依赖链：KubeJS → Rhino 为硬依赖；KubeJS Additions、KubeJS Data Component、LootJS → KubeJS 为硬依赖。脚本系统面向未来所有内容魔改。

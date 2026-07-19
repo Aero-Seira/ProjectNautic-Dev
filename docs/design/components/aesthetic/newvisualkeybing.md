@@ -86,4 +86,5 @@ NewVisualKeybing 是 ProjectNautic 整合包的键位可视化模组，用于在
 
 ## 历史
 
+- 2026-07-20: 新增 `config/newvisualkeybing/keybind_profiles.json`（按键配置档案文件，当前 `profiles` 为空、仅记录 `key.modernui.zoom` 优先级——属生成默认，尚未做 deliberate 配置）
 - 2026-07-16: 作为第二批基础模组与 QoL 扩展批次添加

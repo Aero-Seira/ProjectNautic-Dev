@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-19T18:30:19+08:00",
+  "generated_at": "2026-07-20T00:38:18+08:00",
   "root": "C:\\Users\\aeroseira\\Desktop\\MC\\Versions\\ProjectNautic-Dev",
   "profile": {
     "pack_name": "ProjectNautic-Dev",
@@ -10,14 +10,14 @@
     "fml_version": "4.0.42",
     "java_version": 21,
     "observed_mod_loaders": {
-      "neoforge": 76,
+      "neoforge": 80,
       "fabric": 7
     },
     "content_counts": {
-      "mod": 84,
+      "mod": 88,
       "resource-pack": 1,
       "shader-pack": 3,
-      "config": 129,
+      "config": 134,
       "script-content": 9,
       "launcher-profile": 3
     }
@@ -874,22 +874,22 @@
         "contained_jars": 0
       }
     },
-    "mod:mods/[犀牛] rhino-2101.2.7-build.85.jar": {
-      "id": "mod:mods/[犀牛] rhino-2101.2.7-build.85.jar",
+    "mod:mods/[犀牛] rhino-2101.2.8-build.91.jar": {
+      "id": "mod:mods/[犀牛] rhino-2101.2.8-build.91.jar",
       "category": "mod",
-      "path": "mods/[犀牛] rhino-2101.2.7-build.85.jar",
+      "path": "mods/[犀牛] rhino-2101.2.8-build.91.jar",
       "kind": "file",
-      "size": 882075,
-      "mtime_ns": 1784116962771691200,
-      "sha256": "95df92ce578b2504cb16d8c9fc285303bf062eb15452246a18e57b7cf091c19a",
+      "size": 980936,
+      "mtime_ns": 1784478665702500100,
+      "sha256": "1d53d962aa4dac54bcbb4f998c1845980cf194318f1d6b1580ea6ac15cce5ef3",
       "suggested_document": "components/rhino.md",
       "metadata": {
         "enabled": true,
-        "file_name": "[犀牛] rhino-2101.2.7-build.85.jar",
+        "file_name": "[犀牛] rhino-2101.2.8-build.91.jar",
         "loader": "fabric",
         "mod_id": "rhino",
         "name": "Rhino",
-        "version": "2101.2.7-build.85",
+        "version": "2101.2.8-build.91",
         "description": "A fork of Mozilla's Rhino library, modified for use in mods",
         "authors": [
           "latvian.dev",
@@ -979,22 +979,22 @@
         "contained_jars": 0
       }
     },
-    "mod:mods/[现代化修复] modernfix-neoforge-5.27.15+mc1.21.1.jar": {
-      "id": "mod:mods/[现代化修复] modernfix-neoforge-5.27.15+mc1.21.1.jar",
+    "mod:mods/[现代化修复] modernfix-neoforge-5.27.20+mc1.21.1.jar": {
+      "id": "mod:mods/[现代化修复] modernfix-neoforge-5.27.20+mc1.21.1.jar",
       "category": "mod",
-      "path": "mods/[现代化修复] modernfix-neoforge-5.27.15+mc1.21.1.jar",
+      "path": "mods/[现代化修复] modernfix-neoforge-5.27.20+mc1.21.1.jar",
       "kind": "file",
-      "size": 597318,
-      "mtime_ns": 1784138124304941600,
-      "sha256": "60bad0cb2436b8f5dd277d752e83f05b244477da85ba01456b2bfe01f1ede850",
+      "size": 599474,
+      "mtime_ns": 1784478666077993300,
+      "sha256": "6f367ea4002c39e3cfe27e0a0be1008880a4b35a8482a78a437cfb9d8ee38273",
       "suggested_document": "components/modernfix.md",
       "metadata": {
         "enabled": true,
-        "file_name": "[现代化修复] modernfix-neoforge-5.27.15+mc1.21.1.jar",
+        "file_name": "[现代化修复] modernfix-neoforge-5.27.20+mc1.21.1.jar",
         "loader": "neoforge",
         "mod_id": "modernfix",
         "name": "ModernFix",
-        "version": "5.27.15+mc1.21.1",
+        "version": "5.27.20+mc1.21.1",
         "description": "Egregious, yet effective performance improvements for modern Minecraft",
         "authors": "embeddedt",
         "license": "GNU LGPL 3.0",
@@ -1732,6 +1732,43 @@
         "contained_jars": 0
       }
     },
+    "mod:mods/asynclogger-2.1.2+1.21.1-neoforge.jar": {
+      "id": "mod:mods/asynclogger-2.1.2+1.21.1-neoforge.jar",
+      "category": "mod",
+      "path": "mods/asynclogger-2.1.2+1.21.1-neoforge.jar",
+      "kind": "file",
+      "size": 584937,
+      "mtime_ns": 1784477718172323800,
+      "sha256": "e9fd8a5f2704d6bea6e4534a5833f00e768d64c1853a41d0fb59e46b32d35532",
+      "suggested_document": "components/asynclogger.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "asynclogger-2.1.2+1.21.1-neoforge.jar",
+        "loader": "neoforge",
+        "mod_id": "asynclogger",
+        "name": "Async Logger",
+        "version": "2.1.2+1.21.1-neoforge",
+        "description": "Asynchronous logging and efficient filtering - performance improvements and utility for keeping your logs clean",
+        "authors": "decce",
+        "license": "LGPL-3.0-only",
+        "dependencies": {
+          "asynclogger": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "versionRange": "[1.21,1.21.8]",
+              "type": "required"
+            }
+          ]
+        },
+        "contained_jars": 1
+      }
+    },
     "mod:mods/BadOptimizations-2.4.1-1.21.1.jar": {
       "id": "mod:mods/BadOptimizations-2.4.1-1.21.1.jar",
       "category": "mod",
@@ -2310,6 +2347,46 @@
         "contained_jars": 0
       }
     },
+    "mod:mods/gnetum-3.3.6.jar": {
+      "id": "mod:mods/gnetum-3.3.6.jar",
+      "category": "mod",
+      "path": "mods/gnetum-3.3.6.jar",
+      "kind": "file",
+      "size": 120726,
+      "mtime_ns": 1784477551335675500,
+      "sha256": "19471108f3c2d799831ee52bc9d04d99cf745f0c1699b992ee981508befb583b",
+      "suggested_document": "components/gnetum.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "gnetum-3.3.6.jar",
+        "loader": "neoforge",
+        "mod_id": "gnetum",
+        "name": "Gnetum",
+        "version": "3.3.6",
+        "description": "Minecraft mod that distributes HUD updates over multiple frames to improve performance.",
+        "authors": "decce",
+        "license": "LGPL-3.0-only",
+        "dependencies": {
+          "gnetum": [
+            {
+              "modId": "neoforge",
+              "mandatory": true,
+              "versionRange": "[21.1.0,)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "mandatory": true,
+              "versionRange": "[1.21.1,1.21.2)",
+              "ordering": "NONE",
+              "side": "BOTH"
+            }
+          ]
+        },
+        "contained_jars": 0
+      }
+    },
     "mod:mods/ImmediatelyFast-NeoForge-1.6.11+1.21.1.jar": {
       "id": "mod:mods/ImmediatelyFast-NeoForge-1.6.11+1.21.1.jar",
       "category": "mod",
@@ -2385,6 +2462,43 @@
           ]
         },
         "contained_jars": 6
+      }
+    },
+    "mod:mods/Ixeris-4.5.2+1.21.1-neoforge.jar": {
+      "id": "mod:mods/Ixeris-4.5.2+1.21.1-neoforge.jar",
+      "category": "mod",
+      "path": "mods/Ixeris-4.5.2+1.21.1-neoforge.jar",
+      "kind": "file",
+      "size": 635668,
+      "mtime_ns": 1784477863262261000,
+      "sha256": "6f0e58055dbf1fefa486c44a4d00b7cff0ca9d70bc9eb8f089fe870cf15a87b1",
+      "suggested_document": "components/ixeris-dummy.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "Ixeris-4.5.2+1.21.1-neoforge.jar",
+        "loader": "neoforge",
+        "mod_id": "ixeris_dummy",
+        "name": "Ixeris",
+        "version": "4.5.2+1.21.1-neoforge",
+        "description": "Buffered raw input and threaded event polling",
+        "authors": "decce",
+        "license": "LGPL-3.0-only",
+        "dependencies": {
+          "ixeris": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "versionRange": "[1.21,1.21.1]",
+              "type": "required"
+            }
+          ]
+        },
+        "contained_jars": 1
       }
     },
     "mod:mods/JadeAddons-1.21.1-NeoForge-6.1.0.jar": {
@@ -3051,22 +3165,22 @@
         "contained_jars": 0
       }
     },
-    "mod:mods/Placebo-1.21.1-9.9.1.jar": {
-      "id": "mod:mods/Placebo-1.21.1-9.9.1.jar",
+    "mod:mods/Placebo-1.21.1-9.9.2.jar": {
+      "id": "mod:mods/Placebo-1.21.1-9.9.2.jar",
       "category": "mod",
-      "path": "mods/Placebo-1.21.1-9.9.1.jar",
+      "path": "mods/Placebo-1.21.1-9.9.2.jar",
       "kind": "file",
-      "size": 324054,
-      "mtime_ns": 1784372402848002400,
-      "sha256": "2ecd84c41b65720df4f0e324612ada33fb3c916f7979ed94c8f7c5900f430f4f",
+      "size": 324058,
+      "mtime_ns": 1784478666368214100,
+      "sha256": "1a844a5b081813b1edb82656329e54d38389ed470f6a6516a5887f5303d7daad",
       "suggested_document": "components/placebo.md",
       "metadata": {
         "enabled": true,
-        "file_name": "Placebo-1.21.1-9.9.1.jar",
+        "file_name": "Placebo-1.21.1-9.9.2.jar",
         "loader": "neoforge",
         "mod_id": "placebo",
         "name": "Placebo",
-        "version": "9.9.1",
+        "version": "9.9.2",
         "description": "1 (one) library boi",
         "authors": "Shadows_of_Fire",
         "license": "MIT License",
@@ -3130,6 +3244,43 @@
           ]
         },
         "contained_jars": 0
+      }
+    },
+    "mod:mods/progresspeek-1.0.2+1.21.1-neoforge.jar": {
+      "id": "mod:mods/progresspeek-1.0.2+1.21.1-neoforge.jar",
+      "category": "mod",
+      "path": "mods/progresspeek-1.0.2+1.21.1-neoforge.jar",
+      "kind": "file",
+      "size": 1060581,
+      "mtime_ns": 1784477816426030000,
+      "sha256": "63e6b734d199669154a448008cf901df4eebcc51cc49981dde1f26bb9a6ceabf",
+      "suggested_document": "components/progresspeek.md",
+      "metadata": {
+        "enabled": true,
+        "file_name": "progresspeek-1.0.2+1.21.1-neoforge.jar",
+        "loader": "neoforge",
+        "mod_id": "progresspeek",
+        "name": "Progress Peek",
+        "version": "1.0.2+1.21.1-neoforge",
+        "description": "Display game loading progress on the taskbar",
+        "authors": "decce",
+        "license": "LGPL-3.0-only",
+        "dependencies": {
+          "progresspeek": [
+            {
+              "modId": "neoforge",
+              "type": "required",
+              "ordering": "NONE",
+              "side": "BOTH"
+            },
+            {
+              "modId": "minecraft",
+              "versionRange": "[1.21.1]",
+              "type": "required"
+            }
+          ]
+        },
+        "contained_jars": 1
       }
     },
     "mod:mods/PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar": {
@@ -3540,8 +3691,8 @@
       "path": "resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.21.1.zip",
       "kind": "file",
       "size": 5308333,
-      "mtime_ns": 1784452686402630800,
-      "sha256": "a806b2af0da236346c266264be6e9872d040122638ff0febe754e1993003b630",
+      "mtime_ns": 1784477937347631100,
+      "sha256": "60fa774aae28c381530d12061aa19847d0abe218c0476127fd16ffceae01f517",
       "suggested_document": "components/minecraft-mod-language-modpack-converted-1-21-1.md",
       "metadata": {
         "name": "Minecraft-Mod-Language-Modpack-Converted-1.21.1",
@@ -3615,8 +3766,8 @@
       "path": "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3.txt",
       "kind": "file",
       "size": 1250,
-      "mtime_ns": 1784452696919523300,
-      "sha256": "94e21343bac917db556d013fbb2c0d5400ca03e894f83f5dc4e7c001748d9d9b",
+      "mtime_ns": 1784477952752061600,
+      "sha256": "febcc35a23ed86ad710c792f273acb716d0f6352997e0a145e41b54f74450837",
       "suggested_document": "components/complementaryunbound-r5-8-1-euphoriapatches-1-9-3.md",
       "metadata": {
         "name": "ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3",
@@ -3659,7 +3810,7 @@
       "path": "config/ambiance.json",
       "kind": "file",
       "size": 1828,
-      "mtime_ns": 1784452697704466000,
+      "mtime_ns": 1784477953913837700,
       "sha256": "3f4e155a8a577d4a7c4e59db29b88e76626e8298b66d2b82b6ab886310a2603f",
       "suggested_document": "components/ambiance.md",
       "metadata": {
@@ -3680,7 +3831,7 @@
       "path": "config/ambientsounds-client.json",
       "kind": "file",
       "size": 4198,
-      "mtime_ns": 1784375282555973000,
+      "mtime_ns": 1784478003353267900,
       "sha256": "c98f572839ace55b0792042fa4b984311e7d876abdaccfc8a4694f5bebad766c",
       "suggested_document": "components/ambientsounds-client.md",
       "metadata": {
@@ -3716,14 +3867,60 @@
         "probable_owner": "appleskin"
       }
     },
+    "config:config/asynclogger.toml": {
+      "id": "config:config/asynclogger.toml",
+      "category": "config",
+      "path": "config/asynclogger.toml",
+      "kind": "file",
+      "size": 2464,
+      "mtime_ns": 1784477935650294300,
+      "sha256": "e0804713763b355f2d434ae1c930dd9fe5e720db313ca68fad3ea32c208b1d59",
+      "suggested_document": "components/asynclogger.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 42,
+        "top_level_keys": [
+          "enabled",
+          "ringBufferSize",
+          "waitStrategy",
+          "synchronizeEnqueueWhenQueueFull",
+          "formatMsgAsync",
+          "asyncQueueFullPolicy",
+          "discardThreshold",
+          "wrapSysOutSysErr",
+          "noDebugLog",
+          "testPerformance",
+          "filtering"
+        ],
+        "probable_owner": "asynclogger"
+      }
+    },
+    "config:config/asynclogger/default.toml": {
+      "id": "config:config/asynclogger/default.toml",
+      "category": "config",
+      "path": "config/asynclogger/default.toml",
+      "kind": "file",
+      "size": 339,
+      "mtime_ns": 1784477935565944700,
+      "sha256": "dee286337f4d870b63bb0a4c8d9add6385b363f1edd04209e6a74ff9fd7d9d6e",
+      "suggested_document": "components/default.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 8,
+        "top_level_keys": [
+          "filtering"
+        ],
+        "probable_owner": "default"
+      }
+    },
     "config:config/asyncparticles/asyncparticles-mixin.properties": {
       "id": "config:config/asyncparticles/asyncparticles-mixin.properties",
       "category": "config",
       "path": "config/asyncparticles/asyncparticles-mixin.properties",
       "kind": "file",
       "size": 2168,
-      "mtime_ns": 1784452689925647600,
-      "sha256": "234621632eab1e648a62fe6d169cb44d587d1a96b06afbc7c56c7cd4722b54a0",
+      "mtime_ns": 1784477942745370300,
+      "sha256": "78782a8a8e1acf139efb2198c7471a0c4c422dc3234bd122a2b1c07f0dbcf451",
       "suggested_document": "components/asyncparticles-mixin.md",
       "metadata": {
         "extension": ".properties",
@@ -3737,7 +3934,7 @@
       "path": "config/asyncparticles/asyncparticles.json",
       "kind": "file",
       "size": 1566,
-      "mtime_ns": 1784452699506466100,
+      "mtime_ns": 1784477956476071700,
       "sha256": "35bda34f9fc333a46e1fcd5307260add7f745240f1146c9102d6665b08b22d60",
       "suggested_document": "components/asyncparticles.md",
       "metadata": {
@@ -3877,7 +4074,7 @@
       "path": "config/c2me.toml",
       "kind": "file",
       "size": 9528,
-      "mtime_ns": 1784452699858407300,
+      "mtime_ns": 1784477956912492500,
       "sha256": "2ce4823e7eec432a21dcbb963203ff3a271fe0635f057a375e43f9212ea767fb",
       "suggested_document": "components/c2me.md",
       "metadata": {
@@ -3905,7 +4102,7 @@
       "path": "config/chat_heads.json5",
       "kind": "file",
       "size": 229,
-      "mtime_ns": 1784452707720255600,
+      "mtime_ns": 1784477964700625800,
       "sha256": "e198750061411cf7fca624e38b894ca104ca2cf2c2940da0409ce4240dcc2503",
       "suggested_document": "components/chat-heads.md",
       "metadata": {
@@ -3920,7 +4117,7 @@
       "path": "config/chatimpressiveanimation.json",
       "kind": "file",
       "size": 182,
-      "mtime_ns": 1784452697035526800,
+      "mtime_ns": 1784477952871421600,
       "sha256": "13fac7ab2025bc4ada007db2a05822bfefa1bcc4b685505ad528e981ad31525c",
       "suggested_document": "components/chatimpressiveanimation.md",
       "metadata": {
@@ -3942,7 +4139,7 @@
       "path": "config/chatnotify.json",
       "kind": "file",
       "size": 2510,
-      "mtime_ns": 1784452697099776400,
+      "mtime_ns": 1784477952967836800,
       "sha256": "80052a04acbb99107ffb2af8b6b5d56f55eef7afaf38dbd1f3a11eac0cded8dc",
       "suggested_document": "components/chatnotify.md",
       "metadata": {
@@ -4049,7 +4246,7 @@
       "path": "config/creativecore-client.json",
       "kind": "file",
       "size": 23,
-      "mtime_ns": 1784375282553823100,
+      "mtime_ns": 1784478003351266900,
       "sha256": "acb6c8c1394d4d6f2d0c98d5c314c5ef8ad34b8a76f0a420fc596733bcbc51ac",
       "suggested_document": "components/creativecore-client.md",
       "metadata": {
@@ -4067,7 +4264,7 @@
       "path": "config/creativecore.json",
       "kind": "file",
       "size": 274,
-      "mtime_ns": 1784375280260602700,
+      "mtime_ns": 1784478000482164700,
       "sha256": "5f08d0878d7f89c6b4c947a49dce368d7738255d44fecf9aad59ec6ae8a4fcef",
       "suggested_document": "components/creativecore.md",
       "metadata": {
@@ -4147,7 +4344,7 @@
       "path": "config/effecttimerplus.json",
       "kind": "file",
       "size": 564,
-      "mtime_ns": 1784452697257500100,
+      "mtime_ns": 1784477953196922900,
       "sha256": "d6a4dbdd823eefd0c0800fab06cd0327231668f5432d91f3f3e62f36a3cef8a9",
       "suggested_document": "components/effecttimerplus.md",
       "metadata": {
@@ -4185,7 +4382,7 @@
       "path": "config/effectual.json",
       "kind": "file",
       "size": 631,
-      "mtime_ns": 1784452697520386500,
+      "mtime_ns": 1784477953471780000,
       "sha256": "8792984e714a0a60d8e18b3da0d7879b78ba096e55142ed8354945587647bc91",
       "suggested_document": "components/effectual.md",
       "metadata": {
@@ -4227,7 +4424,7 @@
       "path": "config/entity_texture_features.json",
       "kind": "file",
       "size": 1421,
-      "mtime_ns": 1784454761335429400,
+      "mtime_ns": 1784478362281030000,
       "sha256": "d8d72a9ac49bbe45921f1ace5a22c30b65802c5e70829343cf7acfd25f79b8dc",
       "suggested_document": "components/entity-texture-features.md",
       "metadata": {
@@ -4274,7 +4471,7 @@
       "path": "config/etf_warnings.json",
       "kind": "file",
       "size": 28,
-      "mtime_ns": 1784452697023271800,
+      "mtime_ns": 1784477952868327500,
       "sha256": "a5ba22e63061c1fb67f0f895f17681351eaeccc225faef966c29ee630593275e",
       "suggested_document": "components/etf-warnings.md",
       "metadata": {
@@ -4313,7 +4510,7 @@
       "path": "config/euphoria_patcher/settings.toml",
       "kind": "file",
       "size": 2641,
-      "mtime_ns": 1784452691083598300,
+      "mtime_ns": 1784477944536081300,
       "sha256": "d4ff06f1b6d8b191853b72996f8ba1d20cc90fa4e98e3222ab7fe552cf52b31e",
       "suggested_document": "components/settings.md",
       "metadata": {
@@ -4370,7 +4567,7 @@
       "path": "config/ferritecore-mixin.toml",
       "kind": "file",
       "size": 1603,
-      "mtime_ns": 1784452689328211300,
+      "mtime_ns": 1784477942036275000,
       "sha256": "1356f9d52b2dcb2afa5a593e53c286d9c1c3778a6f8b1cf761953b185b7dce78",
       "suggested_document": "components/ferritecore-mixin.md",
       "metadata": {
@@ -4399,7 +4596,7 @@
       "path": "config/flerovium.json",
       "kind": "file",
       "size": 168,
-      "mtime_ns": 1784452690206422900,
+      "mtime_ns": 1784477943071217900,
       "sha256": "b9191d66e27631be50d24e6294603c98d9256d37e499465efe519a37d8c4d187",
       "suggested_document": "components/flerovium.md",
       "metadata": {
@@ -4421,7 +4618,7 @@
       "path": "config/fml.toml",
       "kind": "file",
       "size": 1550,
-      "mtime_ns": 1784452679251536900,
+      "mtime_ns": 1784477936154333300,
       "sha256": "cc59fb1039726fda3ab1eb69b06d9b9aebb7496604ea579cfb735bc5377e7825",
       "suggested_document": "components/fml.md",
       "metadata": {
@@ -4487,7 +4684,7 @@
       "path": "config/immediatelyfast.json",
       "kind": "file",
       "size": 1115,
-      "mtime_ns": 1784452689304189800,
+      "mtime_ns": 1784477942001009400,
       "sha256": "9389453506ed5b8c789154d45defefcaf8afd1f5b13244df3d728ea1e47b1b17",
       "suggested_document": "components/immediatelyfast.md",
       "metadata": {
@@ -4571,14 +4768,43 @@
       "category": "config",
       "path": "config/iris.properties",
       "kind": "file",
-      "size": 332,
-      "mtime_ns": 1784452695713340900,
-      "sha256": "606861be9066f1f89a90e6a875823079c7122b969b685701c395a3ac17175f79",
+      "size": 333,
+      "mtime_ns": 1784478155076559100,
+      "sha256": "338c3ee69b2bf57d280a9ca548fe869feaab097241723082884bc2ad05a92a7a",
       "suggested_document": "components/iris.md",
       "metadata": {
         "extension": ".properties",
         "line_count": 10,
         "probable_owner": "iris"
+      }
+    },
+    "config:config/ixeris.toml": {
+      "id": "config:config/ixeris.toml",
+      "category": "config",
+      "path": "config/ixeris.toml",
+      "kind": "file",
+      "size": 2139,
+      "mtime_ns": 1784477934415999000,
+      "sha256": "81eba96be0162e3f0e6e3d6a9b481103bff2041246eeb14c970fdac5c7fa3d88",
+      "suggested_document": "components/ixeris.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 40,
+        "top_level_keys": [
+          "enabledOnWindows",
+          "enabledOnMacOS",
+          "enabledOnLinux",
+          "enabledOnOtherPlatforms",
+          "aggressiveCaching",
+          "flexibleThreading",
+          "fullyBlockingMode",
+          "eventPollingThreadPriority",
+          "logPollingCalls",
+          "logBlockingCalls",
+          "logCacheIssues",
+          "bufferedRawInput"
+        ],
+        "probable_owner": "ixeris"
       }
     },
     "config:config/jade/hide-blocks.json": {
@@ -4843,7 +5069,7 @@
       "path": "config/jei/jei-client.ini",
       "kind": "file",
       "size": 10302,
-      "mtime_ns": 1784375285194954800,
+      "mtime_ns": 1784478006361631000,
       "sha256": "a2d183d3e078ba8e60fa990edb255e5ea7a7a6e3250d106908573822dec3a2aa",
       "suggested_document": "components/jei-client.md",
       "metadata": {
@@ -4858,7 +5084,7 @@
       "path": "config/jei/jei-colors.ini",
       "kind": "file",
       "size": 1355,
-      "mtime_ns": 1784375285196955300,
+      "mtime_ns": 1784478006363634200,
       "sha256": "37ac7d250a69357afb14cbb7c7d3c67310c208bc9315a2f7f348f51853fe5e83",
       "suggested_document": "components/jei-colors.md",
       "metadata": {
@@ -4873,7 +5099,7 @@
       "path": "config/jei/jei-debug.ini",
       "kind": "file",
       "size": 1262,
-      "mtime_ns": 1784375285190900900,
+      "mtime_ns": 1784478006358637600,
       "sha256": "5fbb28e705d346c4e55c3e3cd10555c2c555d1138fc1c1536c6275b621636697",
       "suggested_document": "components/jei-debug.md",
       "metadata": {
@@ -4888,7 +5114,7 @@
       "path": "config/jei/jei-mod-id-format.ini",
       "kind": "file",
       "size": 477,
-      "mtime_ns": 1784375285189900400,
+      "mtime_ns": 1784478006356638400,
       "sha256": "6af091efbd8c5000e45a48db5957c566dbda6d4323c2ca1f3ca95c29c2bf4b0a",
       "suggested_document": "components/jei-mod-id-format.md",
       "metadata": {
@@ -5027,7 +5253,7 @@
       "path": "config/modernfix-mixins.properties",
       "kind": "file",
       "size": 5519,
-      "mtime_ns": 1784452689107365900,
+      "mtime_ns": 1784477941616025900,
       "sha256": "2ceaf383640e546cf4853e2c41508472814d229673ab0bccdb3ab57003b194df",
       "suggested_document": "components/modernfix-mixins.md",
       "metadata": {
@@ -5187,6 +5413,28 @@
         "probable_owner": "neoforge"
       }
     },
+    "config:config/newvisualkeybing/keybind_profiles.json": {
+      "id": "config:config/newvisualkeybing/keybind_profiles.json",
+      "category": "config",
+      "path": "config/newvisualkeybing/keybind_profiles.json",
+      "kind": "file",
+      "size": 135,
+      "mtime_ns": 1784478036719062500,
+      "sha256": "3aaa281acf83c37abd94914b0e81d543de6a01d174bf5139ac9548c4b94d28eb",
+      "suggested_document": "components/keybind-profiles.md",
+      "metadata": {
+        "extension": ".json",
+        "line_count": 9,
+        "top_level_keys": [
+          "version",
+          "selectedProfile",
+          "profiles",
+          "priorities",
+          "conflictIgnored"
+        ],
+        "probable_owner": "keybind"
+      }
+    },
     "config:config/newvisualkeybing/keybind_viewer.json": {
       "id": "config:config/newvisualkeybing/keybind_viewer.json",
       "category": "config",
@@ -5249,7 +5497,7 @@
       "path": "config/NoChatReports/NCR-Client.json",
       "kind": "file",
       "size": 565,
-      "mtime_ns": 1784452697578296200,
+      "mtime_ns": 1784477953694995000,
       "sha256": "edfe78d985fe67dce28104f3d87673e94c89134144451c291ecedcd2e2c3b480",
       "suggested_document": "components/ncr-client.md",
       "metadata": {
@@ -5284,7 +5532,7 @@
       "path": "config/NoChatReports/NCR-Common.json",
       "kind": "file",
       "size": 230,
-      "mtime_ns": 1784452697577296200,
+      "mtime_ns": 1784477953693991000,
       "sha256": "0eaad2630bd70ade719f7810e805810ada25379269ea194e43d3eea30c51dec0",
       "suggested_document": "components/ncr-common.md",
       "metadata": {
@@ -5306,7 +5554,7 @@
       "path": "config/NoChatReports/NCR-Encryption.json",
       "kind": "file",
       "size": 520,
-      "mtime_ns": 1784452697581297200,
+      "mtime_ns": 1784477953699049100,
       "sha256": "0f61ac30bfc78653a30d715f793e30a6a43d6715106706487efd0aea5d43a84c",
       "suggested_document": "components/ncr-encryption.md",
       "metadata": {
@@ -5332,7 +5580,7 @@
       "path": "config/NoChatReports/NCR-ServerPreferences.json",
       "kind": "file",
       "size": 24,
-      "mtime_ns": 1784452697579296200,
+      "mtime_ns": 1784477953697052200,
       "sha256": "df32843b853e0a493ef3a9b1e39276818294353fbb0d833f7f61e77da0f5bca1",
       "suggested_document": "components/ncr-serverpreferences.md",
       "metadata": {
@@ -5350,7 +5598,7 @@
       "path": "config/NoChatReports/README.md",
       "kind": "file",
       "size": 167,
-      "mtime_ns": 1784452697581297200,
+      "mtime_ns": 1784477953699049100,
       "sha256": "c52b76ccad2bd1063a22c7f6bb9e7c5db6b00fb53a6fd605585972ee0e5fc01f",
       "suggested_document": "components/readme.md",
       "metadata": {
@@ -5364,9 +5612,9 @@
       "category": "config",
       "path": "config/obscuria/obscure_tooltips-client.toml",
       "kind": "file",
-      "size": 1746,
-      "mtime_ns": 1784452699027299600,
-      "sha256": "5d852c25ca18cff5899b626be210576f24ed7fa1dc7f79a8231f7e476079481a",
+      "size": 1747,
+      "mtime_ns": 1784468756602083600,
+      "sha256": "faa74f10e5fca240bf8a692944738e88e47827ca43eaab6418b0e8f9cfb631e8",
       "suggested_document": "components/obscure-tooltips-client.md",
       "metadata": {
         "extension": ".toml",
@@ -5514,7 +5762,7 @@
       "path": "config/presencefootsteps/updater.json",
       "kind": "file",
       "size": 68,
-      "mtime_ns": 1784452707729366200,
+      "mtime_ns": 1784477964715655200,
       "sha256": "1e7c61df09c105e1eeca8cf3dcbdfeb976700e9904bcb3983fc7791adb7fad2e",
       "suggested_document": "components/updater.md",
       "metadata": {
@@ -5534,7 +5782,7 @@
       "path": "config/presencefootsteps/userconfig.json",
       "kind": "file",
       "size": 427,
-      "mtime_ns": 1784452699659959800,
+      "mtime_ns": 1784477956587091900,
       "sha256": "8cf6192eda81b3a27737440cfdedc05c40a8c1b552583114c1aa6fb2673ca907",
       "suggested_document": "components/userconfig.md",
       "metadata": {
@@ -5562,13 +5810,33 @@
         "probable_owner": "userconfig"
       }
     },
+    "config:config/progresspeek.toml": {
+      "id": "config:config/progresspeek.toml",
+      "category": "config",
+      "path": "config/progresspeek.toml",
+      "kind": "file",
+      "size": 546,
+      "mtime_ns": 1784477933612390500,
+      "sha256": "47d0dd977322772c1a3405299c25fd1d9c0963655e44b2e08ab330265c746166",
+      "suggested_document": "components/progresspeek.md",
+      "metadata": {
+        "extension": ".toml",
+        "line_count": 17,
+        "top_level_keys": [
+          "enabled",
+          "windows",
+          "linux"
+        ],
+        "probable_owner": "progresspeek"
+      }
+    },
     "config:config/resourcify.json": {
       "id": "config:config/resourcify.json",
       "category": "config",
       "path": "config/resourcify.json",
       "kind": "file",
       "size": 275,
-      "mtime_ns": 1784375999739505900,
+      "mtime_ns": 1784478153552254900,
       "sha256": "ade1b4a28332a849a0b3dfe006db3d1ef22810301999316fd58a34b130968fb5",
       "suggested_document": "components/resourcify.md",
       "metadata": {
@@ -5649,8 +5917,8 @@
       "path": "config/smoothscrolling-client.toml",
       "kind": "file",
       "size": 1115,
-      "mtime_ns": 1784375803261711700,
-      "sha256": "1587137da96082fd63bf0c3216913bea80414ec4a6a343f0bfd90e4f492c4078",
+      "mtime_ns": 1784478124924728100,
+      "sha256": "7e89ab45c721b35648f5ece065097048cc01bef16cae90dfe1b22ba701573025",
       "suggested_document": "components/smoothscrolling-client.md",
       "metadata": {
         "extension": ".toml",
@@ -5691,7 +5959,7 @@
       "path": "config/sodium-extra-options.json",
       "kind": "file",
       "size": 2136,
-      "mtime_ns": 1784452707699234500,
+      "mtime_ns": 1784477964614815000,
       "sha256": "49897093abfdee204e74740483b2e4d12fa60feb5bca1954e1d5e0fac4c454ba",
       "suggested_document": "components/sodium-extra-options.md",
       "metadata": {
@@ -5764,9 +6032,9 @@
       "category": "config",
       "path": "config/sodium-options.json",
       "kind": "file",
-      "size": 762,
-      "mtime_ns": 1784452699218569000,
-      "sha256": "44478bef0973f1aa587c0493568a5cbc5426233b611f14bd2be489b5b862fa7f",
+      "size": 761,
+      "mtime_ns": 1784478024495209600,
+      "sha256": "ef3242a314c4311b64b88ce016acea790d42a35f7c81f0a02934841e64efcda1",
       "suggested_document": "components/sodium-options.md",
       "metadata": {
         "extension": ".json",
@@ -5806,7 +6074,7 @@
       "path": "config/spark/tmp-client/about.txt",
       "kind": "file",
       "size": 585,
-      "mtime_ns": 1784375280191914300,
+      "mtime_ns": 1784478000384021700,
       "sha256": "d7514c0ddb6ae8611a281527bf04ca6cbcea1fa21758534fdcd08ed0f51c19c0",
       "suggested_document": "components/about.md",
       "metadata": {
@@ -5821,7 +6089,7 @@
       "path": "config/spark/tmp/about.txt",
       "kind": "file",
       "size": 585,
-      "mtime_ns": 1784452707752465700,
+      "mtime_ns": 1784477964753217100,
       "sha256": "d7514c0ddb6ae8611a281527bf04ca6cbcea1fa21758534fdcd08ed0f51c19c0",
       "suggested_document": "components/about.md",
       "metadata": {
@@ -5974,7 +6242,7 @@
       "path": "config/xaero/lib/client.cfg",
       "kind": "file",
       "size": 26,
-      "mtime_ns": 1784452697437250900,
+      "mtime_ns": 1784477953490390000,
       "sha256": "43ed9dbfa5b4d6f0f3d2e8c2ced17ad298164b22c68ff11d415257a39b074336",
       "suggested_document": "components/client.md",
       "metadata": {
@@ -5989,7 +6257,7 @@
       "path": "config/xaero/lib/common.cfg",
       "kind": "file",
       "size": 236,
-      "mtime_ns": 1784452697395119500,
+      "mtime_ns": 1784477953474777200,
       "sha256": "98f698d96a6d21d830a455b4ad045b70516fa63c298021742d8499e7f0366cd2",
       "suggested_document": "components/common.md",
       "metadata": {
@@ -6004,7 +6272,7 @@
       "path": "config/xaero/lib/profiles/default.cfg",
       "kind": "file",
       "size": 121,
-      "mtime_ns": 1784452697440253000,
+      "mtime_ns": 1784477953493380200,
       "sha256": "34ae854b17d896d7cb853bdc28c27231a3947e91cb9f0991f372846ee3c2a907",
       "suggested_document": "components/default.md",
       "metadata": {
@@ -6019,7 +6287,7 @@
       "path": "config/xaero/lib/server_profiles/default.cfg",
       "kind": "file",
       "size": 75,
-      "mtime_ns": 1784452697434254000,
+      "mtime_ns": 1784477953487384300,
       "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
       "suggested_document": "components/default.md",
       "metadata": {
@@ -6034,7 +6302,7 @@
       "path": "config/xaero/minimap/client.cfg",
       "kind": "file",
       "size": 235,
-      "mtime_ns": 1784452697736448000,
+      "mtime_ns": 1784477954019919800,
       "sha256": "c0915eff5d1a7905cd1038d646eb9086fd1a29e2f637d53535e4da161de17b9f",
       "suggested_document": "components/client.md",
       "metadata": {
@@ -6049,7 +6317,7 @@
       "path": "config/xaero/minimap/common.cfg",
       "kind": "file",
       "size": 147,
-      "mtime_ns": 1784452697730191600,
+      "mtime_ns": 1784477954014601200,
       "sha256": "2b49df024c03a369c62a303c72755e7fedeb4f4653ff53a12fd37bd83ccd4ed0",
       "suggested_document": "components/common.md",
       "metadata": {
@@ -6116,7 +6384,7 @@
       "path": "config/xaero/minimap/profiles/default.cfg",
       "kind": "file",
       "size": 3922,
-      "mtime_ns": 1784452697751481000,
+      "mtime_ns": 1784477954040957000,
       "sha256": "1a4765d792c9c43faa0a5a7de1b7bfacf0c8f79b484e6e5449b99d9567d0f102",
       "suggested_document": "components/default.md",
       "metadata": {
@@ -6131,7 +6399,7 @@
       "path": "config/xaero/minimap/profiles/entity_radar_categories/default.cfg.json",
       "kind": "file",
       "size": 5626,
-      "mtime_ns": 1784452697749481400,
+      "mtime_ns": 1784477954037964500,
       "sha256": "19158fce70907d6f9239c758c767ce2de0d79f7b3ad4b60b8937c1067d613fc5",
       "suggested_document": "components/default-cfg.md",
       "metadata": {
@@ -6157,7 +6425,7 @@
       "path": "config/xaero/minimap/profiles/info_display_config/default.cfg.txt",
       "kind": "file",
       "size": 682,
-      "mtime_ns": 1784452697751481000,
+      "mtime_ns": 1784477954040957000,
       "sha256": "6a452ff7c5bb4cb0bc44963ac74e7cdb1104ebd104211ce1cb575a4fc825bb1b",
       "suggested_document": "components/default-cfg.md",
       "metadata": {
@@ -6172,7 +6440,7 @@
       "path": "config/xaero/minimap/server_profiles/default.cfg",
       "kind": "file",
       "size": 75,
-      "mtime_ns": 1784452697733447500,
+      "mtime_ns": 1784477954017924400,
       "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
       "suggested_document": "components/default.md",
       "metadata": {
@@ -6187,7 +6455,7 @@
       "path": "config/xaero/world-map/client.cfg",
       "kind": "file",
       "size": 521,
-      "mtime_ns": 1784452697572295900,
+      "mtime_ns": 1784477953841164200,
       "sha256": "d0f079a8df083f6f60a0e0c1316a25fc841755a91bdcb2f86c66ead8e7d4d13d",
       "suggested_document": "components/client.md",
       "metadata": {
@@ -6202,7 +6470,7 @@
       "path": "config/xaero/world-map/common.cfg",
       "kind": "file",
       "size": 141,
-      "mtime_ns": 1784452697566255000,
+      "mtime_ns": 1784477953834000900,
       "sha256": "0c229eb0daf85bd09af51f21eeeb99497a3bd50a825d5ab1ca695fb21bf6cf9d",
       "suggested_document": "components/common.md",
       "metadata": {
@@ -6217,7 +6485,7 @@
       "path": "config/xaero/world-map/profiles/default.cfg",
       "kind": "file",
       "size": 1619,
-      "mtime_ns": 1784452697576296700,
+      "mtime_ns": 1784477953845164000,
       "sha256": "5422abf9c83fedef6509144293fad20f588d4bb6ce0cf1af78cbcd2bcd0d2ccf",
       "suggested_document": "components/default.md",
       "metadata": {
@@ -6232,7 +6500,7 @@
       "path": "config/xaero/world-map/server_profiles/default.cfg",
       "kind": "file",
       "size": 75,
-      "mtime_ns": 1784452697569254800,
+      "mtime_ns": 1784477953838163400,
       "sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
       "suggested_document": "components/default.md",
       "metadata": {
@@ -6247,7 +6515,7 @@
       "path": "config/xaerohud.txt",
       "kind": "file",
       "size": 122,
-      "mtime_ns": 1784452711582397300,
+      "mtime_ns": 1784477968538491800,
       "sha256": "6de57f88c55043cfafb952219205e2080da514284c822a277cd9f1ef804f0def",
       "suggested_document": "components/xaerohud.md",
       "metadata": {
@@ -6355,7 +6623,7 @@
       "path": "kubejs/config/common.json",
       "kind": "file",
       "size": 446,
-      "mtime_ns": 1784452693817406500,
+      "mtime_ns": 1784477948986140600,
       "sha256": "e00a67922942660d77c213379b5128a46c5abc894178b0be04006d325ff5f6b3",
       "suggested_document": "components/common.md",
       "metadata": {
@@ -6465,8 +6733,8 @@
       "path": "usercache.json",
       "kind": "file",
       "size": 109,
-      "mtime_ns": 1784375282312034200,
-      "sha256": "5d712866b08d353c3966eea08ce673cf8672f6ec022a56cabbbdd11e2c45a2f3",
+      "mtime_ns": 1784478003067732000,
+      "sha256": "8bcb20004dd7b399d8d0f47c3378b6f6c6ac3331aa3942f9671a2dff96096885",
       "suggested_document": "components/usercache.md",
       "metadata": {
         "extension": ".json",

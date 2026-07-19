@@ -33,7 +33,7 @@ ignoredItems = ["quality_equipment:reforge_gui_button"]
 
 [ArmorPreview]
 	#Whether Obscure Tooltips should display 3D armor previews.
-	armorPreviewEnabled = true
+	armorPreviewEnabled = false
 	#List of item IDs that should always display a 3D armor preview.
 	armorPreviewWhitelist = []
 	#List of item IDs that should never display a 3D armor preview.

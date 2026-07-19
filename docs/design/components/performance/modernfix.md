@@ -5,8 +5,8 @@
 - 类型：mod
 - 状态：active
 - 证据可信度：verified
-- 来源路径：`mods/[现代化修复] modernfix-neoforge-5.27.15+mc1.21.1.jar`
-- 标识与版本：mod_id = `modernfix`；版本 `5.27.15+mc1.21.1`
+- 来源路径：`mods/[现代化修复] modernfix-neoforge-5.27.20+mc1.21.1.jar`
+- 标识与版本：mod_id = `modernfix`；版本 `5.27.20+mc1.21.1`
 - 加载器或包格式：NeoForge 21.1.235（Minecraft 1.21.1）
 
 ## 设计作用
@@ -77,4 +77,5 @@ blacklist_async_jei_plugins = ["jepb:jei_plugin"]
 
 ## 历史
 
+- 2026-07-20: 升级 5.27.15 → 5.27.20（例行小版本升级，替换旧 jar）
 - 2026-07-16: 作为第二批基础模组与 QoL 扩展批次添加

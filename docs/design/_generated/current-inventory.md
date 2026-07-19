@@ -1,6 +1,6 @@
 # Current modpack content inventory
 
-Generated: `2026-07-19T18:30:19+08:00`
+Generated: `2026-07-20T00:38:18+08:00`
 
 This file is generated. Put design intent in the human-maintained component pages.
 
@@ -11,6 +11,8 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/ambiance.json` | ambiance.json | - | 1.8 KiB | `components/ambiance.md` |
 | `config/ambientsounds-client.json` | ambientsounds-client.json | - | 4.1 KiB | `components/ambientsounds-client.md` |
 | `config/appleskin-client.toml` | appleskin-client.toml | - | 1.3 KiB | `components/appleskin-client.md` |
+| `config/asynclogger.toml` | asynclogger.toml | - | 2.4 KiB | `components/asynclogger.md` |
+| `config/asynclogger/default.toml` | default.toml | - | 339 B | `components/default.md` |
 | `config/asyncparticles/asyncparticles-mixin.properties` | asyncparticles-mixin.properties | - | 2.1 KiB | `components/asyncparticles-mixin.md` |
 | `config/asyncparticles/asyncparticles.json` | asyncparticles.json | - | 1.5 KiB | `components/asyncparticles.md` |
 | `config/badoptimizations.txt` | badoptimizations.txt | - | 3.4 KiB | `components/badoptimizations.md` |
@@ -48,7 +50,8 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/inventory_interactions.json5` | inventory_interactions.json5 | - | 137 B | `components/inventory-interactions.md` |
 | `config/inventory_particles.json5` | inventory_particles.json5 | - | 1.6 KiB | `components/inventory-particles.md` |
 | `config/iris-excluded.json` | iris-excluded.json | - | 31 B | `components/iris-excluded.md` |
-| `config/iris.properties` | iris.properties | - | 332 B | `components/iris.md` |
+| `config/iris.properties` | iris.properties | - | 333 B | `components/iris.md` |
+| `config/ixeris.toml` | ixeris.toml | - | 2.1 KiB | `components/ixeris.md` |
 | `config/jade/hide-blocks.json` | hide-blocks.json | - | 149 B | `components/hide-blocks.md` |
 | `config/jade/hide-entities.json` | hide-entities.json | - | 243 B | `components/hide-entities.md` |
 | `config/jade/jade.json` | jade.json | - | 1.1 KiB | `components/jade.md` |
@@ -81,6 +84,7 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/neoforge-client.toml` | neoforge-client.toml | - | 578 B | `components/neoforge-client.md` |
 | `config/neoforge-common.toml` | neoforge-common.toml | - | 772 B | `components/neoforge-common.md` |
 | `config/neoforge-server.toml` | neoforge-server.toml | - | 1.1 KiB | `components/neoforge-server.md` |
+| `config/newvisualkeybing/keybind_profiles.json` | keybind_profiles.json | - | 135 B | `components/keybind-profiles.md` |
 | `config/newvisualkeybing/keybind_viewer.json` | keybind_viewer.json | - | 156 B | `components/keybind-viewer.md` |
 | `config/newvisualkeybing/ui_textures/pack.json` | pack.json | - | 1.4 KiB | `components/pack.md` |
 | `config/newvisualkeybing/ui_textures/README.md` | README.md | - | 3.8 KiB | `components/readme.md` |
@@ -98,6 +102,7 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/placebo.cfg` | placebo.cfg | - | 495 B | `components/placebo.md` |
 | `config/presencefootsteps/updater.json` | updater.json | - | 68 B | `components/updater.md` |
 | `config/presencefootsteps/userconfig.json` | userconfig.json | - | 427 B | `components/userconfig.md` |
+| `config/progresspeek.toml` | progresspeek.toml | - | 546 B | `components/progresspeek.md` |
 | `config/resourcify.json` | resourcify.json | - | 275 B | `components/resourcify.md` |
 | `config/shouldersurfing-client.toml` | shouldersurfing-client.toml | - | 17.5 KiB | `components/shouldersurfing-client.md` |
 | `config/smoothgui.json` | smoothgui.json | - | 368 B | `components/smoothgui.md` |
@@ -107,7 +112,7 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/sodium-extra.properties` | sodium-extra.properties | - | 360 B | `components/sodium-extra.md` |
 | `config/sodium-fingerprint.json` | sodium-fingerprint.json | - | 427 B | `components/sodium-fingerprint.md` |
 | `config/sodium-mixins.properties` | sodium-mixins.properties | - | 258 B | `components/sodium-mixins.md` |
-| `config/sodium-options.json` | sodium-options.json | - | 762 B | `components/sodium-options.md` |
+| `config/sodium-options.json` | sodium-options.json | - | 761 B | `components/sodium-options.md` |
 | `config/spark/config.json` | config.json | - | 117 B | `components/config.md` |
 | `config/spark/tmp-client/about.txt` | about.txt | - | 585 B | `components/about.md` |
 | `config/spark/tmp/about.txt` | about.txt | - | 585 B | `components/about.md` |
@@ -169,10 +174,10 @@ This file is generated. Put design intent in the human-maintained component page
 | `mods/[氛围！] ambiance-neoforge-1.21-1.1.0.jar` | ambiance | 1.1.0 | 1.4 MiB | `components/ambiance.md` |
 | `mods/[火花] spark-1.10.124-neoforge.jar` | spark | 1.10.124 | 3.5 MiB | `components/spark.md` |
 | `mods/[物品栏粒子] InventoryParticles-2.6.0+1.21.1+neoforge.jar` | inventory_particles | 2.6.0+1.21.1+neoforge | 1.6 MiB | `components/inventory-particles.md` |
-| `mods/[犀牛] rhino-2101.2.7-build.85.jar` | rhino | 2101.2.7-build.85 | 861.4 KiB | `components/rhino.md` |
+| `mods/[犀牛] rhino-2101.2.8-build.91.jar` | rhino | 2101.2.8-build.91 | 957.9 KiB | `components/rhino.md` |
 | `mods/[玉 🔍] Jade-1.21.1-NeoForge-15.10.5.jar` | jade | 15.10.5+neoforge | 708.7 KiB | `components/jade.md` |
 | `mods/[现代化 UI] ModernUI-NeoForge-1.21.1-3.13.0.1-universal.jar` | modernui | 3.13.0.1 | 24.1 MiB | `components/modernui.md` |
-| `mods/[现代化修复] modernfix-neoforge-5.27.15+mc1.21.1.jar` | modernfix | 5.27.15+mc1.21.1 | 583.3 KiB | `components/modernfix.md` |
+| `mods/[现代化修复] modernfix-neoforge-5.27.20+mc1.21.1.jar` | modernfix | 5.27.20+mc1.21.1 | 585.4 KiB | `components/modernfix.md` |
 | `mods/[禁用聊天举报] NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar` | nochatreports | 1.21.1-v2.9.1 | 299.5 KiB | `components/nochatreports.md` |
 | `mods/[聊动魅影] ChatImpressiveAnimation-neoforge-1.6.0+mc1.21.5.jar` | chatimpressiveanimation | 1.6.0+mc1.21.5 | 68.8 KiB | `components/chatimpressiveanimation.md` |
 | `mods/[聊天头像] chat_heads-0.15.2-neoforge-1.21.jar` | chat_heads | 0.15.2 | 87.2 KiB | `components/chat-heads.md` |
@@ -191,6 +196,7 @@ This file is generated. Put design intent in the human-maintained component page
 | `mods/[预生成区块] Chunky-NeoForge-1.4.23.jar` | chunky | 1.4.23 | 332.6 KiB | `components/chunky.md` |
 | `mods/[鼠标手势] MouseTweaks-neoforge-mc1.21-2.26.1.jar` | mousetweaks | 2.26.1 | 72.2 KiB | `components/mousetweaks.md` |
 | `mods/architectury-13.0.8-neoforge.jar` | architectury | 13.0.8 | 570.3 KiB | `components/architectury.md` |
+| `mods/asynclogger-2.1.2+1.21.1-neoforge.jar` | asynclogger | 2.1.2+1.21.1-neoforge | 571.2 KiB | `components/asynclogger.md` |
 | `mods/BadOptimizations-2.4.1-1.21.1.jar` | badoptimizations | 2.4.1 | 276.9 KiB | `components/badoptimizations.md` |
 | `mods/beautifiedchatserver-1.21.1-3.2.jar` | beautifiedchatserver | 3.2 | 72.4 KiB | `components/beautifiedchatserver.md` |
 | `mods/chatnotify-neoforge-2.6.9+1.21.1.jar` | chatnotify | 2.6.9+1.21.1 | 377.2 KiB | `components/chatnotify.md` |
@@ -206,8 +212,10 @@ This file is generated. Put design intent in the human-maintained component page
 | `mods/extrasounds-1.5.4+1.21.1-neoforge.jar` | extrasounds | 1.5.2 | 363.1 KiB | `components/extrasounds.md` |
 | `mods/fragmentum-neoforge-1.21.1-2.2.4.jar` | fragmentum | 2.2.4 | 1.8 MiB | `components/fragmentum.md` |
 | `mods/fzzy_config-0.7.6+1.21+neoforge.jar` | fzzy_config | 0.7.6+1.21+neoforge | 2.3 MiB | `components/fzzy-config.md` |
+| `mods/gnetum-3.3.6.jar` | gnetum | 3.3.6 | 117.9 KiB | `components/gnetum.md` |
 | `mods/ImmediatelyFast-NeoForge-1.6.11+1.21.1.jar` | immediatelyfast | 1.6.11+1.21.1 | 353.3 KiB | `components/immediatelyfast.md` |
 | `mods/iris-neoforge-1.8.14-beta.1+mc1.21.1.jar` | iris | 1.8.14-beta.1+mc1.21.1 | 2.4 MiB | `components/iris.md` |
+| `mods/Ixeris-4.5.2+1.21.1-neoforge.jar` | ixeris_dummy | 4.5.2+1.21.1-neoforge | 620.8 KiB | `components/ixeris-dummy.md` |
 | `mods/JadeAddons-1.21.1-NeoForge-6.1.0.jar` | jadeaddons | 6.1.0+neoforge | 72.7 KiB | `components/jadeaddons.md` |
 | `mods/JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar` | jeresources | 1.6.0.17 | 285.2 KiB | `components/jeresources.md` |
 | `mods/kotlinforforge-5.12.0-all.jar` | kotlinforforge-5.12.0-all.jar | - | 6.9 MiB | `components/kotlinforforge-5-12-0-all-jar.md` |
@@ -223,8 +231,9 @@ This file is generated. Put design intent in the human-maintained component page
 | `mods/particular-1.21.1-NeoForge-1.5.5.jar` | particular | 1.5.5 | 307.6 KiB | `components/particular.md` |
 | `mods/Ping-Wheel-1.12.2-neoforge-1.21.1.jar` | pingwheel | 1.12.2 | 149.9 KiB | `components/pingwheel.md` |
 | `mods/pingtomapxaeros-1.1.0-neoforge-1.21.1.jar` | pingtomapxaeros | 1.1.0 | 21.1 KiB | `components/pingtomapxaeros.md` |
-| `mods/Placebo-1.21.1-9.9.1.jar` | placebo | 9.9.1 | 316.5 KiB | `components/placebo.md` |
+| `mods/Placebo-1.21.1-9.9.2.jar` | placebo | 9.9.2 | 316.5 KiB | `components/placebo.md` |
 | `mods/Prism-1.21.1-neoforge-1.0.11.jar` | prism | 1.0.11 | 60.6 KiB | `components/prism.md` |
+| `mods/progresspeek-1.0.2+1.21.1-neoforge.jar` | progresspeek | 1.0.2+1.21.1-neoforge | 1.0 MiB | `components/progresspeek.md` |
 | `mods/PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar` | puzzleslib | 21.1.52 | 1.4 MiB | `components/puzzleslib.md` |
 | `mods/Resourcify (1.21.1-neoforge)-1.8.5.jar` | resourcify | 1.8.5 | 2.5 MiB | `components/resourcify.md` |
 | `mods/ScalableLux-neoforge-0.3.0-alpha.0.6-all.jar` | scalablelux | 0.3.0-alpha.0.6+1.21.1 | 192.4 KiB | `components/scalablelux.md` |

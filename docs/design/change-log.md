@@ -1,5 +1,25 @@
 # 设计变更记录
 
+## 2026-07-20 - 加载第五批性能与修复类更新
+
+- 新增模组 **4 个**（均为 decce 作品）：
+  - **性能**：Ixeris 4.5.2（输入缓冲与线程化事件轮询，clientSideOnly）、Async Logger 2.1.2（log4j2 异步化与过滤）、Gnetum 3.3.6（HUD 更新分帧）
+  - **QoL**：Progress Peek 1.0.2（任务栏显示游戏加载进度）
+- 升级替换（旧 jar 删除、历史合并入组件页）：Placebo 9.9.1 → 9.9.2、Rhino 2101.2.7-build.85 → 2101.2.8-build.91、ModernFix 5.27.15 → 5.27.20
+- 新增配置：`asynclogger.toml`（全默认，预留过滤文件 `asynclogger/default.toml`）、`ixeris.toml`（`flexibleThreading=true`，实验性缓存不启用）、`progresspeek.toml`（默认启用）、`newvisualkeybing/keybind_profiles.json`（NewVisualKeybing 生成的新档案文件，profiles 为空，无新模组）
+- 修改（实质 delta）：Obscure Tooltips 关闭 3D 盔甲预览（`armorPreviewEnabled=false`）；Smooth Scrolling 快捷栏 `smoothness` 0.5 → 0.1（回调优先响应速度）；Iris `enableShaders` true → false（本地状态，官方默认光影指向不变）
+- 修改（噪音，仅记录）：AsyncParticles mixin 配置与 EuphoriaPatches 设置 txt 仅时间戳刷新；`sodium-options.json` 仅捐赠提示已读标记；语言资源包 zip 内容再次更新
+- 设计文档更新：新建 4 个组件页（performance/ixeris、asynclogger、gnetum + utility/progresspeek）；更新 Rhino / ModernFix / Placebo / Iris / Obscure Tooltips / Smooth Scrolling / NewVisualKeybing / AsyncParticles / 语言包 / 光影页历史；README 系统地图、阶段描述与性能预算（约 90 模组）同步
+- 设计影响：
+  - 性能矩阵补齐输入管线（Ixeris）、HUD 分帧（Gnetum）、日志 I/O（Async Logger）三个维度，配合 HUD 模组众多的现状针对性明显
+  - 模组数约 90，启动耗时上升，Progress Peek 缓解等待体验
+  - Rhino 升级涉及 KubeJS 硬依赖链，需回归脚本系统
+- 验证状态：已扫描整合包，新模组元数据均从 jar 内 mods.toml 核实；启动测试、HUD 分帧显示回归、KubeJS 脚本回归尚待完成
+- 剩余问题：
+  - Gnetum 的 HUD 分帧可能造成饥饿值/效果计时等 HUD 元素轻微跳变，需主观验证
+  - Async Logger 异步写入在崩溃瞬间可能丢失日志尾部，排障时需知悉
+  - Iris `enableShaders=false` 是本地状态还是有意默认待定（若作为整合包默认需在说明中告知玩家如何开启）
+
 ## 2026-07-19 - 加载第四批视觉与协作体验模组，确立官方默认光影
 
 - 新增模组 **14 个**，按设计角色分类：
