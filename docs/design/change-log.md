@@ -1,5 +1,12 @@
 # 设计变更记录
 
+## 2026-07-20 - 完成惜命机制（死亡惩罚）模组调研
+
+- 新增 `docs/design/research/death-penalty-mods.md`：围绕"重生低血量/低饱食度惩罚"与"连续死亡改复活点防刷命"两个需求，核实了 12+ 个候选模组的 NeoForge 1.21.1 支持情况。
+- 推荐结论：**Brutal Respawn 1.1**（需求 1，已验证 neoforge 1.21.1 构建）+ **KubeJS 脚本自实现连死改复活点**（需求 2，随机复活类模组均无 1.21.1 构建）；备选为全 KubeJS 自实现；Better Respawn / Corail Tombstone / PlayerRevive 等方向相反而不推荐。
+- 设计影响：若采纳，将新增 1 个纯服务端模组与 1 个 KubeJS server script，符合"魔改即基础设施"与服务端/客户端分离支柱。
+- 验证状态：候选模组版本与加载器经 Modrinth API / CurseForge 核实；Brutal Respawn 实际数值与脚本效果待实测。
+
 ## 2026-07-20 - 加载第五批性能与修复类更新
 
 - 新增模组 **4 个**（均为 decce 作品）：
