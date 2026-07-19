@@ -1,5 +1,30 @@
 # 设计变更记录
 
+## 2026-07-19 - 加载第四批视觉与协作体验模组，确立官方默认光影
+
+- 新增模组 **14 个**，按设计角色分类：
+  - **视觉/音效/视角**：Euphoria Patcher 1.9.3、Entity Texture Features 7.1、Presence Footsteps [FORGE] 1.0.0（非官方 NeoForge 移植）、Shoulder Surfing Reloaded 5.0.7、Obscure Tooltips 4.2.2
+  - **多人协作 / QoL**：Ping Wheel 1.12.2、Resourcify 1.8.5、Polymorph 1.1.0+1.21.1
+  - **集成扩展**：Ping to Map 1.1.0（Ping Wheel → Xaero 临时路径点）、SSR Camera Fixes 2.0.0（越肩视角战斗兼容，Epic Fight 等未到位，处前向兼容空窗期）
+  - **依赖库**：Fragmentum 2.2.4（Obscure Tooltips 前置）、Iceberg 1.3.2、Prism 1.0.11（Grend 系库，暂无包内下游，引入动机待确认）
+- 新增光影：**Complementary Unbound r5.8.1 + EuphoriaPatches 1.9.3**（基础 zip + 补丁衍生目录 + 设置 txt），`iris.properties` 已预置为默认 `shaderPack`——官方默认视觉基调首次确立
+- 升级替换（旧 jar 删除、历史合并入组件页）：JEI 19.38.0.366 → 19.39.0.368、Xaero's Minimap 26.3.0 → 26.4.2、Xaero's World Map 1.43.0 → 1.44.2
+- 修改：Placebo 9.9.1 jar 刷新（无版本 delta）、Smooth Scrolling 快捷栏 `smoothness` 0.2 → 0.5、AsyncParticles mixin 配置重新生成（仅时间戳）、语言资源包内容更新、Xaero minimap profile 文件（属 `config/xaero/` 个人数据，git 忽略）
+- 新增配置：ETF、Euphoria Patcher、Obscure Tooltips、Ping to Map、Ping Wheel（客户端+服务端限流）、Presence Footsteps（关闭内置更新检查）、Resourcify（Modrinth 默认源）、Shoulder Surfing、SSR Camera Fixes
+- 设计文档更新：新建 14 个组件页 + 1 个光影页；更新 JEI / Xaero 两图 / Iris / Smooth Scrolling / AsyncParticles / Placebo / 语言包页面；README 系统地图、性能预算（约 85 模组）、着色器与依赖链约束同步
+- 设计影响：
+  - 视觉基线从"无预置光影"升级为"官方默认光影 + 实体纹理增强 + 风格化 tooltip"，视觉风格统一支柱落地
+  - 多人协作闭环建立：Ping Wheel（标记）→ Ping to Map（沉淀为 Xaero 临时路径点）
+  - 新增依赖链：Fragmentum → Obscure Tooltips、Shoulder Surfing → SSR Camera Fixes、Ping Wheel → Ping to Map
+  - 视听叠加风险进一步上升（光影 + ETF + 脚步声 + tooltip 动画），低配验证紧迫性提高
+- 验证状态：已扫描整合包，新增模组元数据均从 jar 内 mods.toml 核实；启动、多人 ping 联动、光影帧率测试尚待完成
+- 剩余问题：
+  - Prism / Iceberg 暂无包内下游模组，引入动机待确认（可考虑移除或为 Grend 系模组预留）
+  - 光影设置 txt 随包分发与玩家本地修改的升级冲突策略未定
+  - Presence Footsteps 为非官方移植，长期维护性待观察
+  - SSR Camera Fixes 对应的战斗模组（Epic Fight 等）尚未安装，处于空窗期
+  - 仓库根目录存在若干研究笔记 md（结构修复/地牢/机制保护等主题），未纳入 docs/design，是否归档待决定
+
 ## 2026-07-16 - 加载第三批 QoL、本地化与视听反馈模组
 
 - 新增模组 **约 41 个**（第三批），按设计角色分类：

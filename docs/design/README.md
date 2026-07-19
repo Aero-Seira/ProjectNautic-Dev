@@ -7,14 +7,15 @@
 - Java 版本：21
 - 目标玩家：待定义
 - 核心体验：待定义
-- 当前阶段：基础性能模组、魔改框架、扩展 QoL 工具与集成插件已加载；第三批以中文本地化、聊天/社交、信息展示、环境视听与底层性能优化为主的 QoL 模组已就位
+- 当前阶段：基础性能模组、魔改框架、扩展 QoL 工具与集成插件已加载；第三批以中文本地化、聊天/社交、信息展示、环境视听与底层性能优化为主的 QoL 模组已就位；第四批确立官方默认光影（Complementary + EuphoriaPatches）并引入多人协作标记、越肩视角、实体纹理与 tooltip 视觉增强
 
 ## 设计支柱
 
 1. **长线运营优先**：整合包以服务器长期运营为首要目标，所有设计决策须考虑版本迭代兼容性、存档连续性、玩家进度迁移成本。
 2. ** Vanilla+ 起步，阶段式解锁**：第一版贴近原版生存体验，但通过 Chapters + KubeJS 预留完整的阶段解锁框架。后续大版本更新以"解锁新内容章节"形式投放，而非重置世界。
 3. **魔改即基础设施**：KubeJS 7.0 是核心魔改框架，配方、事件、自定义物品、阶段控制全部脚本化。魔改脚本须具备版本间可迁移性。
-4. **服务端与客户端同源**：所有模组选择必须同时支持服务端与客户端部署，配置与脚本通过版本控制统一管理，支持热更新。
+4. ~~**服务端与客户端同源**：所有模组选择必须同时支持服务端与客户端部署，配置与脚本通过版本控制统一管理，支持热更新。~~
+5. **更正第4条**：服务端与客户端模组不完全相同，部分可仅服务端模组应仅存在服务端中，且服务端中绝对不能出现仅客户端模组。
 
 ## 系统地图
 
@@ -94,20 +95,34 @@
 | [YetAnotherConfigLib](components/library/yet-another-config-lib-v3.md) | 配置界面库 | active | CLIENT |
 | [AsyncParticles](components/integration/asyncparticles.md) | 粒子 tick 异步化 | active | CLIENT |
 | [Minecraft Mod Language Modpack](components/resourcepacks/minecraft-mod-language-modpack-converted-1-21-1.md) | 社区简体中文翻译资源包 | active | CLIENT |
+| [Euphoria Patcher](components/aesthetic/euphoria-patcher.md) | 游戏内应用 Euphoria Patches 光影补丁 | active | CLIENT；依赖 Iris |
+| [Complementary + EuphoriaPatches 光影](components/aesthetic/complementary-euphoria-shaders.md) | 官方默认光影（Unbound r5.8.1 + EuphoriaPatches 1.9.3） | active | CLIENT；Iris 加载 |
+| [Ping Wheel](components/utility/pingwheel.md) | 多人位置标记（ping）系统 | active | BOTH |
+| [Ping to Map](components/integration/pingtomapxaeros.md) | Ping Wheel → Xaero 临时路径点联动 | active | CLIENT；依赖 Ping Wheel |
+| [Resourcify](components/utility/resourcify.md) | 游戏内资源包/数据包/光影浏览器 | active | CLIENT |
+| [Polymorph](components/utility/polymorph.md) | 合成配方冲突结果选择 | active | BOTH |
+| [Entity Texture Features](components/aesthetic/entity-texture-features.md) | 实体随机/发光纹理与眨眼支持 | active | CLIENT |
+| [Presence Footsteps](components/aesthetic/presencefootsteps.md) | 材质感知程序化脚步声 | active | CLIENT |
+| [Shoulder Surfing Reloaded](components/aesthetic/shouldersurfing.md) | 越肩第三人称视角 | active | CLIENT |
+| [SSR Camera Fixes](components/integration/ssrcamerafixes.md) | 越肩视角与战斗模组相机兼容扩展 | active | CLIENT；依赖 Shoulder Surfing |
+| [Obscure Tooltips](components/aesthetic/obscure-tooltips.md) | 风格化物品提示框与 3D 盔甲预览 | active | CLIENT；依赖 Fragmentum |
+| [Fragmentum](components/library/fragmentum.md) | Obscuria 系列共享框架 | active | BOTH；Obscure Tooltips 依赖 |
+| [Iceberg](components/library/iceberg.md) | Grend 系模组工具库 | active | BOTH |
+| [Prism](components/library/prism.md) | Grend 系颜色功能库 | active | BOTH |
 
 ## 跨系统约束
 
 - 兼容性：新增模组应明确支持 Minecraft 1.21.1 与 NeoForge 21.1.x。
 - 客户端/服务端范围：当前目录是客户端实例；加入联机或服务端内容时需要单独核对服务端依赖与配置同步方式。所有魔改脚本（KubeJS）须兼容服务端热重载。
 - 存档兼容性：尚无玩法组件，后续加入世界生成、注册表内容或数据包时必须记录移除风险。新模组加入应尽量不影响已生成区块。
-- 性能预算：当前约 70 个模组，已从"轻量包"进入"中量包"区间。性能优化矩阵已覆盖渲染（Sodium + Iris）、客户端 HUD（ImmediatelyFast）、逻辑（Lithium）、配方匹配（FastSuite）、区块（C2ME）、光照（ScalableLux）、内存（Ferrite Core + ModernFix）、树叶剔除（CullLeaves）、扩展渲染选项（Sodium Extra）以及多项微优化与剔除（BadOptimizations、Flerovium、Cupboard）。后续引入大型内容模组时需重点补充启动耗时与内存影响。参考基准：轻量包 <50 模组、中量包 50-200 模组、服务端内存预算 6-8GB、客户端建议 4-6GB。
+- 性能预算：当前约 85 个模组，处于"中量包"区间。性能优化矩阵已覆盖渲染（Sodium + Iris）、客户端 HUD（ImmediatelyFast）、逻辑（Lithium）、配方匹配（FastSuite）、区块（C2ME）、光照（ScalableLux）、内存（Ferrite Core + ModernFix）、树叶剔除（CullLeaves）、扩展渲染选项（Sodium Extra）以及多项微优化与剔除（BadOptimizations、Flerovium、Cupboard）。后续引入大型内容模组时需重点补充启动耗时与内存影响。参考基准：轻量包 <50 模组、中量包 50-200 模组、服务端内存预算 6-8GB、客户端建议 4-6GB。
 - 阶段锁定：所有新增内容模组必须在 Chapters 阶段系统中定义默认解锁状态，确保未来可通过阶段进行内容开关。
-- 着色器兼容性：Iris 已加载，后续渲染相关模组须验证与 Sodium + Iris 的兼容性，避免引入与 Embeddium 相关的冲突模组。
+- 着色器兼容性：Iris 已加载并预置官方默认光影（Complementary Unbound r5.8.1 + EuphoriaPatches 1.9.3，经 Euphoria Patcher 游戏内补丁）。后续渲染相关模组须验证与该光影管线的兼容性，避免引入与 Embeddium 相关的冲突模组；光影设置文件随包分发，升级策略待明确。
 - 脚本依赖链：KubeJS → Rhino 为硬依赖；KubeJS Additions、KubeJS Data Component、LootJS → KubeJS 为硬依赖。脚本系统面向未来所有内容魔改。
-- 视听叠加风险：第三批同时引入 Ambiance、AmbientSounds、Particular、Visuality、Effectual、Inventory Particles、Extra Sounds、Tiny Item Animations、Smooth GUI/Swapping/Scrolling 等大量视听反馈模组。单个效果开销小，但叠加后在低配设备上可能产生明显的帧率与感知噪音，需在目标硬件上验证并准备关闭清单。
+- 视听叠加风险：第三批同时引入 Ambiance、AmbientSounds、Particular、Visuality、Effectual、Inventory Particles、Extra Sounds、Tiny Item Animations、Smooth GUI/Swapping/Scrolling 等大量视听反馈模组，第四批又叠加官方光影、Entity Texture Features、Presence Footsteps、Obscure Tooltips 与越肩视角。单个效果开销小，但叠加后在低配设备上可能产生明显的帧率与感知噪音，需在目标硬件上验证并准备关闭清单。
 - 中文本地化双轨：I18nUpdateMod 与 Minecraft Mod Language Modpack 同时提供中文翻译，二者加载顺序与覆盖关系会直接影响玩家看到的文本。需要明确默认推荐顺序并在说明文档中告知玩家。
 - 聊天/社交模组耦合：No Chat Reports、Chat Heads、Beautified Chat Server、ChatNotify 共同作用于聊天系统；服务端配置（NCR、Beautified Chat Server）与客户端配置（Chat Heads、ChatNotify）需保持兼容，避免聊天显示异常或安全提示冲突。
-- 库版本耦合：Placebo → FastSuite、Collective → Beautified Chat Server、CreativeCore → AmbientSounds、Particle Effects → Inventory Particles 等依赖链已建立。升级库模组时必须同步验证下游模组兼容性。
+- 库版本耦合：Placebo → FastSuite、Collective → Beautified Chat Server、CreativeCore → AmbientSounds、Particle Effects → Inventory Particles、Fragmentum → Obscure Tooltips、Shoulder Surfing → SSR Camera Fixes、Ping Wheel → Ping to Map 等依赖链已建立。升级库模组时必须同步验证下游模组兼容性。
 
 ## 开放问题
 

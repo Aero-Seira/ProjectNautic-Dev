@@ -1,6 +1,6 @@
 # Current modpack content inventory
 
-Generated: `2026-07-16T03:37:32+08:00`
+Generated: `2026-07-19T18:30:19+08:00`
 
 This file is generated. Put design intent in the human-maintained component pages.
 
@@ -34,6 +34,10 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/effectdescriptions-client.toml` | effectdescriptions-client.toml | - | 2.0 KiB | `components/effectdescriptions-client.md` |
 | `config/effecttimerplus.json` | effecttimerplus.json | - | 564 B | `components/effecttimerplus.md` |
 | `config/effectual.json` | effectual.json | - | 631 B | `components/effectual.md` |
+| `config/entity_texture_features.json` | entity_texture_features.json | - | 1.4 KiB | `components/entity-texture-features.md` |
+| `config/etf_warnings.json` | etf_warnings.json | - | 28 B | `components/etf-warnings.md` |
+| `config/euphoria_patcher/.data.json` | .data.json | - | 162 B | `components/data.md` |
+| `config/euphoria_patcher/settings.toml` | settings.toml | - | 2.6 KiB | `components/settings.md` |
 | `config/extrasounds.json` | extrasounds.json | - | 970 B | `components/extrasounds.md` |
 | `config/fastsuite.cfg` | fastsuite.cfg | - | 918 B | `components/fastsuite.md` |
 | `config/ferritecore-mixin.toml` | ferritecore-mixin.toml | - | 1.6 KiB | `components/ferritecore-mixin.md` |
@@ -44,7 +48,7 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/inventory_interactions.json5` | inventory_interactions.json5 | - | 137 B | `components/inventory-interactions.md` |
 | `config/inventory_particles.json5` | inventory_particles.json5 | - | 1.6 KiB | `components/inventory-particles.md` |
 | `config/iris-excluded.json` | iris-excluded.json | - | 31 B | `components/iris-excluded.md` |
-| `config/iris.properties` | iris.properties | - | 281 B | `components/iris.md` |
+| `config/iris.properties` | iris.properties | - | 332 B | `components/iris.md` |
 | `config/jade/hide-blocks.json` | hide-blocks.json | - | 149 B | `components/hide-blocks.md` |
 | `config/jade/hide-entities.json` | hide-entities.json | - | 243 B | `components/hide-entities.md` |
 | `config/jade/jade.json` | jade.json | - | 1.1 KiB | `components/jade.md` |
@@ -85,9 +89,17 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/NoChatReports/NCR-Encryption.json` | NCR-Encryption.json | - | 520 B | `components/ncr-encryption.md` |
 | `config/NoChatReports/NCR-ServerPreferences.json` | NCR-ServerPreferences.json | - | 24 B | `components/ncr-serverpreferences.md` |
 | `config/NoChatReports/README.md` | README.md | - | 167 B | `components/readme.md` |
+| `config/obscuria/obscure_tooltips-client.toml` | obscure_tooltips-client.toml | - | 1.7 KiB | `components/obscure-tooltips-client.md` |
 | `config/particle_effects.json5` | particle_effects.json5 | - | 25 B | `components/particle-effects.md` |
 | `config/particular-common.toml` | particular-common.toml | - | 5.7 KiB | `components/particular-common.md` |
+| `config/pingtomapxaeros-client.toml` | pingtomapxaeros-client.toml | - | 767 B | `components/pingtomapxaeros-client.md` |
+| `config/pingwheel.json` | pingwheel.json | - | 410 B | `components/pingwheel.md` |
+| `config/pingwheel.server.json` | pingwheel.server.json | - | 111 B | `components/pingwheel-server.md` |
 | `config/placebo.cfg` | placebo.cfg | - | 495 B | `components/placebo.md` |
+| `config/presencefootsteps/updater.json` | updater.json | - | 68 B | `components/updater.md` |
+| `config/presencefootsteps/userconfig.json` | userconfig.json | - | 427 B | `components/userconfig.md` |
+| `config/resourcify.json` | resourcify.json | - | 275 B | `components/resourcify.md` |
+| `config/shouldersurfing-client.toml` | shouldersurfing-client.toml | - | 17.5 KiB | `components/shouldersurfing-client.md` |
 | `config/smoothgui.json` | smoothgui.json | - | 368 B | `components/smoothgui.md` |
 | `config/smoothscrolling-client.toml` | smoothscrolling-client.toml | - | 1.1 KiB | `components/smoothscrolling-client.md` |
 | `config/smoothswapping.json` | smoothswapping.json | - | 113 B | `components/smoothswapping.md` |
@@ -99,6 +111,7 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/spark/config.json` | config.json | - | 117 B | `components/config.md` |
 | `config/spark/tmp-client/about.txt` | about.txt | - | 585 B | `components/about.md` |
 | `config/spark/tmp/about.txt` | about.txt | - | 585 B | `components/about.md` |
+| `config/ssrcamerafixes-client.toml` | ssrcamerafixes-client.toml | - | 436 B | `components/ssrcamerafixes-client.md` |
 | `config/tia-client.toml` | tia-client.toml | - | 260 B | `components/tia-client.md` |
 | `config/visuality/config.toml` | config.toml | - | 280 B | `components/config.md` |
 | `config/visuality/particle_emitters/block_ambient.json` | block_ambient.json | - | 1.3 KiB | `components/block-ambient.md` |
@@ -138,13 +151,16 @@ This file is generated. Put design intent in the human-maintained component page
 | Path | Name / ID | Version / format | Size | Suggested design page |
 | --- | --- | --- | ---: | --- |
 | `mods/[C^2M 引擎] c2me-neoforge-mc1.21.1-0.4.0-alpha.0.115.jar` | c2me | 0.4.0-alpha.0.115+1.21.1 | 3.5 MiB | `components/c2me.md` |
-| `mods/[JEI物品管理器] jei-1.21.1-neoforge-19.38.0.366.jar` | jei | 19.38.0.366 | 1.6 MiB | `components/jei.md` |
+| `mods/[JEI物品管理器] jei-1.21.1-neoforge-19.39.0.368.jar` | jei | 19.39.0.368 | 1.6 MiB | `components/jei.md` |
 | `mods/[JEI药水效果] jeed-1.21-2.3.2.jar` | jeed | 1.21-2.3.2 | 160.2 KiB | `components/jeed.md` |
 | `mods/[JER集成] jerintegration-6.5.0.jar` | jerintegration | 6.5.0 | 29.1 KiB | `components/jerintegration.md` |
 | `mods/[Tiny Item Animations] tia-neoforge-1.21-1.2.1.jar` | tia | 1.2.1 | 18.5 KiB | `components/tia.md` |
-| `mods/[Xaero的小地图] xaerominimap-neoforge-1.21.1-26.3.0.jar` | xaerominimap | 26.3.0 | 2.1 MiB | `components/xaerominimap.md` |
+| `mods/[Xaero的小地图] xaerominimap-neoforge-1.21.1-26.4.2.jar` | xaerominimap | 26.4.2 | 2.1 MiB | `components/xaerominimap.md` |
+| `mods/[冰山] Iceberg-1.21.1-neoforge-1.3.2.jar` | iceberg | 1.3.2 | 208.8 KiB | `components/iceberg.md` |
 | `mods/[可点击的进度] clickadv-1.21-3.8.jar` | clickadv | 3.8 | 14.3 KiB | `components/clickadv.md` |
 | `mods/[可视性：重铸] visuality-forge-2.1.0.jar` | visuality | 2.1.0 | 113.1 KiB | `components/visuality.md` |
+| `mods/[多态合成] polymorph-neoforge-1.1.0+1.21.1.jar` | polymorph | 1.1.0+1.21.1 | 170.9 KiB | `components/polymorph.md` |
+| `mods/[实体纹理特性] entity_texture_features_1.21-neoforge-7.1.jar` | entity_texture_features | 7.1 | 734.7 KiB | `components/entity-texture-features.md` |
 | `mods/[平滑转移] smoothswapping-0.9.3.2-1.21.1-neoforge.jar` | smoothswapping | 0.9.3.2 | 61.4 KiB | `components/smoothswapping.md` |
 | `mods/[异步粒子] AsyncParticles-21.1.2.0+1.21.1.jar` | asyncparticles | 21.1.2.0 | 1.1 MiB | `components/asyncparticles.md` |
 | `mods/[截图到剪贴板] screenshot-to-clipboard-neoforge-1.0.10.jar` | screenshotclipboard | 1.0.10 | 13.8 KiB | `components/screenshotclipboard.md` |
@@ -160,9 +176,11 @@ This file is generated. Put design intent in the human-maintained component page
 | `mods/[禁用聊天举报] NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar` | nochatreports | 1.21.1-v2.9.1 | 299.5 KiB | `components/nochatreports.md` |
 | `mods/[聊动魅影] ChatImpressiveAnimation-neoforge-1.6.0+mc1.21.5.jar` | chatimpressiveanimation | 1.6.0+mc1.21.5 | 68.8 KiB | `components/chatimpressiveanimation.md` |
 | `mods/[聊天头像] chat_heads-0.15.2-neoforge-1.21.jar` | chat_heads | 0.15.2 | 87.2 KiB | `components/chat-heads.md` |
+| `mods/[脚步声Forge版] Presence Footsteps [NEOFORGE]+1.21-1.1.0.jar` | presencefootsteps | 1.0.0 | 5.3 MiB | `components/presencefootsteps.md` |
 | `mods/[自动汉化更新] I18nUpdateMod-3.7.0-all.jar` | i18nupdatemod | 3.7.0 | 48.6 KiB | `components/i18nupdatemod.md` |
 | `mods/[自然音效] AmbientSounds_NEOFORGE_v6.3.8_mc1.21.1.jar` | ambientsounds | 6.3.8 | 80.9 MiB | `components/ambientsounds.md` |
 | `mods/[苹果皮] appleskin-neoforge-mc1.21-3.0.9.jar` | appleskin | 3.0.9+mc1.21 | 74.0 KiB | `components/appleskin.md` |
+| `mods/[越肩视角重制] ShoulderSurfing-NeoForge-1.21.1-5.0.7.jar` | shouldersurfing | 1.21.1-5.0.7 | 389.5 KiB | `components/shouldersurfing.md` |
 | `mods/[通用拼音搜索] jecharacters-1.21.1-neoforge-4.5.26.jar` | jecharacters | 4.5.26 | 244.9 KiB | `components/jecharacters.md` |
 | `mods/[配方性能优化] FastSuite-1.21.1-6.0.7.jar` | fastsuite | 6.0.7 | 27.5 KiB | `components/fastsuite.md` |
 | `mods/[鈇] flerovium-neoforge-1.21.1-1.1.2-all.jar` | flerovium | 1.1.2 | 178.3 KiB | `components/flerovium.md` |
@@ -184,7 +202,9 @@ This file is generated. Put design intent in the human-maintained component page
 | `mods/EffectDescriptions-v21.1.1-1.21.1-NeoForge.jar` | effectdescriptions | 21.1.1 | 64.8 KiB | `components/effectdescriptions.md` |
 | `mods/effecttimerplus-neoforge-2.2.7+1.21.jar` | effecttimerplus | 2.2.7+1.21 | 41.1 KiB | `components/effecttimerplus.md` |
 | `mods/effectual-neoforge-1.4.0-1.21.1.jar` | effectual | 1.4.0-1.21.1 | 367.3 KiB | `components/effectual.md` |
+| `mods/EuphoriaPatcher-1.9.3-r5.8.1-neoforge.jar` | euphoria_patcher | 1.9.3-r5.8.1-neoforge | 4.0 MiB | `components/euphoria-patcher.md` |
 | `mods/extrasounds-1.5.4+1.21.1-neoforge.jar` | extrasounds | 1.5.2 | 363.1 KiB | `components/extrasounds.md` |
+| `mods/fragmentum-neoforge-1.21.1-2.2.4.jar` | fragmentum | 2.2.4 | 1.8 MiB | `components/fragmentum.md` |
 | `mods/fzzy_config-0.7.6+1.21+neoforge.jar` | fzzy_config | 0.7.6+1.21+neoforge | 2.3 MiB | `components/fzzy-config.md` |
 | `mods/ImmediatelyFast-NeoForge-1.6.11+1.21.1.jar` | immediatelyfast | 1.6.11+1.21.1 | 353.3 KiB | `components/immediatelyfast.md` |
 | `mods/iris-neoforge-1.8.14-beta.1+mc1.21.1.jar` | iris | 1.8.14-beta.1+mc1.21.1 | 2.4 MiB | `components/iris.md` |
@@ -198,15 +218,21 @@ This file is generated. Put design intent in the human-maintained component page
 | `mods/midnightlib-neoforge-1.9.3+1.21.1.jar` | midnightlib | 1.9.3 | 59.8 KiB | `components/midnightlib.md` |
 | `mods/MossyLib-1.5.0+1.21.1+neoforge.jar` | mossylib | 1.5.0+1.21.1+neoforge | 175.3 KiB | `components/mossylib.md` |
 | `mods/New Visual Keybing-1.21.1-neoforge-0.6.16.jar` | newvisualkeybing | 0.6.16 | 438.7 KiB | `components/newvisualkeybing.md` |
+| `mods/obscure_tooltips-neoforge-1.21.1-4.2.2.jar` | obscure_tooltips | 4.2.2 | 438.0 KiB | `components/obscure-tooltips.md` |
 | `mods/ParticleEffects-1.5.0+1.21.1+neoforge.jar` | particle_effects | 1.5.0+1.21.1+neoforge | 301.9 KiB | `components/particle-effects.md` |
 | `mods/particular-1.21.1-NeoForge-1.5.5.jar` | particular | 1.5.5 | 307.6 KiB | `components/particular.md` |
+| `mods/Ping-Wheel-1.12.2-neoforge-1.21.1.jar` | pingwheel | 1.12.2 | 149.9 KiB | `components/pingwheel.md` |
+| `mods/pingtomapxaeros-1.1.0-neoforge-1.21.1.jar` | pingtomapxaeros | 1.1.0 | 21.1 KiB | `components/pingtomapxaeros.md` |
 | `mods/Placebo-1.21.1-9.9.1.jar` | placebo | 9.9.1 | 316.5 KiB | `components/placebo.md` |
+| `mods/Prism-1.21.1-neoforge-1.0.11.jar` | prism | 1.0.11 | 60.6 KiB | `components/prism.md` |
 | `mods/PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar` | puzzleslib | 21.1.52 | 1.4 MiB | `components/puzzleslib.md` |
+| `mods/Resourcify (1.21.1-neoforge)-1.8.5.jar` | resourcify | 1.8.5 | 2.5 MiB | `components/resourcify.md` |
 | `mods/ScalableLux-neoforge-0.3.0-alpha.0.6-all.jar` | scalablelux | 0.3.0-alpha.0.6+1.21.1 | 192.4 KiB | `components/scalablelux.md` |
 | `mods/smoothgui-neoforge-2.0.1+mc1.21.jar` | smoothgui | 2.0.1 | 679.4 KiB | `components/smoothgui.md` |
 | `mods/smoothscrolling-1.21.1-NeoForge-1.0.1.jar` | smoothscrolling | 1.0.1 | 39.2 KiB | `components/smoothscrolling.md` |
+| `mods/ssrcamerafixes-neoforge-1.21.1-2.0.0.jar` | ssrcamerafixes | 2.0.0 | 77.4 KiB | `components/ssrcamerafixes.md` |
 | `mods/tlib-neoforge-1.5.0-1.21.1.jar` | tlib | 1.5.0-1.21.1 | 223.2 KiB | `components/tlib.md` |
-| `mods/xaeroworldmap-neoforge-1.21.1-1.43.0.jar` | xaeroworldmap | 1.43.0 | 1.3 MiB | `components/xaeroworldmap.md` |
+| `mods/xaeroworldmap-neoforge-1.21.1-1.44.2.jar` | xaeroworldmap | 1.44.2 | 1.4 MiB | `components/xaeroworldmap.md` |
 | `mods/yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar` | yet_another_config_lib_v3 | 3.8.2+1.21.1-neoforge | 1.1 MiB | `components/yet-another-config-lib-v3.md` |
 
 ## resource-pack
@@ -228,3 +254,11 @@ This file is generated. Put design intent in the human-maintained component page
 | `kubejs/README.txt` | README.txt | - | 1.2 KiB | `components/readme.md` |
 | `kubejs/server_scripts/main.js` | main.js | - | 116 B | `components/main.md` |
 | `kubejs/startup_scripts/main.js` | main.js | - | 117 B | `components/main.md` |
+
+## shader-pack
+
+| Path | Name / ID | Version / format | Size | Suggested design page |
+| --- | --- | --- | ---: | --- |
+| `shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3` | ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3 | - | 8.6 MiB | `components/complementaryunbound-r5-8-1-euphoriapatches-1-9-3.md` |
+| `shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3.txt` | ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3 | - | 1.2 KiB | `components/complementaryunbound-r5-8-1-euphoriapatches-1-9-3.md` |
+| `shaderpacks/ComplementaryUnbound_r5.8.1.zip` | ComplementaryUnbound_r5.8.1 | - | 534.1 KiB | `components/complementaryunbound-r5-8-1.md` |

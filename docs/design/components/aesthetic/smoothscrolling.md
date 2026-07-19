@@ -39,7 +39,7 @@ Smooth Scrolling 为 ProjectNautic 提供快捷栏、聊天栏、创造模式物
 
 `config/smoothscrolling-client.toml` 当前配置对各滚动区域做了差异化平滑度设置：
 
-- **Hotbar**：`smoothness=0.2`，`rollover=true`。快捷栏滚动平滑度较低，保证切换武器/工具时响应迅速；同时启用滚轮越过首尾时循环滚动，提升操作效率。
+- **Hotbar**：`smoothness=0.5`，`rollover=true`。快捷栏滚动平滑度调至中等，与聊天/列表对齐，提升滚动物理感；同时启用滚轮越过首尾时循环滚动，提升操作效率。
 - **Chat**：`smoothness=0.5`，`openingSmoothness=0.5`。聊天栏滚动与打开动画均采用中等平滑度，兼顾流畅感与可读性。
 - **Creative Screen**：`smoothness=0.5`。创造模式物品栏滚动采用中等平滑度，避免翻页过快导致找不到物品。
 - **Entry List**：`smoothness=0.5`，`speed=30.0`。条目列表（如配置界面、模组列表）滚动中等平滑，自动速度为 30 px，保持适中响应。
@@ -70,4 +70,5 @@ Smooth Scrolling 为 ProjectNautic 提供快捷栏、聊天栏、创造模式物
 
 ## 历史
 
+- 2026-07-19: 快捷栏滚动平滑度 `smoothness` 0.2 → 0.5（提升滚动物理感，与聊天/列表平滑度对齐）
 - 2026-07-16: 作为第三批 QoL 模组添加

@@ -159,3 +159,12 @@ python/
 # spark 临时采样目录
 config/spark/tmp/
 config/spark/tmp-client/
+
+# Particular 粒子缓存
+particular_cache/
+
+# Delightify 本地数据库
+.delightify/
+
+# 启动器命令历史
+command_history.txt

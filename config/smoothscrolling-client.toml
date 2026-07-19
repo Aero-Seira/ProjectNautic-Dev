@@ -5,7 +5,7 @@
 	#Hotbar scroll smoothness. 0 = Off, 1 = Maximum smoothness
 	# Default: 0.2
 	# Range: 0.0 ~ 1.0
-	smoothness = 0.2
+	smoothness = 0.5
 	#Enable Hotbar rollover when scrolling
 	rollover = true
 

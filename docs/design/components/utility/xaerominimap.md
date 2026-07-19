@@ -5,8 +5,8 @@
 - 类型：mod
 - 状态：active
 - 证据可信度：verified
-- 来源路径：`mods/[Xaero的小地图] xaerominimap-neoforge-1.21.1-26.3.0.jar`
-- 标识与版本：mod_id = `xaerominimap`；版本 `26.3.0`
+- 来源路径：`mods/[Xaero的小地图] xaerominimap-neoforge-1.21.1-26.4.2.jar`
+- 标识与版本：mod_id = `xaerominimap`；版本 `26.4.2`
 - 加载器或包格式：NeoForge 21.1.235（Minecraft 1.21.1）
 
 ## 设计作用
@@ -82,4 +82,5 @@ Xaero's Minimap 为 CLIENT 侧模组，主要功能不依赖服务端，但与 X
 
 ## 历史
 
+- 2026-07-19: 升级 26.3.0 → 26.4.2（例行小版本升级，替换旧 jar）；新增 [Ping to Map](../integration/pingtomapxaeros.md) 联动（ping 自动生成临时路径点）
 - 2026-07-16: 作为第二批基础模组与 QoL 扩展批次添加

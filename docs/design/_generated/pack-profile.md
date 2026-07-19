@@ -1,6 +1,6 @@
 # Detected pack profile
 
-Generated: `2026-07-16T03:37:32+08:00`
+Generated: `2026-07-19T18:30:19+08:00`
 
 - Pack Name: ProjectNautic-Dev
 - Name: usernamecache
@@ -8,5 +8,5 @@ Generated: `2026-07-16T03:37:32+08:00`
 - Neoforge Version: 21.1.235
 - Fml Version: 4.0.42
 - Java Version: 21
-- Observed Mod Loaders: {"neoforge":63,"fabric":7}
-- Content Counts: {"mod":71,"resource-pack":1,"config":116,"script-content":9,"launcher-profile":3}
+- Observed Mod Loaders: {"neoforge":76,"fabric":7}
+- Content Counts: {"mod":84,"resource-pack":1,"shader-pack":3,"config":129,"script-content":9,"launcher-profile":3}
