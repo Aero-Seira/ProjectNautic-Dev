@@ -1,9 +1,11 @@
 # Smooth GUI
 
+> **已于 2026-07-21 移除**：GUI 打开/关闭动画职能由 GUI Tween 接替（覆盖面更广且按组可配），本页归档保留历史。
+
 ## 记录
 
 - 类型：mod
-- 状态：active
+- 状态：removed
 - 证据可信度：verified
 - 来源路径：`mods/smoothgui-neoforge-2.0.1+mc1.21.jar`
 - 标识与版本：smoothgui 2.0.1
@@ -75,3 +77,4 @@ Smooth GUI 为 ProjectNautic 提供 GUI 打开/关闭时的缩放动画，直接
 ## 历史
 
 - 2026-07-16: 作为第三批 QoL 模组添加
+- 2026-07-21: 移除；GUI 打开/关闭动画由 GUI Tween 替代（注意 GUI Tween 当前主开关默认关闭，处于 experimental 观察期）

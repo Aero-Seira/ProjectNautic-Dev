@@ -1,0 +1,54 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Aero_Seira",
+      "uniqueId": "76d796c5-1fe7-43a9-9b33-0cfbd478ce40"
+    },
+    "time": 1784575157891,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/2PjHcYD6yK"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Aero_Seira",
+      "uniqueId": "76d796c5-1fe7-43a9-9b33-0cfbd478ce40"
+    },
+    "time": 1784566796761,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/VkV1iKOFyn"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Aero_Seira",
+      "uniqueId": "76d796c5-1fe7-43a9-9b33-0cfbd478ce40"
+    },
+    "time": 1784559661721,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/BQ6gHH6FQs"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Aero_Seira",
+      "uniqueId": "76d796c5-1fe7-43a9-9b33-0cfbd478ce40"
+    },
+    "time": 1784559660698,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/wEAplINbJq"
+    }
+  }
+]

@@ -99,5 +99,6 @@ ImmediatelyFast 的配置文件 `config/immediatelyfast.json` 经过以下深思
 
 ## 历史
 
+- 2026-07-21: `hud_batching` true → false（第六批 HUD 模组大量加入后关闭 HUD 批处理，规避与新 HUD 渲染层的叠加风险；Gnetum 同批移除，HUD 性能维度暂时回到无分帧/无批处理基线）
 - 2026-07-16: 更新配置说明：`fast_buffer_upload` 实际为 `false`，采用保守策略以换取稳定性
 - 2026-07-15: 作为基础性能模组批次添加

@@ -7,12 +7,12 @@
 - Java 版本：21
 - 目标玩家：待定义
 - 核心体验：待定义
-- 当前阶段：基础性能模组、魔改框架、扩展 QoL 工具与集成插件已加载；第三批以中文本地化、聊天/社交、信息展示、环境视听与底层性能优化为主的 QoL 模组已就位；第四批确立官方默认光影（Complementary + EuphoriaPatches）并引入多人协作标记、越肩视角、实体纹理与 tooltip 视觉增强；第五批补充输入/HUD/日志维度性能优化（Ixeris、Gnetum、Async Logger）与启动体验 QoL（Progress Peek）
+- 当前阶段：基础性能模组、魔改框架、扩展 QoL 工具与集成插件已加载；第三批以中文本地化、聊天/社交、信息展示、环境视听与底层性能优化为主的 QoL 模组已就位；第四批确立官方默认光影（Complementary + EuphoriaPatches）并引入多人协作标记、越肩视角、实体纹理与 tooltip 视觉增强；第五批补充输入/日志维度性能优化（Ixeris、Async Logger）与启动体验 QoL（Progress Peek，Gnetum 已于第六批撤出）；第六批扩容 HUD/血条体系（Stylish Effects、Inventory HUD+、Enhanced Boss Bars、Overflowing Bars、Leave My Bars Alone、Pick Up Notifier、Configured、Armor Statues、Pixelshot、Distinguished Potions、MEED、GUI Tween）、补齐性能矩阵网络/红石/世界生成/实体剔除维度（Krypton FNP、PacketFixer、Alternate Current、Noisium、EntityCulling、Acedium）并首次落地机制类模组（BetterDays 时间/睡眠、Brutal Respawn 死亡惩罚）
 
 ## 设计支柱
 
 1. **长线运营优先**：整合包以服务器长期运营为首要目标，所有设计决策须考虑版本迭代兼容性、存档连续性、玩家进度迁移成本。
-2. ** Vanilla+ 起步，阶段式解锁**：第一版贴近原版生存体验，但通过 Chapters + KubeJS 预留完整的阶段解锁框架。后续大版本更新以"解锁新内容章节"形式投放，而非重置世界。
+2. **类原版起步，阶段式解锁**：第一版为"类原版"体验——不新增任何模组物品、方块、实体等注册表内容，但允许机制优化与 QoL 模组（如红石计算优化、渲染/性能优化、界面增强）存在；此类模组可改变原版的性能表现或交互感受，但不得向玩家暴露新的可获得内容。通过 Chapters + KubeJS 预留完整的阶段解锁框架，后续大版本更新以"解锁新内容章节"形式投放，而非重置世界。
 3. **魔改即基础设施**：KubeJS 7.0 是核心魔改框架，配方、事件、自定义物品、阶段控制全部脚本化。魔改脚本须具备版本间可迁移性。
 4. ~~**服务端与客户端同源**：所有模组选择必须同时支持服务端与客户端部署，配置与脚本通过版本控制统一管理，支持热更新。~~
 5. **更正第4条**：服务端与客户端模组不完全相同，部分可仅服务端模组应仅存在服务端中，且服务端中绝对不能出现仅客户端模组。
@@ -65,9 +65,7 @@
 | [Particle Effects](components/aesthetic/particle-effects.md) | 粒子效果配置库 | active | CLIENT；Inventory Particles 依赖 |
 | [Inventory Particles](components/aesthetic/inventory-particles.md) | 物品栏物品移动粒子反馈 | active | CLIENT；依赖 Particle Effects |
 | [Extra Sounds](components/aesthetic/extrasounds.md) | UI/交互音效扩展 | active | CLIENT |
-| [Tiny Item Animations](components/aesthetic/tia.md) | 物品拾取/使用微动画 | active | CLIENT |
 | [Smooth Swapping](components/aesthetic/smoothswapping.md) | 物品栏物品平滑位移动画 | active | CLIENT |
-| [SmoothGui](components/aesthetic/smoothgui.md) | GUI 打开/关闭平滑动画 | active | CLIENT |
 | [Smooth Scrolling Reforged](components/aesthetic/smoothscrolling.md) | 快捷栏/聊天/列表平滑滚动 | active | CLIENT |
 | [CreativeCore](components/aesthetic/creativecore.md) | CreativeMD 系列共享库 | active | BOTH；AmbientSounds 依赖 |
 | [Chat Impressive Animation](components/aesthetic/chatimpressiveanimation.md) | 聊天栏/消息发送动画 | active | CLIENT |
@@ -78,7 +76,6 @@
 | [Better Advancements](components/utility/betteradvancements.md) | 改进进度界面可读性 | active | CLIENT |
 | [Clickable Advancements](components/utility/clickadv.md) | 聊天中点击进度名称 | active | CLIENT |
 | [Effect Descriptions](components/utility/effectdescriptions.md) | 物品提示中显示状态效果说明 | active | CLIENT |
-| [EffectTimerPlus](components/utility/effecttimerplus.md) | HUD 效果图标计时器 | active | CLIENT |
 | [Screenshot to Clipboard](components/utility/screenshotclipboard.md) | 截图直接复制到剪贴板 | active | CLIENT |
 | [I18nUpdateMod](components/utility/i18nupdatemod.md) | 自动汉化更新 | active | CLIENT |
 | [Just Enough Characters](components/utility/jecharacters.md) | JEI 拼音搜索 | active | CLIENT；依赖 JEI |
@@ -97,7 +94,6 @@
 | [Minecraft Mod Language Modpack](components/resourcepacks/minecraft-mod-language-modpack-converted-1-21-1.md) | 社区简体中文翻译资源包 | active | CLIENT |
 | [Ixeris](components/performance/ixeris.md) | 输入缓冲与线程化事件轮询 | active | CLIENT |
 | [Async Logger](components/performance/asynclogger.md) | 日志异步化与过滤 | active | BOTH |
-| [Gnetum](components/performance/gnetum.md) | HUD 更新分帧 | active | CLIENT |
 | [Progress Peek](components/utility/progresspeek.md) | 任务栏显示游戏加载进度 | active | CLIENT |
 | [Euphoria Patcher](components/aesthetic/euphoria-patcher.md) | 游戏内应用 Euphoria Patches 光影补丁 | active | CLIENT；依赖 Iris |
 | [Complementary + EuphoriaPatches 光影](components/aesthetic/complementary-euphoria-shaders.md) | 官方默认光影（Unbound r5.8.1 + EuphoriaPatches 1.9.3） | active | CLIENT；Iris 加载 |
@@ -113,17 +109,38 @@
 | [Fragmentum](components/library/fragmentum.md) | Obscuria 系列共享框架 | active | BOTH；Obscure Tooltips 依赖 |
 | [Iceberg](components/library/iceberg.md) | Grend 系模组工具库 | active | BOTH |
 | [Prism](components/library/prism.md) | Grend 系颜色功能库 | active | BOTH |
+| [EntityCulling](components/performance/entityculling.md) | 异步路径追踪实体/方块实体剔除 | active | CLIENT；内嵌 TRansition/TRender |
+| [Acedium Sodiumized](components/performance/acedium.md) | Nvidium 延续，NVIDIA mesh shader 渲染加速 | active | CLIENT；依赖 Sodium 0.8 |
+| [Alternate Current](components/performance/alternate-current.md) | 红石线信号 BFS 重写 | active | BOTH |
+| [Krypton FNP](components/performance/krypton-fnp.md) | 网络栈优化（Netty/原生传输） | active | BOTH |
+| [Noisium](components/performance/noisium.md) | 世界生成噪声优化 | active | BOTH |
+| [PacketFixer](components/performance/packetfixer.md) | 数据包大小/连接问题修复 | active | BOTH |
+| [GUI Tween](components/aesthetic/guitween.md) | 全分组 GUI 动画（替代 SmoothGui） | experimental | CLIENT；主开关默认关闭 |
+| [Stylish Effects](components/aesthetic/stylisheffects.md) | 状态效果显示重做（替代 EffectTimerPlus） | active | CLIENT；依赖 PuzzlesLib |
+| [Enhanced Boss Bars](components/aesthetic/enhancedbossbars.md) | 改进 Boss 血条 | active | BOTH |
+| [Overflowing Bars](components/aesthetic/overflowingbars.md) | 生命/护甲条超限扩展显示 | active | CLIENT；依赖 PuzzlesLib |
+| [Leave My Bars Alone](components/aesthetic/leavemybarsalone.md) | 骑乘时保留饥饿/经验条 | active | CLIENT；依赖 PuzzlesLib |
+| [Distinguished Potions](components/aesthetic/distinguishedpotions.md) | 药水视觉区分强化 | active | BOTH；依赖 PuzzlesLib |
+| [Pick Up Notifier](components/utility/pickupnotifier.md) | 拾取物品通知 | active | BOTH；依赖 PuzzlesLib |
+| [Pixelshot](components/utility/pixelshot.md) | 高分辨率截图与正交相机 | active | CLIENT；依赖 PuzzlesLib |
+| [MEED](components/utility/meed.md) | JEI 效果描述数据集（与 JEED 重叠待裁决） | active | BOTH |
+| [Inventory HUD+](components/utility/inventoryhud.md) | 护甲耐久/药水/迷你物品栏常驻 HUD | active | CLIENT |
+| [Configured](components/utility/configured.md) | 全模组游戏内配置 GUI | active | CLIENT；JEI 可选集成 |
+| [Armor Statues](components/utility/armorstatues.md) | 盔甲架姿势编辑 | active | BOTH；依赖 PuzzlesLib |
+| [Leaves Be Gone](components/utility/leavesbegone.md) | 砍树后树叶快速腐烂 | active | BOTH；依赖 PuzzlesLib |
+| [BetterDays](components/content/betterdays.md) | 时间流速与睡眠加速机制 | active | BOTH；内嵌 whitenoise |
+| [Brutal Respawn](components/content/brutal-respawn.md) | 死亡惩罚：低血/低饱食重生 | active | BOTH；依赖 YACL |
 
 ## 跨系统约束
 
 - 兼容性：新增模组应明确支持 Minecraft 1.21.1 与 NeoForge 21.1.x。
 - 客户端/服务端范围：当前目录是客户端实例；加入联机或服务端内容时需要单独核对服务端依赖与配置同步方式。所有魔改脚本（KubeJS）须兼容服务端热重载。
 - 存档兼容性：尚无玩法组件，后续加入世界生成、注册表内容或数据包时必须记录移除风险。新模组加入应尽量不影响已生成区块。
-- 性能预算：当前约 90 个模组，处于"中量包"区间。性能优化矩阵已覆盖渲染（Sodium + Iris）、客户端 HUD（ImmediatelyFast、Gnetum）、逻辑（Lithium）、配方匹配（FastSuite）、区块（C2ME）、光照（ScalableLux）、内存（Ferrite Core + ModernFix）、树叶剔除（CullLeaves）、扩展渲染选项（Sodium Extra）、输入管线（Ixeris）、日志异步化（Async Logger）以及多项微优化与剔除（BadOptimizations、Flerovium、Cupboard）。后续引入大型内容模组时需重点补充启动耗时与内存影响。参考基准：轻量包 <50 模组、中量包 50-200 模组、服务端内存预算 6-8GB、客户端建议 4-6GB。
+- 性能预算：当前 105 个模组，处于"中量包"区间。性能优化矩阵已覆盖渲染（Sodium + Iris、Acedium mesh shader 进阶）、实体剔除（EntityCulling、Flerovium）、客户端 HUD（ImmediatelyFast；Gnetum 已于第六批移除且 `hud_batching` 暂时关闭）、逻辑（Lithium）、红石（Alternate Current）、配方匹配（FastSuite）、区块（C2ME）、世界生成噪声（Noisium）、光照（ScalableLux）、内存（Ferrite Core + ModernFix）、网络栈（Krypton FNP + PacketFixer）、树叶剔除（CullLeaves）、扩展渲染选项（Sodium Extra）、输入管线（Ixeris）、日志异步化（Async Logger）以及多项微优化（BadOptimizations、Cupboard）。后续引入大型内容模组时需重点补充启动耗时与内存影响。参考基准：轻量包 <50 模组、中量包 50-200 模组、服务端内存预算 6-8GB、客户端建议 4-6GB。
 - 阶段锁定：所有新增内容模组必须在 Chapters 阶段系统中定义默认解锁状态，确保未来可通过阶段进行内容开关。
 - 着色器兼容性：Iris 已加载并预置官方默认光影（Complementary Unbound r5.8.1 + EuphoriaPatches 1.9.3，经 Euphoria Patcher 游戏内补丁）。后续渲染相关模组须验证与该光影管线的兼容性，避免引入与 Embeddium 相关的冲突模组；光影设置文件随包分发，升级策略待明确。
 - 脚本依赖链：KubeJS → Rhino 为硬依赖；KubeJS Additions、KubeJS Data Component、LootJS → KubeJS 为硬依赖。脚本系统面向未来所有内容魔改。
-- 视听叠加风险：第三批同时引入 Ambiance、AmbientSounds、Particular、Visuality、Effectual、Inventory Particles、Extra Sounds、Tiny Item Animations、Smooth GUI/Swapping/Scrolling 等大量视听反馈模组，第四批又叠加官方光影、Entity Texture Features、Presence Footsteps、Obscure Tooltips 与越肩视角。单个效果开销小，但叠加后在低配设备上可能产生明显的帧率与感知噪音，需在目标硬件上验证并准备关闭清单。
+- 视听叠加风险：第三批同时引入 Ambiance、AmbientSounds、Particular、Visuality、Effectual、Inventory Particles、Extra Sounds、Smooth Swapping/Scrolling 等大量视听反馈模组，第四批又叠加官方光影、Entity Texture Features、Presence Footsteps、Obscure Tooltips 与越肩视角。第六批再叠加 HUD 层模组（Stylish Effects、Inventory HUD+、Enhanced Boss Bars、Overflowing Bars、Leave My Bars Alone、Pick Up Notifier、GUI Tween）——其中 Stylish Effects 与 Inventory HUD+ 的药水 HUD 功能重叠需二选一，GUI Tween 因叠加顾虑主开关默认关闭。单个效果开销小，但叠加后在低配设备上可能产生明显的帧率与感知噪音，需在目标硬件上验证并准备关闭清单。
 - 中文本地化双轨：I18nUpdateMod 与 Minecraft Mod Language Modpack 同时提供中文翻译，二者加载顺序与覆盖关系会直接影响玩家看到的文本。需要明确默认推荐顺序并在说明文档中告知玩家。
 - 聊天/社交模组耦合：No Chat Reports、Chat Heads、Beautified Chat Server、ChatNotify 共同作用于聊天系统；服务端配置（NCR、Beautified Chat Server）与客户端配置（Chat Heads、ChatNotify）需保持兼容，避免聊天显示异常或安全提示冲突。
 - 库版本耦合：Placebo → FastSuite、Collective → Beautified Chat Server、CreativeCore → AmbientSounds、Particle Effects → Inventory Particles、Fragmentum → Obscure Tooltips、Shoulder Surfing → SSR Camera Fixes、Ping Wheel → Ping to Map 等依赖链已建立。升级库模组时必须同步验证下游模组兼容性。

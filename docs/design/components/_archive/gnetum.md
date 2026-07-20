@@ -1,9 +1,11 @@
 # Gnetum
 
+> **已于 2026-07-21 移除**：第五批（2026-07-20）刚加入即被移除。推断原因（inferred）：HUD 分帧与 ImmediatelyFast 的 `hud_batching` 同维度叠加且收益未验证，本批大量新 HUD 模组（Stylish Effects、Inventory HUD+、Enhanced Boss Bars 等）加入后叠加风险上升，先撤出待单独评估。本页归档保留历史。
+
 ## 记录
 
 - 类型：mod
-- 状态：active
+- 状态：removed
 - 证据可信度：verified
 - 来源路径：`mods/gnetum-3.3.6.jar`
 - 标识与版本：mod_id = `gnetum`；版本 `3.3.6`
@@ -43,3 +45,4 @@ Gnetum 将 **HUD 更新分摊到多个帧**以改善性能（verified，mods.tom
 ## 历史
 
 - 2026-07-20: 作为第五批性能与修复类更新添加
+- 2026-07-21: 移除（加入仅一天）；HUD 分帧收益未验证即遭遇本批 HUD 模组扩容，与 ImmediatelyFast `hud_batching`（本批亦被关闭）同维度叠加，先撤出待单独评估；配置文件同步清理

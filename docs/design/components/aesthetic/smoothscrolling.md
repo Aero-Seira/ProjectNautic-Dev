@@ -70,6 +70,7 @@ Smooth Scrolling 为 ProjectNautic 提供快捷栏、聊天栏、创造模式物
 
 ## 历史
 
+- 2026-07-21: 快捷栏 `smoothness` 0.1 → 0.0、`rollover` true → false；聊天 `smoothness` 0.5 → 0.0、`openingSmoothness` 0.5 → 0.1（进一步收敛滚动动画，优先操作响应；与 GUI Tween 引入的动画层并存时降低叠加噪音）
 - 2026-07-20: 快捷栏滚动平滑度 `smoothness` 0.5 → 0.1（回调：优先操作响应速度，0.5 手感偏钝）
 - 2026-07-19: 快捷栏滚动平滑度 `smoothness` 0.2 → 0.5（提升滚动物理感，与聊天/列表平滑度对齐）
 - 2026-07-16: 作为第三批 QoL 模组添加

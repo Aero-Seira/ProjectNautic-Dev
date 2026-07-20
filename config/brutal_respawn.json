@@ -1,0 +1,7 @@
+{
+	"healthOnRespawn": 1,
+	"minFoodLevelOnRespawn": 0,
+	"minSaturationOnRespawn": 0.0,
+	"deathHungerPenalty": 3,
+	"brutallyRespawnedEffectDuration": 10
+}

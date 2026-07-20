@@ -1,5 +1,39 @@
 # 设计变更记录
 
+## 2026-07-21 - 加载第六批 HUD/性能/机制模组，首次落地机制改动并归档 4 个移除组件
+
+- 新增模组 **21 个**，按设计角色分类：
+  - **性能**：[EntityCulling](components/performance/entityculling.md) 1.10.5（异步路径追踪实体剔除，内嵌 TRansition/TRender）、[Acedium Sodiumized](components/performance/acedium.md) 0.4.1（Nvidium 延续，依赖 Sodium 0.8，NVIDIA mesh shader）、[Alternate Current](components/performance/alternate-current.md) 1.9.0（红石线 BFS 重写）、[Krypton FNP](components/performance/krypton-fnp.md) 0.2.28.1（网络栈优化）、[Noisium](components/performance/noisium.md) 2.7.0（世界生成噪声优化）、[PacketFixer](components/performance/packetfixer.md) 3.3.1（数据包容错）
+  - **视听/HUD**：[GUI Tween](components/aesthetic/guitween.md) 3.3.7（全分组 GUI 动画，主开关默认关闭，experimental）、[Stylish Effects](components/aesthetic/stylisheffects.md) 21.1.3、[Enhanced Boss Bars](components/aesthetic/enhancedbossbars.md) 1.0.0、[Overflowing Bars](components/aesthetic/overflowingbars.md) 21.1.1、[Leave My Bars Alone](components/aesthetic/leavemybarsalone.md) 21.1.2、[Distinguished Potions](components/aesthetic/distinguishedpotions.md) 21.1.1
+  - **工具/QoL**：[Pick Up Notifier](components/utility/pickupnotifier.md) 21.1.1、[Pixelshot](components/utility/pixelshot.md) 21.1.1、[MEED](components/utility/meed.md) 8.0.1（与 JEED 功能重叠待裁决）、[Inventory HUD+](components/utility/inventoryhud.md) 3.4.28、[Configured](components/utility/configured.md) 2.6.3、[Armor Statues](components/utility/armorstatues.md) 21.1.0、[Leaves Be Gone](components/utility/leavesbegone.md) 21.1.1
+  - **内容/机制**：[BetterDays](components/content/betterdays.md) 3.3.6.3（时间流速/睡眠加速，昼夜速度保持 1.0）、[Brutal Respawn](components/content/brutal-respawn.md) 1.1（1 血 0 食重生，落地 [死亡惩罚调研](research/death-penalty-mods.md) 需求 1 结论）
+- 移除模组 **4 个**（页面已归档至 `components/_archive/`，README 系统地图同步删除）：
+  - SmoothGui → 由 [GUI Tween](components/aesthetic/guitween.md) 替代
+  - EffectTimerPlus → 由 [Stylish Effects](components/aesthetic/stylisheffects.md) 替代（功能上位）
+  - Tiny Item Animations → 物品缩放动画由 GUI Tween 与既有动画层覆盖（inferred）
+  - Gnetum → 第五批加入仅一天即撤出；HUD 分帧收益未验证即遭遇 HUD 扩容，与 ImmediatelyFast `hud_batching`（本批亦关闭）同维度叠加，待单独评估（inferred）
+- 废弃配置清理（用户明确要求，删除前已快速核对均为默认或无迁移价值）：`config/effecttimerplus.json`、`config/gnetum.json`、`config/smoothgui.json`、`config/tia-client.toml`；其中 `config/gnetum.json` 为本次首启新生成后随即删除，既不算新增也不算遗留
+- 修改（实质 delta，已更新对应组件页历史）：
+  - ImmediatelyFast `hud_batching` true → false（规避与新 HUD 层叠加）
+  - ModernUI 增强 tooltip 关闭（`[tooltip] enable=false`，推断让位 Obscure Tooltips）
+  - Smooth Scrolling 快捷栏/聊天平滑度收敛至 0~0.1、关闭快捷栏 rollover
+  - Smooth Swapping 动画曲线首控制点 0.1875 → 0.1171875
+- 噪音项（仅记录，不建档）：JEI 按存档生成的 `config/jei/world/local/新的世界/bookmarks.json` 与 `lookupHistory.json`；JEI `ingredient-list-mod-sort-order.ini` 因新模组加入变化（预期）；`config/spark/activity.json`、`usercache.json` 运行数据；AsyncParticles mixin 属性、modernfix-mixins、Iris `enableShaders`（本地开关 false→true）、语言资源包 zip、光影设置 txt 时间戳刷新
+- 孤儿配置（无对应模组 jar，暂不建档，待确认来源）：`config/raritycore/` 下 6 个 json（对应 RarityCore 类稀有度模组，mods/ 中无此 jar，疑为试用残留）；`config/healthbars-client.toml`（Fuzs 风格血条模组配置，无对应 jar）；`config/catalogue.properties` 与 `catalogue_favourites.txt`（MrCrayfish Catalogue 模组菜单配置，本包装的是 Configured 而非 Catalogue）。归属已查明并计入对应组件页：`nvidium-config.json` 属 Acedium、`whitenoise-client.toml` 属 BetterDays 内嵌库、`transition.json`/`trender.json` 属 EntityCulling 内嵌库
+- 设计影响：
+  - HUD/血条体系大幅扩充，药水效果 HUD 出现 Stylish Effects vs Inventory HUD+ 的重叠，需二选一
+  - 死亡惩罚机制落地（调研结论需求 1）；需求 2（连死改复活点 KubeJS 脚本）尚未落地，1 血 0 食配置下连死风险敞口存在
+  - 性能矩阵补齐网络栈（Krypton FNP）、数据包容错（PacketFixer）、红石（Alternate Current）、世界生成噪声（Noisium）、实体剔除（EntityCulling）、渲染进阶（Acedium）六个维度；模组总数 105
+  - BetterDays 是首个机制类模组（时间/睡眠），配置克制（昼夜 1.0，仅睡眠加速）
+- 验证状态：新模组元数据均从 jar 内 neoforge.mods.toml 核实；启动测试、HUD 重叠裁决、联机回归、Noisium 同种子世界生成一致性验证均待完成
+- 剩余问题：
+  - Stylish Effects 与 Inventory HUD+ 药水 HUD 二选一
+  - MEED 与 JEED 效果描述重叠的实机裁决
+  - GUI Tween 主开关 `enable=false` 是有意默认还是试用遗留
+  - Armor Statues 依赖的 `statuemenus` 提供者待启动日志确认
+  - Acedium 在非 NVIDIA 环境的行为待验证
+  - BetterDays 睡眠提示消息未本地化
+
 ## 2026-07-20 - 完成惜命机制（死亡惩罚）模组调研
 
 - 新增 `docs/design/research/death-penalty-mods.md`：围绕"重生低血量/低饱食度惩罚"与"连续死亡改复活点防刷命"两个需求，核实了 12+ 个候选模组的 NeoForge 1.21.1 支持情况。

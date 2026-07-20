@@ -5,19 +5,19 @@
 	#Hotbar scroll smoothness. 0 = Off, 1 = Maximum smoothness
 	# Default: 0.2
 	# Range: 0.0 ~ 1.0
-	smoothness = 0.1
+	smoothness = 0.0
 	#Enable Hotbar rollover when scrolling
-	rollover = true
+	rollover = false
 
 [Chat]
 	#Chat scroll smoothness. 0 = Off, 1 = Maximum smoothness
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0
-	smoothness = 0.5
+	smoothness = 0.0
 	#Chat opening animation smoothness. 0 = Off, 1 = Maximum smoothness
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0
-	openingSmoothness = 0.5
+	openingSmoothness = 0.1
 
 [creativeScreen]
 	#Creative screen scroll smoothness. 0 = Off, 1 = Maximum smoothness
