@@ -1,5 +1,20 @@
 # 设计变更记录
 
+## 2026-07-21 - Base Pack 收尾：归档实机验证产生的最终变更，105 模组基线定稿
+
+- 背景：维护者于当日 19:49 前后完成一次完整实机启动验证（各配置/光影/会话文件 mtime 一致印证），随后宣布当前整合包作为 **Base Pack** 收尾。
+- 修改（实质 delta，已更新对应组件页历史）：
+  - **GUI Tween 主开关 `enable` false → true**（`config/guitween-client.toml`，verified）：第六批遗留的"有意默认还是试用遗留"开放问题由实机行动裁决，组件状态 experimental → active；分组动画参数全部保持作者预设默认值
+  - **汉化资源包内容更新**：`Minecraft-Mod-Language-Modpack-Converted-1.21.1.zip` 文件数 2157→2158、lang 文件 1096→1097（+734 字节），连续第三日刷新，覆盖新增模组译名（verified）
+- 噪音项（仅记录，不建档）：`asyncparticles-mixin.properties`、`iris.properties`、`packetfixer.properties`、光影设置 txt 均为关闭游戏时的运行时重写（大小不变，仅时间戳/键序刷新，verified）；`usercache.json` 为登录会话缓存续期（expiresOn 2026-08-21），属运行数据
+- 设计文档更新：[GUI Tween 组件页](components/aesthetic/guitween.md)（状态、配置意图、开放问题裁决、历史）、[汉化包组件页](components/resourcepacks/minecraft-mod-language-modpack-converted-1-21-1.md)（历史）、README（当前阶段标记 Base Pack 定稿、GUI Tween 条目与视听叠加约束同步）
+- 设计影响：
+  - Base Pack 内容基线定稿：105 个模组（NeoForge 96 + Fabric 8 格式）、1 个资源包、3 个光影包、165 个配置、9 项脚本内容，全部进入已接受清单，后续变更均从新基线起算
+  - 视听叠加风险约束中"GUI Tween 关闭"的缓解假设失效，HUD/动画层全量生效状态下的低配实机回归优先级上升
+  - 后续开发按设计支柱以"章节解锁"方式投放内容模组，不再直接扩充 Base Pack 本体
+- 验证状态：7 项 pending 变更全部经本地文件核实；GUI Tween 启用后的动画叠加观感、Stylish Effects vs Inventory HUD+ 药水 HUD 二选一裁决仍待实机确认
+- 剩余问题：继承第六批全部剩余问题（HUD 重叠裁决、MEED/JEED 重叠、Acedium 非 NVIDIA 行为、BetterDays 睡眠提示本地化等）；新增"GUI Tween 启用后动画叠加回归"一项
+
 ## 2026-07-21 - 加载第六批 HUD/性能/机制模组，首次落地机制改动并归档 4 个移除组件
 
 - 新增模组 **21 个**，按设计角色分类：
