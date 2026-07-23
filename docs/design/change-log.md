@@ -199,7 +199,7 @@
 
 - 新增：`.gitignore` 文件，定义整合包仓库的忽略规则。
 - 忽略范围：运行时日志、下载缓存、玩家存档、本地库文件（`.dll`）、PCL 启动器个人配置、游戏主 Jar、系统临时文件等。
-- 保留范围：`config/`、`defaultconfigs/`、`mods/`、`resourcepacks/`、`docs/`、`ProjectNautic-Dev.json` 及设计文档。
+- 保留范围：`config/`、`defaultconfigs/`、`mods/`、`resourcepacks/`、`docs/`、`Toudai.json` 及设计文档。
 - 设计影响：统一团队与 CI 的仓库边界，避免个人运行时数据混入版本控制。
 - 验证状态：已扫描现有目录结构，规则与当前文件布局匹配。
 

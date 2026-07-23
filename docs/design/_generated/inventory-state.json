@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "accepted_at": "2026-07-21T20:03:22+08:00",
-  "root_name": "ProjectNautic-Dev",
+  "root_name": "Toudai",
   "items": {
     "mod:mods/[C^2M 引擎] c2me-neoforge-mc1.21.1-0.4.0-alpha.0.115.jar": {
       "id": "mod:mods/[C^2M 引擎] c2me-neoforge-mc1.21.1-0.4.0-alpha.0.115.jar",
@@ -8107,17 +8107,17 @@
         "line_count": 4
       }
     },
-    "launcher-profile:ProjectNautic-Dev.json": {
-      "id": "launcher-profile:ProjectNautic-Dev.json",
+    "launcher-profile:Toudai.json": {
+      "id": "launcher-profile:Toudai.json",
       "category": "launcher-profile",
-      "path": "ProjectNautic-Dev.json",
+      "path": "Toudai.json",
       "kind": "file",
       "size": 75611,
       "mtime_ns": 1783873383246021400,
       "sha256": "06fb006be4575682402ba9bb87c47617916d071234f936a97168f96a6db520dc",
       "suggested_document": "components/projectnautic-dev.md",
       "metadata": {
-        "name": "ProjectNautic-Dev",
+        "name": "Toudai",
         "main_class": "cpw.mods.bootstraplauncher.BootstrapLauncher",
         "java_version": 21,
         "minecraft_version": "1.21.1",

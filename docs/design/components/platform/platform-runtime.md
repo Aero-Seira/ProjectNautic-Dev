@@ -5,7 +5,7 @@
 - 类型：运行环境与基础配置
 - 状态：active
 - 证据可信度：verified
-- 来源路径：`ProjectNautic-Dev.json`、`config/fml.toml`、`config/neoforge-client.toml`、`config/neoforge-common.toml`
+- 来源路径：`Toudai.json`、`config/fml.toml`、`config/neoforge-client.toml`、`config/neoforge-common.toml`
 - 标识与版本：Minecraft 1.21.1、NeoForge 21.1.235、FML 4.0.42
 - Java：21
 - 启动目标：`forgeclient`

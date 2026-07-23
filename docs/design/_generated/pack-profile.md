@@ -2,7 +2,7 @@
 
 Generated: `2026-07-21T20:03:23+08:00`
 
-- Pack Name: ProjectNautic-Dev
+- Pack Name: Toudai
 - Name: usernamecache
 - Minecraft Version: 1.21.1
 - Neoforge Version: 21.1.235

@@ -76,7 +76,7 @@ knownpacks.json
 # --------------------------------------------------
 
 # 版本主 Jar（由启动器通过版本 JSON 下载）
-ProjectNautic-Dev.jar
+Toudai.jar
 
 # 构建产物目录
 dist/
@@ -130,7 +130,7 @@ test-*.txt
 !resourcepacks/
 !docs/
 !AGENTS.md
-!ProjectNautic-Dev.json
+!Toudai.json
 
 # --------------------------------------------------
 # 8. KubeJS 运行时生成

@@ -209,7 +209,7 @@
       "url": "https://piston-data.mojang.com/v1/objects/03f8985492bda0afc0898465341eb0acef35f570/server.txt"
     }
   },
-  "id": "ProjectNautic-Dev",
+  "id": "Toudai",
   "javaVersion": {
     "component": "java-runtime-delta",
     "majorVersion": 21
@@ -2225,5 +2225,5 @@
   "releaseTime": "2024-08-08T20:24:45+08:00",
   "time": "2024-08-08T20:24:45+08:00",
   "type": "release",
-  "clientVersion": "1.21.1"
+  "clientVersion": "Toudai"
 }

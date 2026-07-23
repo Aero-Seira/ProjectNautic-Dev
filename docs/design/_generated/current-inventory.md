@@ -178,7 +178,7 @@ This file is generated. Put design intent in the human-maintained component page
 
 | Path | Name / ID | Version / format | Size | Suggested design page |
 | --- | --- | --- | ---: | --- |
-| `ProjectNautic-Dev.json` | ProjectNautic-Dev | - | 73.8 KiB | `components/projectnautic-dev.md` |
+| `Toudai.json` | Toudai | - | 73.8 KiB | `components/projectnautic-dev.md` |
 | `usercache.json` | usercache.json | - | 109 B | `components/usercache.md` |
 | `usernamecache.json` | usernamecache | - | 58 B | `components/usernamecache.md` |
 
